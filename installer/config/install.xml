@@ -8,11 +8,11 @@
     -->
     <info>
         <appname>PartyPlayer</appname>
-        <appversion>1.0-SNAPSHOT</appversion>
+        <appversion>1.0</appversion>
         <authors>
             <author name="Daniel Wasilew" email="der.wusel@googlemail.com"/>
         </authors>
-        <url>https://launchpad.net/partyPlayer</url>
+        <url>https://github.com/wusel/partyplayer</url>
     </info>
 
     <!--
@@ -64,11 +64,15 @@
             <file src="Readme.txt" targetdir="$INSTALL_PATH"/>
             <file src="License.txt" targetdir="$INSTALL_PATH/license"/>
             <file src="lib" targetdir="$INSTALL_PATH"/>
-            <file src="picotask.jar" targetdir="$INSTALL_PATH"/>
+            <file src="licenses" targetdir="$INSTALL_PATH"/>
+            <file src="bin" targetdir="$INSTALL_PATH"/>
+            <file src="partyPlayer.jar" targetdir="$INSTALL_PATH"/>
             <file src="start.png" targetdir="$INSTALL_PATH"/>
             <file src="start.ico" targetdir="$INSTALL_PATH"/>
             <updatecheck>
                 <include name="lib/**" />
+ 		<include name="bin/**" />
+ 		<include name="license/**" />
             </updatecheck>
         </pack>
     </packs>

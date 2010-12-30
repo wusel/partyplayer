@@ -12,14 +12,17 @@ mkdir staging
 cd ..
 mvn clean install
 
-cp picotask-gui/target/picotask.jar installer/staging
-cp -r picotask-gui/target/lib installer/staging/
+cp target/partyPlayer.jar installer/staging
+cp -r target/lib installer/staging/
+cp -r target/bin installer/staging/
+cp -r licenses installer/staging/
+
 cd installer
 cp -r config/* staging/
 
 cd staging
 
-$IZPACK_COMPILE_HOME/compile install.xml -b . -o ../picotask-installer.jar -k standard
-chmod u+x ../picotask-installer.jar
+$IZPACK_COMPILE_HOME/compile install.xml -b . -o ../partyplayer-installer.jar -k standard
+chmod u+x ../partyplayer-installer.jar
 
 

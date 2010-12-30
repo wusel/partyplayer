@@ -2,3 +2,6 @@
 *.settings
 partyPlayer.lib
 target/
+installer/staging
+installer/partyplayer-installer.jar
+

@@ -8,23 +8,23 @@
 
 <shortcuts>
   <skipIfNotSupported/>
-  <programGroup defaultName="picotask" location="applications"/>
+  <programGroup defaultName="Partyplayer" location="applications"/>
   <shortcut
-   name="Picotask"
+   name="Partyplayer"
      programGroup="yes"
      desktop="yes"
      applications="no"
      startMenu="no"
      startup="no"
      target="java"
-     commandLine="-jar $INSTALL_PATH/picotask.jar"
+     commandLine="-jar $INSTALL_PATH/partyPlayer.jar"
      initialState="noShow"
      iconFile="$INSTALL_PATH/start.png"
      iconIndex="0"
      workingDirectory=""
      type="Application"
      encoding="UTF-8"
-     description="Picotask">
+     description="Partyplayer">
   </shortcut>
   <shortcut
      name="Uninstaller"
@@ -41,6 +41,6 @@
      workingDirectory=""
      type="Application"
      encoding="UTF-8"
-     description="Picotask uninstaller">
+     description="Partyplayer Uninstaller">
   </shortcut>
 </shortcuts>

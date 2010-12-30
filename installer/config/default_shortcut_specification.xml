@@ -8,15 +8,15 @@
         Purpose of the document follows.
 -->
  <shortcuts>
-  <programGroup defaultName="Picotask"
+  <programGroup defaultName="Partyplayer"
                 location="applications"/>
   <skipIfNotSupported/>
   <shortcut
-    name="picotask"
-    target="$INSTALL_PATH\picotask.jar"
+    name="Partyplayer"
+    target="$INSTALL_PATH\partyPlayer.jar"
     commandLine=""
     workingDirectory="$INSTALL_PATH\"
-    description="This starts Picotask"
+    description="Start partyplayer"
     iconFile="$INSTALL_PATH\start.ico"
     iconIndex="0"
     initialState="normal"

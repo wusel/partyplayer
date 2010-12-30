@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes" ?>
+
+<installation version="1.0">
+
+    <!--
+        The info section.
+        The meaning of the tags should be natural ...
+    -->
+    <info>
+        <appname>picotask</appname>
+        <appversion>3.0-SNAPSHOT</appversion>
+        <authors>
+            <author name="Daniel Wasilew" email="der.wusel@googlemail.com"/>
+        </authors>
+        <url>https://launchpad.net/picotask</url>
+    </info>
+
+    <!--
+        The gui preferences indication.
+        Sets the installer window to 640x480. It will not be able to change the size.
+    -->
+    <guiprefs width="640" height="480" resizable="no"/>
+
+    <!--
+        The locale section.
+        Asks here to include the English and French langpacks.
+    -->
+    <locale>
+        <langpack iso3="deu"/>
+        <langpack iso3="eng"/>
+    </locale>
+
+    <!--
+        The resources section.
+        The ids must be these ones if you want to use the LicencePanel and/or the InfoPanel.
+    -->
+    <resources>
+        <res id="LicencePanel.licence" src="License.txt"/>
+        <res id="InfoPanel.info" src="Readme.txt"/>
+        <res src="default_shortcut_specification.xml" id="shortcutSpec.xml"/>
+        <res src="unix_shortcut_specification.xml" id="Unix_shortcutSpec.xml"/>
+    </resources>
+
+    <!--
+        The panels section.
+        We indicate here which panels we want to use. The order will be respected.
+    -->
+    <panels>
+        <panel classname="HelloPanel"/>
+        <panel classname="LicencePanel"/>
+        <panel classname="TargetPanel"/>
+        <panel classname="InstallPanel"/>
+        <panel classname="ShortcutPanel"/>
+        <panel classname="FinishPanel"/>
+    </panels>
+
+    <!--
+        The packs section.
+        We specify here our packs.
+    -->
+    <packs>
+        <pack name="Base" required="yes">
+            <description>The base files</description>
+            <file src="Readme.txt" targetdir="$INSTALL_PATH"/>
+            <file src="License.txt" targetdir="$INSTALL_PATH/license"/>
+            <file src="lib" targetdir="$INSTALL_PATH"/>
+            <file src="picotask.jar" targetdir="$INSTALL_PATH"/>
+            <file src="start.png" targetdir="$INSTALL_PATH"/>
+            <file src="start.ico" targetdir="$INSTALL_PATH"/>
+            <updatecheck>
+                <include name="lib/**" />
+            </updatecheck>
+        </pack>
+    </packs>
+
+   <native type="izpack" name="ShellLink.dll">
+     <os family="windows"/>
+   </native>
+   <native type="izpack" name="ShellLink_x64.dll">
+     <os family="windows"/>
+   </native>
+
+</installation>

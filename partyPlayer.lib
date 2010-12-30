@@ -1,0 +1,2792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <Album title="Silent Alarm" year="2005" cddb="" albumID="0"/>
+    <Album title="Stille Post CD" year="2004" cddb="" albumID="1"/>
+    <Album title="Silent Alarm Remixed" year="2005" cddb="" albumID="2"/>
+    <Album
+        title="A Weekend In The City - The Official B Side Collection"
+        year="0" cddb="" albumID="3"/>
+    <Album title="Johnossi" year="2005" cddb="" albumID="4"/>
+    <Album title="A Rush of Blood to the Head" year="2002" cddb="" albumID="5"/>
+    <Album title="A Weekend in the City" year="2007" cddb="" albumID="6"/>
+    <Album title="Fornika" year="2007" cddb="" albumID="7"/>
+    <Album title="Fettes" year="2010" cddb="" albumID="8"/>
+    <Album title="So Sehr Dabei [Live]" year="2009" cddb="" albumID="9"/>
+    <Album title="So Sehr Dabei" year="2008" cddb="" albumID="10"/>
+    <Album title="Helicopter (7&quot; Single)" year="2004" cddb="" albumID="11"/>
+    <Album title="Sixteen Stone" year="1994" cddb="" albumID="12"/>
+    <Album title="Intimacy" year="2008" cddb="" albumID="13"/>
+    <Album title="Help: A Day In The Life" year="2005" cddb="" albumID="14"/>
+    <Album title="Figure 8" year="2000" cddb="" albumID="15"/>
+    <Album title="Two More Years" year="0" cddb="" albumID="16"/>
+    <Album title="Eyes Open (UK Bonus Tracks)" year="2006" cddb="" albumID="17"/>
+    <Album title="Overtones" year="2007" cddb="" albumID="18"/>
+    <Album title="Viel" year="2004" cddb="" albumID="19"/>
+    <Album title="Hieb &amp; Stichfest" year="2002" cddb="" albumID="20"/>
+    <Album title="Save The Last Dance" year="2000" cddb="" albumID="21"/>
+    <Album title="Soundtrack - Eiskalte Engel" year="2000" cddb="" albumID="22"/>
+    <Album title="Save The Last Dance 2-(OST)" year="0" cddb="" albumID="23"/>
+    <Album title="ZOMBIES! ALIENS! VAMPIRES! DINOSAURS!" year="2006"
+        cddb="" albumID="24"/>
+    <Album title="I Still Remember" year="2007" cddb="" albumID="25"/>
+    <Album title="Konk" year="2008" cddb="" albumID="26"/>
+    <Album title="Soundso" year="2007" cddb="" albumID="27"/>
+    <Album title="Bloc Party E.P." year="2004" cddb="" albumID="28"/>
+    <Album title="Eyes Open [UK Bonus Tracks]" year="2006" cddb="" albumID="29"/>
+    <Album title="Pioneers" year="2004" cddb="" albumID="30"/>
+    <Album title="Eyes Open" year="2006" cddb="" albumID="31"/>
+    <Album title="Little Thoughts EP" year="2004" cddb="" albumID="32"/>
+    <Album title="Limbo Messiah" year="2007" cddb="" albumID="33"/>
+    <Album title="Bar Lounge Classics - Summer Edition CD1" year="2003"
+        cddb="" albumID="34"/>
+    <Album title="Ohne Titel - 19-12-05" year="0" cddb="" albumID="35"/>
+    <Album title="Stadtaffe" year="2008" cddb="" albumID="36"/>
+    <Album title="Living Targets" year="2002" cddb="" albumID="37"/>
+    <Album title="Brot" year="2010" cddb="" albumID="38"/>
+    <Album title="The Ideal Crash" year="1999" cddb="" albumID="39"/>
+    <Album title="First Impressions Of Earth (Advance)" year="2005"
+        cddb="" albumID="40"/>
+    <Album title="Alternative Moments III" year="2002" cddb="" albumID="41"/>
+    <Album title="Love Actually" year="0" cddb="" albumID="42"/>
+    <Album title="Intimacy Remixed" year="2009" cddb="" albumID="43"/>
+    <Album title="The Prayer" year="0" cddb="" albumID="44"/>
+    <Album title="unknown" year="0" cddb="" albumID="45"/>
+    <Album title="The Weekend Isn't Over" year="2007" cddb="" albumID="46"/>
+    <Album title="A Weekeend In The City" year="2007" cddb="" albumID="47"/>
+    <Album title="Love Actually OST" year="2003" cddb="" albumID="48"/>
+    <Album
+        title="So Here We Are /  /  /  /  /  /  /  /  /  /  /  /  /  /  / "
+        year="2005" cddb="" albumID="49"/>
+    <Album title="Smack Smash" year="2004" cddb="" albumID="50"/>
+    <Album title="Eiskalte Engel Soundtrack" year="1999" cddb="" albumID="51"/>
+    <Album title="Zirkus" year="2006" cddb="" albumID="52"/>
+    <Album title="Alternative Moments I" year="2001" cddb="" albumID="53"/>
+    <Artist name="Aimee Mann" artistID="54">
+        <Albums>
+            <Album albumID="22"/>
+        </Albums>
+    </Artist>
+    <Artist name="Peter Fox" artistID="55">
+        <Albums>
+            <Album albumID="36"/>
+        </Albums>
+    </Artist>
+    <Artist name="Die Fantastischen Vier" artistID="56">
+        <Albums>
+            <Album albumID="7"/>
+            <Album albumID="19"/>
+        </Albums>
+    </Artist>
+    <Artist name="Bush" artistID="57">
+        <Albums>
+            <Album albumID="12"/>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Pete Yorn" artistID="58">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Johnossi" artistID="59">
+        <Albums>
+            <Album albumID="4"/>
+        </Albums>
+    </Artist>
+    <Artist name="Fun lovin' criminals" artistID="60">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="The Cooper temple clause" artistID="61">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Monster Magnet" artistID="62">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="The Cure" artistID="63">
+        <Albums>
+            <Album albumID="41"/>
+        </Albums>
+    </Artist>
+    <Artist name="V.A.S.T." artistID="64">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Mother love bones" artistID="65">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Kid Rock" artistID="66">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Jeff  Buckley" artistID="67">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Elliott Smith" artistID="68">
+        <Albums>
+            <Album albumID="15"/>
+        </Albums>
+    </Artist>
+    <Artist name="The Shining" artistID="69">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Marcy Playground" artistID="70">
+        <Albums>
+            <Album albumID="22"/>
+        </Albums>
+    </Artist>
+    <Artist name="Sugababes" artistID="71">
+        <Albums>
+            <Album albumID="42"/>
+        </Albums>
+    </Artist>
+    <Artist name="Faith no more" artistID="72">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Heather Nova" artistID="73">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="The Soundtrack of our lives" artistID="74">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Tosca" artistID="75">
+        <Albums>
+            <Album albumID="34"/>
+        </Albums>
+    </Artist>
+    <Artist name="Day One" artistID="76">
+        <Albums>
+            <Album albumID="22"/>
+        </Albums>
+    </Artist>
+    <Artist name="Zero 7" artistID="77">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="The Verve" artistID="78">
+        <Albums>
+            <Album albumID="22"/>
+        </Albums>
+    </Artist>
+    <Artist name="HIM" artistID="79">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Snow Patrol" artistID="80">
+        <Albums>
+            <Album albumID="17"/>
+            <Album albumID="31"/>
+            <Album albumID="29"/>
+        </Albums>
+    </Artist>
+    <Artist name="Ne-Yo" artistID="81">
+        <Albums>
+            <Album albumID="23"/>
+        </Albums>
+    </Artist>
+    <Artist name="John Frusciante" artistID="82">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Billy Mack" artistID="83">
+        <Albums>
+            <Album albumID="42"/>
+        </Albums>
+    </Artist>
+    <Artist name="The Dining Room" artistID="84">
+        <Albums>
+            <Album albumID="34"/>
+        </Albums>
+    </Artist>
+    <Artist name="Kid Loco" artistID="85">
+        <Albums>
+            <Album albumID="34"/>
+        </Albums>
+    </Artist>
+    <Artist name="Fettes Brot" artistID="86">
+        <Albums>
+            <Album albumID="8"/>
+            <Album albumID="38"/>
+        </Albums>
+    </Artist>
+    <Artist name="Lynden David Hall" artistID="87">
+        <Albums>
+            <Album albumID="42"/>
+        </Albums>
+    </Artist>
+    <Artist name="The Strokes" artistID="88">
+        <Albums>
+            <Album albumID="40"/>
+        </Albums>
+    </Artist>
+    <Artist name="Incubus" artistID="89">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Krezip" artistID="90">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Clueso" artistID="91">
+        <Albums>
+            <Album albumID="10"/>
+            <Album albumID="9"/>
+        </Albums>
+    </Artist>
+    <Artist name="Garbage" artistID="92">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Reamonn" artistID="93">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="dEUS" artistID="94">
+        <Albums>
+            <Album albumID="39"/>
+        </Albums>
+    </Artist>
+    <Artist name="Eva Cassidy" artistID="95">
+        <Albums>
+            <Album albumID="42"/>
+            <Album albumID="48"/>
+        </Albums>
+    </Artist>
+    <Artist name="Soulbone" artistID="96">
+        <Albums>
+            <Album albumID="21"/>
+        </Albums>
+    </Artist>
+    <Artist name="Fredro Starr &amp; Jill Scott" artistID="97">
+        <Albums>
+            <Album albumID="21"/>
+        </Albums>
+    </Artist>
+    <Artist name="Starsailor" artistID="98">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Thievery Coperation" artistID="99">
+        <Albums>
+            <Album albumID="34"/>
+        </Albums>
+    </Artist>
+    <Artist name="Pink" artistID="100">
+        <Albums>
+            <Album albumID="21"/>
+        </Albums>
+    </Artist>
+    <Artist name="Depeche Mode" artistID="101">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Noel ft. Ghostface Killah" artistID="102">
+        <Albums>
+            <Album albumID="23"/>
+        </Albums>
+    </Artist>
+    <Artist name="Blur" artistID="103">
+        <Albums>
+            <Album albumID="22"/>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Bloc Party" artistID="104">
+        <Albums>
+            <Album albumID="0"/>
+            <Album albumID="14"/>
+            <Album albumID="2"/>
+            <Album albumID="46"/>
+            <Album albumID="43"/>
+            <Album albumID="13"/>
+            <Album albumID="44"/>
+            <Album albumID="30"/>
+            <Album albumID="28"/>
+            <Album albumID="3"/>
+            <Album albumID="11"/>
+            <Album albumID="16"/>
+            <Album albumID="25"/>
+            <Album albumID="6"/>
+            <Album albumID="32"/>
+            <Album albumID="47"/>
+        </Albums>
+    </Artist>
+    <Artist name="The Vines" artistID="105">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Athena Cage" artistID="106">
+        <Albums>
+            <Album albumID="21"/>
+        </Albums>
+    </Artist>
+    <Artist name="Norah Jones" artistID="107">
+        <Albums>
+            <Album albumID="42"/>
+        </Albums>
+    </Artist>
+    <Artist name="unknown" artistID="108">
+        <Albums>
+            <Album albumID="53"/>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Fleps" artistID="109">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="K's choice" artistID="110">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Kelly Clarkson" artistID="111">
+        <Albums>
+            <Album albumID="42"/>
+        </Albums>
+    </Artist>
+    <Artist name="Matt Bianco" artistID="112">
+        <Albums>
+            <Album albumID="34"/>
+        </Albums>
+    </Artist>
+    <Artist name="Hooverphonic" artistID="113">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Andreas Johnson" artistID="114">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Lenny McDowell" artistID="115">
+        <Albums>
+            <Album albumID="34"/>
+        </Albums>
+    </Artist>
+    <Artist name="Unbekannt" artistID="116">
+        <Albums>
+            <Album albumID="35"/>
+        </Albums>
+    </Artist>
+    <Artist name="Mia" artistID="117">
+        <Albums>
+            <Album albumID="20"/>
+            <Album albumID="52"/>
+            <Album albumID="1"/>
+        </Albums>
+    </Artist>
+    <Artist name="Beatsteaks" artistID="118">
+        <Albums>
+            <Album albumID="37"/>
+            <Album albumID="33"/>
+            <Album albumID="50"/>
+        </Albums>
+    </Artist>
+    <Artist name="The Kooks" artistID="119">
+        <Albums>
+            <Album albumID="26"/>
+        </Albums>
+    </Artist>
+    <Artist name="Morcheeba" artistID="120">
+        <Albums>
+            <Album albumID="34"/>
+        </Albums>
+    </Artist>
+    <Artist name="Kristofer Aström &amp; Hidden Truck" artistID="121">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="The Pointer Sisters" artistID="122">
+        <Albums>
+            <Album albumID="42"/>
+        </Albums>
+    </Artist>
+    <Artist name="Ryan Toby (Formerly of City High)" artistID="123">
+        <Albums>
+            <Album albumID="23"/>
+        </Albums>
+    </Artist>
+    <Artist name="Suede" artistID="124">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Sub7even" artistID="125">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Just Jack" artistID="126">
+        <Albums>
+            <Album albumID="18"/>
+        </Albums>
+    </Artist>
+    <Artist name="Joni Mitchell" artistID="127">
+        <Albums>
+            <Album albumID="42"/>
+        </Albums>
+    </Artist>
+    <Artist name="Counting Crows" artistID="128">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Goldfrapp" artistID="129">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Donell Jones" artistID="130">
+        <Albums>
+            <Album albumID="21"/>
+        </Albums>
+    </Artist>
+    <Artist name="Wir sind Helden" artistID="131">
+        <Albums>
+            <Album albumID="27"/>
+        </Albums>
+    </Artist>
+    <Artist name="Maroon 5" artistID="132">
+        <Albums>
+            <Album albumID="42"/>
+        </Albums>
+    </Artist>
+    <Artist name="Blue Six" artistID="133">
+        <Albums>
+            <Album albumID="34"/>
+        </Albums>
+    </Artist>
+    <Artist name="Jazzamor" artistID="134">
+        <Albums>
+            <Album albumID="34"/>
+        </Albums>
+    </Artist>
+    <Artist name="Ho' Horizons" artistID="135">
+        <Albums>
+            <Album albumID="34"/>
+        </Albums>
+    </Artist>
+    <Artist name="Hellogoodbye" artistID="136">
+        <Albums>
+            <Album albumID="24"/>
+        </Albums>
+    </Artist>
+    <Artist name="Moodorama" artistID="137">
+        <Albums>
+            <Album albumID="34"/>
+        </Albums>
+    </Artist>
+    <Artist name="Portishead" artistID="138">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Fatboy Slim" artistID="139">
+        <Albums>
+            <Album albumID="51"/>
+        </Albums>
+    </Artist>
+    <Artist name="Texas" artistID="140">
+        <Albums>
+            <Album albumID="42"/>
+        </Albums>
+    </Artist>
+    <Artist name="Guano Apes" artistID="141">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Olivia Olson" artistID="142">
+        <Albums>
+            <Album albumID="48"/>
+        </Albums>
+    </Artist>
+    <Artist name="X-2-C" artistID="143">
+        <Albums>
+            <Album albumID="21"/>
+        </Albums>
+    </Artist>
+    <Artist name="Madrugada" artistID="144">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Manic Street Preachers" artistID="145">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Gabrielle" artistID="146">
+        <Albums>
+            <Album albumID="48"/>
+        </Albums>
+    </Artist>
+    <Artist name="Jimmies Chicken Shack" artistID="147">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Skunk Anansie" artistID="148">
+        <Albums>
+            <Album albumID="22"/>
+        </Albums>
+    </Artist>
+    <Artist name="Abra Moore" artistID="149">
+        <Albums>
+            <Album albumID="22"/>
+        </Albums>
+    </Artist>
+    <Artist name="Bare Jr." artistID="150">
+        <Albums>
+            <Album albumID="22"/>
+        </Albums>
+    </Artist>
+    <Artist name="Coldplay" artistID="151">
+        <Albums>
+            <Album albumID="45"/>
+            <Album albumID="5"/>
+        </Albums>
+    </Artist>
+    <Artist name="Gus Gus" artistID="152">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="112 (Featuring The Notorious B" artistID="153">
+        <Albums>
+            <Album albumID="21"/>
+        </Albums>
+    </Artist>
+    <Artist name="Chambao" artistID="154">
+        <Albums>
+            <Album albumID="34"/>
+        </Albums>
+    </Artist>
+    <Artist name="T-Pain ft. Pitbull" artistID="155">
+        <Albums>
+            <Album albumID="23"/>
+        </Albums>
+    </Artist>
+    <Artist name="Lucy Pearl (Featuring Snoop Do" artistID="156">
+        <Albums>
+            <Album albumID="21"/>
+        </Albums>
+    </Artist>
+    <Artist name="Kevon Edmonds" artistID="157">
+        <Albums>
+            <Album albumID="21"/>
+        </Albums>
+    </Artist>
+    <Artist
+        name="Bloc Party /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  / " artistID="158">
+        <Albums>
+            <Album albumID="49"/>
+            <Album albumID="30"/>
+        </Albums>
+    </Artist>
+    <Artist name="Doves" artistID="159">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="The Calling" artistID="160">
+        <Albums>
+            <Album albumID="42"/>
+        </Albums>
+    </Artist>
+    <Artist name="Everlast" artistID="161">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="The Afghan Whigs" artistID="162">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Craig Armstrong" artistID="163">
+        <Albums>
+            <Album albumID="22"/>
+            <Album albumID="48"/>
+        </Albums>
+    </Artist>
+    <Artist name="Ice Cube (Featuring Mack 10 an" artistID="164">
+        <Albums>
+            <Album albumID="21"/>
+        </Albums>
+    </Artist>
+    <Artist name="Dido" artistID="165">
+        <Albums>
+            <Album albumID="42"/>
+        </Albums>
+    </Artist>
+    <Artist name="Kyoto Jazz Massive" artistID="166">
+        <Albums>
+            <Album albumID="34"/>
+        </Albums>
+    </Artist>
+    <Artist name="various" artistID="167">
+        <Albums>
+            <Album albumID="41"/>
+        </Albums>
+    </Artist>
+    <Artist name="Richard Ashcroft" artistID="168">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Björk" artistID="169">
+        <Albums>
+            <Album albumID="53"/>
+        </Albums>
+    </Artist>
+    <Artist name="Slut" artistID="170">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Lamb" artistID="171">
+        <Albums>
+            <Album albumID="53"/>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Minus 8" artistID="172">
+        <Albums>
+            <Album albumID="34"/>
+        </Albums>
+    </Artist>
+    <Artist name="Alice in chains" artistID="173">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Tiefschwarz" artistID="174">
+        <Albums>
+            <Album albumID="34"/>
+        </Albums>
+    </Artist>
+    <Artist name="The Beach Boys" artistID="175">
+        <Albums>
+            <Album albumID="42"/>
+        </Albums>
+    </Artist>
+    <Artist name="Faithless" artistID="176">
+        <Albums>
+            <Album albumID="22"/>
+        </Albums>
+    </Artist>
+    <Artist name="Chaka Demus &amp; Pliers" artistID="177">
+        <Albums>
+            <Album albumID="21"/>
+        </Albums>
+    </Artist>
+    <Artist name="Oasis" artistID="178">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Wyclef Jean feat. Sharissa" artistID="179">
+        <Albums>
+            <Album albumID="42"/>
+        </Albums>
+    </Artist>
+    <Artist name="Placebo" artistID="180">
+        <Albums>
+            <Album albumID="22"/>
+        </Albums>
+    </Artist>
+    <Artist name="Kristen Barry" artistID="181">
+        <Albums>
+            <Album albumID="22"/>
+        </Albums>
+    </Artist>
+    <Artist name="Rihanna ft. Shontelle" artistID="182">
+        <Albums>
+            <Album albumID="23"/>
+        </Albums>
+    </Artist>
+    <Artist name="Moloko" artistID="183">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Queensryche" artistID="184">
+        <Albums>
+            <Album albumID="45"/>
+        </Albums>
+    </Artist>
+    <Artist name="Montell Jordan" artistID="185">
+        <Albums>
+            <Album albumID="21"/>
+        </Albums>
+    </Artist>
+    <Artist name="Otis Redding" artistID="186">
+        <Albums>
+            <Album albumID="42"/>
+        </Albums>
+    </Artist>
+    <Artist name="K-Ci &amp; JoJo" artistID="187">
+        <Albums>
+            <Album albumID="21"/>
+        </Albums>
+    </Artist>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/limbo messiah/01 - as i please.mp3"
+        title="As I Please" trackNumber="1" albumID="33" artistID="118" duration="155.54"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/limbo messiah/02 - jane became insane.mp3"
+        title="Jane Became Insane" trackNumber="2" albumID="33"
+        artistID="118" duration="165.4"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/limbo messiah/03 - sharp, cool &amp; collected.mp3"
+        title="Sharp, Cool &amp; Collected" trackNumber="3" albumID="33"
+        artistID="118" duration="132.3"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/limbo messiah/04 - meantime.mp3"
+        title="Meantime" trackNumber="4" albumID="33" artistID="118" duration="150.33"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/limbo messiah/05 - demons galore.mp3"
+        title="Demons Galore" trackNumber="5" albumID="33"
+        artistID="118" duration="171.55"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/limbo messiah/06 - cut off the top.mp3"
+        title="Cut off the Top" trackNumber="6" albumID="33"
+        artistID="118" duration="194.26"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/limbo messiah/07 - bad brain.mp3"
+        title="Bad Brain" trackNumber="7" albumID="33" artistID="118" duration="159.09"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/limbo messiah/08 - she was great.mp3"
+        title="She Was Great" trackNumber="8" albumID="33"
+        artistID="118" duration="166.71"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/limbo messiah/09 - soljanka.mp3"
+        title="Soljanka" trackNumber="9" albumID="33" artistID="118" duration="234.99"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/limbo messiah/10 - hail to the freaks.mp3"
+        title="Hail to the Freaks" trackNumber="10" albumID="33"
+        artistID="118" duration="193.86"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/limbo messiah/11 - e-g-o.mp3"
+        title="E-G-O" trackNumber="11" albumID="33" artistID="118" duration="163.91"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/living targets/Beatsteaks - 01 - Not Ready To Rock.mp3"
+        title="Not Ready to Rock" trackNumber="1" albumID="37"
+        artistID="118" duration="87.88"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/living targets/Beatsteaks - 02 - God Knows.mp3"
+        title="God Knows" trackNumber="2" albumID="37" artistID="118" duration="152.7"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/living targets/Beatsteaks - 03 - Let Me In.mp3"
+        title="Let Me In" trackNumber="3" albumID="37" artistID="118" duration="212.74"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/living targets/Beatsteaks - 04 - Soothe Me.mp3"
+        title="Soothe Me" trackNumber="4" albumID="37" artistID="118" duration="151.08"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/living targets/Beatsteaks - 05 - Above Us.mp3"
+        title="Above Us" trackNumber="5" albumID="37" artistID="118" duration="183.7"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/living targets/Beatsteaks - 06 - This One.mp3"
+        title="This One" trackNumber="6" albumID="37" artistID="118" duration="167.76"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/living targets/Beatsteaks - 07 - Disconnected.mp3"
+        title="Disconnected" trackNumber="7" albumID="37" artistID="118" duration="185.69"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/living targets/Beatsteaks - 08 - A-Way.mp3"
+        title="A-Way" trackNumber="8" albumID="37" artistID="118" duration="221.04"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/living targets/Beatsteaks - 09 - Mirrored.mp3"
+        title="Mirrored" trackNumber="9" albumID="37" artistID="118" duration="229.34"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/living targets/Beatsteaks - 10 - Run Run.mp3"
+        title="Run Run" trackNumber="10" albumID="37" artistID="118" duration="175.8"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/living targets/Beatsteaks - 11 - To Be Strong.mp3"
+        title="To Be Strong" trackNumber="11" albumID="37"
+        artistID="118" duration="169.49"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/living targets/Beatsteaks - 12 - Summer.mp3"
+        title="Summer" trackNumber="12" albumID="37" artistID="118" duration="401.15"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/Smack Smash/01 - beatsteaks - big attack.mp3"
+        title="Big Attack" trackNumber="1" albumID="50" artistID="118" duration="144.21"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/Smack Smash/02 - beatsteaks - vision.mp3"
+        title="Vision" trackNumber="2" albumID="50" artistID="118" duration="169.77"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/Smack Smash/03 - beatsteaks - ain't complaining.mp3"
+        title="Ain't Complaining" trackNumber="3" albumID="50"
+        artistID="118" duration="168.41"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/- Björk - all is full of love.mp3"
+        title="all is full of love" trackNumber="5" albumID="53"
+        artistID="169" duration="288.01"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/A Weekend in the City/01  Bloc Party - Song For Clay [Disappear Here].mp3"
+        title="Song For Clay [Disappear Here]" trackNumber="1"
+        albumID="47" artistID="104" duration="290.16"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/A Weekend in the City/02  Bloc Party - Hunting For Witches.mp3"
+        title="Hunting For Witches" trackNumber="2" albumID="47"
+        artistID="104" duration="211.94"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/A Weekend in the City/03  Bloc Party - Waiting For The 7.18.mp3"
+        title="Waiting For The 7.18" trackNumber="3" albumID="47"
+        artistID="104" duration="257.85"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/A Weekend in the City/04  Bloc Party - The Prayer.mp3"
+        title="The Prayer" trackNumber="4" albumID="47" artistID="104" duration="225.52"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/A Weekend in the City/05  Bloc Party - Uniform.mp3"
+        title="Uniform" trackNumber="5" albumID="47" artistID="104" duration="332.86"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/A Weekend in the City/06  Bloc Party - On.mp3"
+        title="On" trackNumber="6" albumID="47" artistID="104" duration="287.55"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/A Weekend in the City/07  Bloc Party - Where Is Home.mp3"
+        title="Where Is Home" trackNumber="7" albumID="47"
+        artistID="104" duration="294.85"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/A Weekend in the City/08  Bloc Party - Kreuzberg.mp3"
+        title="Kreuzberg" trackNumber="8" albumID="47" artistID="104" duration="327.97"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/A Weekend in the City/09  Bloc Party - I Still Remember.mp3"
+        title="I Still Remember" trackNumber="9" albumID="47"
+        artistID="104" duration="263.82"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/A Weekend in the City/10  Bloc Party - Sunday.mp3"
+        title="Sunday" trackNumber="10" albumID="47" artistID="104" duration="300.08"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/A Weekend in the City/11  Bloc Party - Srxt.mp3"
+        title="Srxt" trackNumber="11" albumID="47" artistID="104" duration="292.52"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Rare and B sides/02 Staying Fat.mp3"
+        title="Staying Fat" trackNumber="2" albumID="28" artistID="104" duration="143.14"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Bloc_Party-Intimacy-Retail-2008-BLOCPARTY/Bloc_Party_Intimacy_01_Ares.mp3"
+        title="Ares" trackNumber="1" albumID="13" artistID="104" duration="209.55"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Bloc_Party-Intimacy-Retail-2008-BLOCPARTY/Bloc_Party_Intimacy_02_Mercury.mp3"
+        title="Mercury" trackNumber="2" albumID="13" artistID="104" duration="233.43"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Bloc_Party-Intimacy-Retail-2008-BLOCPARTY/Bloc_Party_Intimacy_03_Halo.mp3"
+        title="Halo" trackNumber="3" albumID="13" artistID="104" duration="216.37"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Bloc_Party-Intimacy-Retail-2008-BLOCPARTY/Bloc_Party_Intimacy_04_Biko.mp3"
+        title="Biko" trackNumber="4" albumID="13" artistID="104" duration="301.36"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Bloc_Party-Intimacy-Retail-2008-BLOCPARTY/Bloc_Party_Intimacy_05_Trojan_Horse.mp3"
+        title="Trojan Horse" trackNumber="5" albumID="13" artistID="104" duration="212.48"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Bloc_Party-Intimacy-Retail-2008-BLOCPARTY/Bloc_Party_Intimacy_06_Signs.mp3"
+        title="Signs" trackNumber="6" albumID="13" artistID="104" duration="279.97"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Bloc_Party-Intimacy-Retail-2008-BLOCPARTY/Bloc_Party_Intimacy_07_One_Month_Off.mp3"
+        title="One Month Off" trackNumber="7" albumID="13"
+        artistID="104" duration="218.83"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Bloc_Party-Intimacy-Retail-2008-BLOCPARTY/Bloc_Party_Inticamy_08_Zephyrus.mp3"
+        title="Zepherus" trackNumber="8" albumID="13" artistID="104" duration="274.96"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Bloc_Party-Intimacy-Retail-2008-BLOCPARTY/Bloc_Party_Intimacy_09_Better_Than_Heaven.mp3"
+        title="Better Than Heaven" trackNumber="9" albumID="13"
+        artistID="104" duration="261.82"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Bloc_Party-Intimacy-Retail-2008-BLOCPARTY/Bloc_Party_Intimacy_10_Ion_Square.mp3"
+        title="Ion Square" trackNumber="10" albumID="13" artistID="104" duration="393.28"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2009]Intimacy Remixed/01 - Bloc Party - Ares (Villains Remix).mp3"
+        title="Ares (Villains Remix)" trackNumber="1" albumID="43"
+        artistID="104" duration="331.49"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2009]Intimacy Remixed/02 - Bloc Party - Mercury (Hervé Is In Disarray Remix).mp3"
+        title="Mercury (Hervé Is In Disarray Remix)" trackNumber="2"
+        albumID="43" artistID="104" duration="289.04"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2009]Intimacy Remixed/03 - Bloc Party - Halo (We Have Band Dub).mp3"
+        title="Halo (We Have Band Dub)" trackNumber="3" albumID="43"
+        artistID="104" duration="274.45"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2009]Intimacy Remixed/04 - Bloc Party - Biko (Mogwai Remix).mp3"
+        title="Biko (Mogwai Remix)" trackNumber="4" albumID="43"
+        artistID="104" duration="264.75"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2009]Intimacy Remixed/05 - Bloc Party - Trojan Horse (John B Remix).mp3"
+        title="Trojan Horse (John B Remix)" trackNumber="5" albumID="43"
+        artistID="104" duration="413.8"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2009]Intimacy Remixed/06 - Bloc Party - Signs (Armand Van Helden Remix).mp3"
+        title="Signs (Armand Van Helden Remix)" trackNumber="6"
+        albumID="43" artistID="104" duration="347.26"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2009]Intimacy Remixed/07 - Bloc Party - One Month Off (Filty Dukes Remix).mp3"
+        title="One Month Off (Filty Dukes Remix)" trackNumber="7"
+        albumID="43" artistID="104" duration="347.57"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2009]Intimacy Remixed/08 - Bloc Party - Zephyrus (Phase One Remix).mp3"
+        title="Zephyrus (Phase One Remix)" trackNumber="8" albumID="43"
+        artistID="104" duration="250.0"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2009]Intimacy Remixed/09 - Bloc Party - Talons (Phones R.I.P Mix).mp3"
+        title="Talons (Phones R.I.P Mix)" trackNumber="9" albumID="43"
+        artistID="104" duration="316.1"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2009]Intimacy Remixed/10 - Bloc Party - Better Than Heaven (No Age Remix).mp3"
+        title="Better Than Heaven (No Age Remix)" trackNumber="10"
+        albumID="43" artistID="104" duration="181.21"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2009]Intimacy Remixed/11 - Bloc Party - Ion Square (Banjo Or Freakout Remix).mp3"
+        title="Ion Square (Banjo Or Freakout Remix)" trackNumber="11"
+        albumID="43" artistID="104" duration="264.49"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2009]Intimacy Remixed/12 - Bloc Party - Letter To My Son (Gold Panda Remix).mp3"
+        title="Letter To My Son (Gold Panda Remix)" trackNumber="12"
+        albumID="43" artistID="104" duration="332.91"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2009]Intimacy Remixed/13 - Bloc Party - Your Visits Are Getting Shorter (Double D Remix).mp3"
+        title="Your Visits Are Getting Shorter (Double D Remix)"
+        trackNumber="13" albumID="43" artistID="104" duration="305.98"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Rare and B sides/02 Tulips.mp3"
+        title="Tulips" trackNumber="2" albumID="32" artistID="104" duration="325.31"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Silent Alarm/05 - Blue Light.mp3"
+        title="Blue Light" trackNumber="5" albumID="0" artistID="104" duration="167.45"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Silent Alarm/06 - Shes Hearing Voices.mp3"
+        title="Shes Hearing Voices" trackNumber="6" albumID="0"
+        artistID="104" duration="208.91"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Silent Alarm/07 - This Modern Love.mp3"
+        title="This Modern Love" trackNumber="7" albumID="0"
+        artistID="104" duration="265.59"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Silent Alarm/08 - Pioneers.mp3"
+        title="Pioneers" trackNumber="8" albumID="0" artistID="104" duration="215.18"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Silent Alarm/09 - Price Of Gas.mp3"
+        title="Price Of Gas" trackNumber="9" albumID="0" artistID="104" duration="259.61"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Silent Alarm/10 - So Here We Are.mp3"
+        title="So Here We Are" trackNumber="10" albumID="0"
+        artistID="104" duration="232.83"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Silent Alarm/11 - Luno.mp3"
+        title="Luno" trackNumber="11" albumID="0" artistID="104" duration="237.22"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Silent Alarm/12 - Plans.mp3"
+        title="Plans" trackNumber="12" albumID="0" artistID="104" duration="250.13"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Silent Alarm/13 - Compliments.mp3"
+        title="Compliments" trackNumber="13" albumID="0" artistID="104" duration="282.15"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2005]Silent Alarm Remixed/08 The Pioneers (M83 Remix).mp3"
+        title="The Pioneers (M83 Remix)" trackNumber="8" albumID="2"
+        artistID="104" duration="351.79"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2005]Silent Alarm Remixed/09 Price Of Gas (Automato Remix).mp3"
+        title="Price Of Gas (Automato Remix)" trackNumber="9"
+        albumID="2" artistID="104" duration="289.28"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2005]Silent Alarm Remixed/10 So Here We Are (Four Tet Remix).mp3"
+        title="So Here We Are (Four Tet Remix)" trackNumber="10"
+        albumID="2" artistID="104" duration="388.28"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2005]Silent Alarm Remixed/11 Luno (Bloc Party vs. Death From Above 1979).mp3"
+        title="Luno (Bloc Party vs. Death From Above 1979)"
+        trackNumber="11" albumID="2" artistID="104" duration="237.58"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2005]Silent Alarm Remixed/12 Plans (Replanned by Mogwai).mp3"
+        title="Plans (Replanned by Mogwai)" trackNumber="12" albumID="2"
+        artistID="104" duration="224.1"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2005]Silent Alarm Remixed/13 Compliments (Shibuyaka Remix by Nick Zinner).mp3"
+        title="Compliments (Shibuyaka Remix by Nick Zinner)"
+        trackNumber="13" albumID="2" artistID="104" duration="321.2"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2005]Silent Alarm Remixed/14 Tulips (Minotaur Shock Remix).mp3"
+        title="Tulips (Minotaur Shock Remix)" trackNumber="14"
+        albumID="2" artistID="104" duration="313.89"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Rare and B sides/02 We Were Lovers.mp3"
+        title="We Were Lovers" trackNumber="2" albumID="44"
+        artistID="104" duration="252.8"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Rare and B sides/03 England.mp3"
+        title="England" trackNumber="3" albumID="46" artistID="104" duration="250.44"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Rare and B sides/Hero.mp3"
+        title="Hero" trackNumber="0" albumID="16" artistID="104" duration="248.75"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Rare and B sides/02 The Marshals Are Dead.mp3"
+        title="The Marshals Are Dead /  /  /  /  /  /  /  / "
+        trackNumber="2" albumID="49" artistID="158" duration="220.51"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/So sehr dabei/Clueso - So Sehr Dabei - 01 - Barfuss.mp3"
+        title="Barfuss" trackNumber="1" albumID="10" artistID="91" duration="156.47"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/So sehr dabei/Clueso - So Sehr Dabei - 02 - Augen Zu.mp3"
+        title="Augen Zu" trackNumber="2" albumID="10" artistID="91" duration="255.64"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Love Actually - Original Motion Picture Soundtrack/Love Actually-OST/Love Actually - 02 - Dido - Here With Me.mp3"
+        title="Here With Me" trackNumber="2" albumID="42" artistID="165" duration="288.47"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Save the last Dance OST/08. - Chaka Demus &amp; Pliers - Murder She Wrote.mp3"
+        title="Murder She Wrote" trackNumber="8" albumID="21"
+        artistID="177" duration="246.84"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Fornika/01 Mehr Nehmen.mp3"
+        title="Mehr Nehmen" trackNumber="1" albumID="7" artistID="56" duration="237.67"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Fornika/02 Ernten Was Wir Säen.mp3"
+        title="Ernten Was Wir Säen" trackNumber="2" albumID="7"
+        artistID="56" duration="253.78"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Fornika/03 Einfach Sein.mp3"
+        title="Einfach Sein" trackNumber="3" albumID="7" artistID="56" duration="217.37"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Fornika/04 Yeah Yeah Yeah.mp3"
+        title="Yeah Yeah Yeah" trackNumber="4" albumID="7" artistID="56" duration="227.11"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Fornika/05 Nikki War Nie Weg.mp3"
+        title="Nikki War Nie Weg" trackNumber="5" albumID="7"
+        artistID="56" duration="243.39"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Fornika/06 Fornika.mp3"
+        title="Fornika" trackNumber="6" albumID="7" artistID="56" duration="309.45"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Fornika/07 Du Mich Auch.mp3"
+        title="Du Mich Auch" trackNumber="7" albumID="7" artistID="56" duration="180.17"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Fornika/08 Mission Ypsilon.mp3"
+        title="Mission Ypsilon" trackNumber="8" albumID="7"
+        artistID="56" duration="324.29"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Fornika/09 Ichisichisichisich.mp3"
+        title="Ichisichisichisich" trackNumber="9" albumID="7"
+        artistID="56" duration="251.22"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Fornika/10 Einsam Und Zurückgezogen.mp3"
+        title="Einsam Und Zurückgezogen" trackNumber="10" albumID="7"
+        artistID="56" duration="131.92"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Fornika/11 Flüchtig.mp3"
+        title="Flüchtig" trackNumber="11" albumID="7" artistID="56" duration="314.26"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Fornika/12 Du Und Sie Wir.mp3"
+        title="Du Und Sie Wir" trackNumber="12" albumID="7"
+        artistID="56" duration="199.97"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Fornika/13 Was Bleibt.mp3"
+        title="Was Bleibt" trackNumber="13" albumID="7" artistID="56" duration="340.49"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/elliott smith/figure 8/Elliott Smith - Son Of Sam.mp3"
+        title="Son Of Sam" trackNumber="1" albumID="15" artistID="68" duration="184.35"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/elliott smith/figure 8/Elliott Smith - Somebody That I Used To Know.mp3"
+        title="Somebody That I Used To Know" trackNumber="2"
+        albumID="15" artistID="68" duration="129.38"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/elliott smith/figure 8/Elliott Smith - Everything Reminds Me Of Her.mp3"
+        title="Everything Reminds Me Of Her" trackNumber="4"
+        albumID="15" artistID="68" duration="157.78"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/elliott smith/figure 8/Elliott Smith - Everything Means Nothing To Me.mp3"
+        title="Everything Means Nothing To Me" trackNumber="5"
+        albumID="15" artistID="68" duration="144.4"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/elliott smith/figure 8/Elliott Smith - L.A..mp3"
+        title="L.A." trackNumber="6" albumID="15" artistID="68" duration="194.12"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/elliott smith/figure 8/Elliott Smith - Happiness (The Gondola Man).mp3"
+        title="Happiness (The Gondola Man)" trackNumber="12"
+        albumID="15" artistID="68" duration="304.46"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/elliott smith/figure 8/Elliott Smith - Can't Make A Sound.mp3"
+        title="Can't Make A Sound" trackNumber="15" albumID="15"
+        artistID="68" duration="258.82"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/elliott smith/figure 8/Elliott Smith - Bye.mp3"
+        title="Bye" trackNumber="16" albumID="15" artistID="68" duration="113.29"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Brot-DE-2010-VOiCE/04_fettes_brot_-_1_euro_blues.mp3"
+        title="1 Euro Blues" trackNumber="4" albumID="38" artistID="86" duration="354.09"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Brot-DE-2010-VOiCE/12_fettes_brot_-_koennen_diese_augen_luegen.mp3"
+        title="Koennen Diese Augen Luegen" trackNumber="12" albumID="38"
+        artistID="86" duration="280.4"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Fettes-DE-2010-VOiCE/03_fettes_brot_-_was_in_der_zeitung_steht.mp3"
+        title="Was in Der Zeitung Steht" trackNumber="3" albumID="8"
+        artistID="86" duration="123.82"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Fettes-DE-2010-VOiCE/06_fettes_brot_-_hamburg_calling.mp3"
+        title="Hamburg Calling" trackNumber="6" albumID="8"
+        artistID="86" duration="174.0"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Fettes-DE-2010-VOiCE/07_fettes_brot_-_der_beste_rapper_ist_offensichtlich_ich.mp3"
+        title="Der Beste Rapper Ist Offensichtlich Ich" trackNumber="7"
+        albumID="8" artistID="86" duration="195.19"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Fettes-DE-2010-VOiCE/10_fettes_brot_-_ich_lass_dich_nicht_los.mp3"
+        title="Ich Lass Dich Nicht Los" trackNumber="10" albumID="8"
+        artistID="86" duration="242.05"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Fettes-DE-2010-VOiCE/12_fettes_brot_-_automatikpistole.mp3"
+        title="Automatikpistole" trackNumber="12" albumID="8"
+        artistID="86" duration="294.3"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Fettes-DE-2010-VOiCE/14_fettes_brot_-_lieber_verbrennen_als_erfrieren.mp3"
+        title="Lieber Verbrennen Als Erfrieren" trackNumber="14"
+        albumID="8" artistID="86" duration="209.53"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Fettes-DE-2010-VOiCE/15_fettes_brot_-_schwule_maedchen.mp3"
+        title="Schwule Maedchen" trackNumber="15" albumID="8"
+        artistID="86" duration="225.12"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Save the last Dance OST/14. - Fredro Starr &amp; Jill Scott - Shining Through (Theme From 'Save The Last Dance') [Soulshock &amp; Karlin Bonus Track].mp3"
+        title="Shining Through [Soulshock &amp; K" trackNumber="14"
+        albumID="21" artistID="97" duration="213.07"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/johnossi/01 the show tonight.mp3"
+        title="The Show tonight" trackNumber="1" albumID="4"
+        artistID="59" duration="233.52"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/johnossi/02 execution song.mp3"
+        title="Execution song" trackNumber="2" albumID="4" artistID="59" duration="143.34"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/johnossi/03 glory days to come.mp3"
+        title="Glory days to come" trackNumber="3" albumID="4"
+        artistID="59" duration="175.57"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/johnossi/04 there's a lot of things to do before you die.mp3"
+        title="There's a lot of things to do before you die"
+        trackNumber="4" albumID="4" artistID="59" duration="161.08"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/johnossi/05 man must dance.mp3"
+        title="Man must dance" trackNumber="5" albumID="4" artistID="59" duration="156.68"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/johnossi/06 family values.mp3"
+        title="Family values" trackNumber="6" albumID="4" artistID="59" duration="210.23"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/johnossi/07 press hold.mp3"
+        title="Press hold" trackNumber="7" albumID="4" artistID="59" duration="275.04"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/johnossi/08 happiness a la mode.mp3"
+        title="Happiness a la mode" trackNumber="8" albumID="4"
+        artistID="59" duration="257.95"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/johnossi/09 from peoples heart.mp3"
+        title="From peoples heart" trackNumber="9" albumID="4"
+        artistID="59" duration="172.98"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/johnossi/10 santa monica bay.mp3"
+        title="Santa Monica Bay" trackNumber="10" albumID="4"
+        artistID="59" duration="156.21"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/johnossi/11 the lottery.mp3"
+        title="The Lottery" trackNumber="11" albumID="4" artistID="59" duration="241.84"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/johnossi/12 summerbreeze.mp3"
+        title="Summerbreeze" trackNumber="12" albumID="4" artistID="59" duration="173.29"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Just Jack/Overtones/01  Just Jack - Writer's Block.mp3"
+        title="Writer's Block" trackNumber="1" albumID="18"
+        artistID="126" duration="223.03"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Just Jack/Overtones/02  Just Jack - Glory Days.mp3"
+        title="Glory Days" trackNumber="2" albumID="18" artistID="126" duration="220.23"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Just Jack/Overtones/03  Just Jack - Disco Friends.mp3"
+        title="Disco Friends" trackNumber="3" albumID="18"
+        artistID="126" duration="181.1"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Just Jack/Overtones/04  Just Jack - Starz In Their Eyes.mp3"
+        title="Starz In Their Eyes" trackNumber="4" albumID="18"
+        artistID="126" duration="296.52"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Just Jack/Overtones/05  Just Jack - Lost.mp3"
+        title="Lost" trackNumber="5" albumID="18" artistID="126" duration="349.32"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Just Jack/Overtones/06  Just Jack - I Talk Too Much.mp3"
+        title="I Talk Too Much" trackNumber="6" albumID="18"
+        artistID="126" duration="256.78"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Just Jack/Overtones/07  Just Jack - Hold On.mp3"
+        title="Hold On" trackNumber="7" albumID="18" artistID="126" duration="145.2"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Just Jack/Overtones/08  Just Jack - Symphony Of Sirens.mp3"
+        title="Symphony Of Sirens" trackNumber="8" albumID="18"
+        artistID="126" duration="261.49"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Just Jack/Overtones/09  Just Jack - Life Stories.mp3"
+        title="Life Stories" trackNumber="9" albumID="18" artistID="126" duration="232.92"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Just Jack/Overtones/10  Just Jack - No Time.mp3"
+        title="No Time" trackNumber="10" albumID="18" artistID="126" duration="267.98"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Just Jack/Overtones/11  Just Jack - Mourning Morning.mp3"
+        title="Mourning Morning" trackNumber="11" albumID="18"
+        artistID="126" duration="247.15"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Just Jack/Overtones/12  Just Jack - Spectacular Failures.mp3"
+        title="Spectacular Failures" trackNumber="12" albumID="18"
+        artistID="126" duration="296.02"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Just Jack/Overtones/13  Just Jack - Koolaid [Hidden Track].mp3"
+        title="Koolaid" trackNumber="13" albumID="18" artistID="126" duration="195.59"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Hieb &amp; Stichfest (2002) [shared by hi RES for www.best-torrentz.dl.am]/07-Mia - Heroes.mp3"
+        title="Heroes" trackNumber="7" albumID="20" artistID="117" duration="226.98"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Hieb &amp; Stichfest (2002) [shared by hi RES for www.best-torrentz.dl.am]/08-Mia - Poem Of 'On And Off'.mp3"
+        title="Poem Of 'On And Off'" trackNumber="8" albumID="20"
+        artistID="117" duration="193.71"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Hieb &amp; Stichfest (2002) [shared by hi RES for www.best-torrentz.dl.am]/09-Mia - Machtspiele (Tanz Drauf).mp3"
+        title="Machtspiele (Tanz Drauf)" trackNumber="9" albumID="20"
+        artistID="117" duration="325.72"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Hieb &amp; Stichfest (2002) [shared by hi RES for www.best-torrentz.dl.am]/10-Mia - Factory City (Factory City Elektropunk Remix).mp3"
+        title="Factory City (Factory City Elektropunk Remix)"
+        trackNumber="10" albumID="20" artistID="117" duration="252.85"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/- Massive Attack - Teardrop.mp3"
+        title="Massive Attack - Teardrop" trackNumber="4" albumID="53"
+        artistID="108" duration="329.07"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/- Jamiroquai - Everyday.mp3"
+        title="Jamiroquai - Everyday" trackNumber="6" albumID="53"
+        artistID="108" duration="268.18"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/- Left Field - Original.mp3"
+        title="Left Field - Original" trackNumber="7" albumID="53"
+        artistID="108" duration="251.05"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/- Suede - by the sea.mp3"
+        title="Suede - by the sea" trackNumber="8" albumID="53"
+        artistID="108" duration="257.26"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/- Vivid - Still.mp3"
+        title="Vivid - Still" trackNumber="9" albumID="53"
+        artistID="108" duration="240.75"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/- Soul Asylum - closer to the stars.mp3"
+        title="Soul Asylum - closer to the stars" trackNumber="10"
+        albumID="53" artistID="108" duration="234.51"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/- Tonic - mean to me.mp3"
+        title="Tonic - mean to me" trackNumber="11" albumID="53"
+        artistID="108" duration="252.12"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/- Hyperchild - wonderful life.mp3"
+        title="Hyperchild - wonderful life" trackNumber="12"
+        albumID="53" artistID="108" duration="228.09"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/- Toploader - Achilles heel.mp3"
+        title="Toploader - Achilles heel" trackNumber="13" albumID="53"
+        artistID="108" duration="236.52"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/- Creed - one.mp3"
+        title="Creed - one" trackNumber="14" albumID="53" artistID="108" duration="289.44"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/- Nick Cave &amp; Kylie Minogue - where the wild roses grow.mp3"
+        title="Nick Cave &amp; Kylie Minogue - where the wild roses grow"
+        trackNumber="15" albumID="53" artistID="108" duration="237.02"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/- The Cardigans - erase &amp; rewind.mp3"
+        title="The Cardigans - erase &amp; rewind" trackNumber="16"
+        albumID="53" artistID="108" duration="216.7"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/- Faithless - don't leave.mp3"
+        title="Faithless - don't leave" trackNumber="17" albumID="53"
+        artistID="108" duration="235.43"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/- Lamb - Gorecki.mp3"
+        title="Gorecki" trackNumber="18" albumID="53" artistID="171" duration="388.44"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Chad Kroeger - Hero.mp3"
+        title="Chad Kroeger - Hero" trackNumber="1" albumID="41"
+        artistID="167" duration="198.73"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Watershed - Indigo Girl.mp3"
+        title="Watershed - Indigo Girl" trackNumber="2" albumID="41"
+        artistID="167" duration="181.51"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Oasis - Stop crying your heart out.mp3"
+        title="Oasis - Stop crying your heart out" trackNumber="3"
+        albumID="41" artistID="167" duration="298.27"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Manic Street Preachers - The Everlasting.mp3"
+        title="Manic Street Preachers - The Everlasting" trackNumber="4"
+        albumID="41" artistID="167" duration="367.67"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/H-Blockx - Take me home.mp3"
+        title="H-Blockx - Take me home" trackNumber="5" albumID="41"
+        artistID="167" duration="242.01"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Reamonn - waiting there for you.mp3"
+        title="Reamonn - waiting there for you" trackNumber="6"
+        albumID="41" artistID="167" duration="234.51"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Matchbox 20 - if you're gone.mp3"
+        title="Matchbox 20 - if you're gone" trackNumber="7"
+        albumID="41" artistID="167" duration="276.12"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/HeyDay - could be day, could be night.mp3"
+        title="HeyDay - could be day, could be night" trackNumber="8"
+        albumID="41" artistID="167" duration="218.5"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Vertical Horizon - everything you want.mp3"
+        title="Vertical Horizon - everything you want" trackNumber="9"
+        albumID="41" artistID="167" duration="257.0"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Feeder - Yesterday I went too soon.mp3"
+        title="Feeder - Yesterday I went too soon" trackNumber="10"
+        albumID="41" artistID="167" duration="260.27"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Stereophonics - Handbags and Gladrags.mp3"
+        title="Stereophonics - Handbags and Gladrags" trackNumber="11"
+        albumID="41" artistID="167" duration="277.35"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Headswim - Clinging to the wreckage.mp3"
+        title="Headswim - Clinging to the wreckage" trackNumber="12"
+        albumID="41" artistID="167" duration="275.76"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Oleander - Halo.mp3"
+        title="Oleander - Halo" trackNumber="13" albumID="41"
+        artistID="167" duration="282.62"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Toploader - only for a while.mp3"
+        title="Toploader - only for a while" trackNumber="14"
+        albumID="41" artistID="167" duration="232.84"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/3 Doors Down - be like that.mp3"
+        title="3 Doors Down - be like that" trackNumber="15"
+        albumID="41" artistID="167" duration="238.12"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Our Lady Peace - somewhere out there.mp3"
+        title="Our Lady Peace - somewhere out there" trackNumber="16"
+        albumID="41" artistID="167" duration="252.4"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Silverchair - Cemetery.mp3"
+        title="Silverchair - Cemetery" trackNumber="17" albumID="41"
+        artistID="167" duration="242.69"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/The Cure - Lovesong.mp3"
+        title="Lovesong" trackNumber="18" albumID="41" artistID="63" duration="207.19"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bar Lounge Classics/01_-_Lenny_Mcdowell_-Ain_t_No_Sunshine.mp3"
+        title="Ain't No Sunshine" trackNumber="1" albumID="34"
+        artistID="115" duration="224.39"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bar Lounge Classics/02_-_Thievery_Coperation_-So_Com_Voce.mp3"
+        title="So Com Voce" trackNumber="2" albumID="34" artistID="99" duration="164.36"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bar Lounge Classics/03_-_Jazzamor_-Je_T_aime__Jazzamor_Bar_Lounge_Classic_Mix_.mp3"
+        title="Je T'aime (Jazzamor Bar Lounge Classic Mix)"
+        trackNumber="3" albumID="34" artistID="134" duration="290.6"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bar Lounge Classics/04_-_The_Dining_Room_-M_Dupont.mp3"
+        title="M Dupont" trackNumber="4" albumID="34" artistID="84" duration="273.6"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bar Lounge Classics/05_-_Moodorama_-Weird_Love.mp3"
+        title="Weird Love" trackNumber="5" albumID="34" artistID="137" duration="295.28"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bar Lounge Classics/06_-_Morcheeba_-Get_Along__Album_Version_.mp3"
+        title="Get Along (Album Version)" trackNumber="6" albumID="34"
+        artistID="120" duration="229.74"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bar Lounge Classics/07_-_Tosca_-Dave_Dudley.mp3"
+        title="Dave Dudley" trackNumber="7" albumID="34" artistID="75" duration="386.85"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bar Lounge Classics/08_-_Kid_Loco_-Relaxin__With_Cherrry__Album_Version_.mp3"
+        title="Relaxin' With Cherrry (Album Version)" trackNumber="8"
+        albumID="34" artistID="85" duration="340.07"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bar Lounge Classics/09_-_Tiefschwarz_-Never__Turntablerocker_s_Never__Hiphop_Mix_.mp3"
+        title="Never (Turntablerocker's Never! HipHop Mix)"
+        trackNumber="9" albumID="34" artistID="174" duration="368.61"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bar Lounge Classics/10_-_Minus_8_-At_the_Beach.mp3"
+        title="At The Beach" trackNumber="10" albumID="34"
+        artistID="172" duration="218.35"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bar Lounge Classics/11_-_Matt_Bianco_-Half_a_Minute__Album_Version_.mp3"
+        title="Half A Minute (Album Version)" trackNumber="11"
+        albumID="34" artistID="112" duration="227.76"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bar Lounge Classics/12_-_Chambao_-Verde_Mar__Fundaci_n_Eivissa_Future_Flam_Remix_.mp3"
+        title="Verde Mar (Fundaciòn Eivissa Future Flam Remix)"
+        trackNumber="12" albumID="34" artistID="154" duration="241.63"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bar Lounge Classics/13_-_Ho__Horizons_-Alive_Tonight__Bobby_Hughes_Comination_Remix_.mp3"
+        title="Alive Tonight (Bobby Hughes Comination Remix)"
+        trackNumber="13" albumID="34" artistID="135" duration="399.5"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bar Lounge Classics/14_-_Kyoto_Jazz_Massive_-Shine.mp3"
+        title="Shine" trackNumber="14" albumID="34" artistID="166" duration="429.59"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bar Lounge Classics/15_-_Blue_Six_-Love_Yourself__Album_Version_.mp3"
+        title="Love Yourself (Album Version)" trackNumber="15"
+        albumID="34" artistID="133" duration="322.02"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Brot-DE-2010-VOiCE/01_fettes_brot_-_bettina_superpunk.mp3"
+        title="Bettina Superpunk" trackNumber="1" albumID="38"
+        artistID="86" duration="285.13"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Love Actually - Original Motion Picture Soundtrack/Love Actually-OST/Love Actually - 01 - Kelly Clarkson - The Trouble With Love Is.mp3"
+        title="The Trouble With Love Is" trackNumber="1" albumID="42"
+        artistID="111" duration="218.69"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Love Actually - Original Motion Picture Soundtrack/Love Actually-OST/Love Actually - 03 - Maroon 5 - Sweetest Goodbye-Sunday Morning.mp3"
+        title="Sweetest Goodbye/Sunday Morning" trackNumber="3"
+        albumID="42" artistID="132" duration="406.24"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Love Actually - Original Motion Picture Soundtrack/Love Actually-OST/Love Actually - 04 - Norah Jones - Turn Me On.mp3"
+        title="Turn Me On" trackNumber="4" albumID="42" artistID="107" duration="149.77"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Save the last Dance OST/02. - Lucy Pearl (Featuring Snoop Dogg &amp; Q-Tip) - You.mp3"
+        title="You" trackNumber="2" albumID="21" artistID="156" duration="266.39"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Hieb &amp; Stichfest (2002) [shared by hi RES for www.best-torrentz.dl.am]/01-Mia - Ekelhaftes Benehmen.mp3"
+        title="Ekelhaftes Benehmen" trackNumber="1" albumID="20"
+        artistID="117" duration="152.79"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Hieb &amp; Stichfest (2002) [shared by hi RES for www.best-torrentz.dl.am]/02-Mia - Alles Neu.mp3"
+        title="Alles Neu" trackNumber="2" albumID="20" artistID="117" duration="224.89"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Hieb &amp; Stichfest (2002) [shared by hi RES for www.best-torrentz.dl.am]/03-Mia - Verrückt.mp3"
+        title="VerrÃ¼ckt" trackNumber="3" albumID="20" artistID="117" duration="235.88"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Hieb &amp; Stichfest (2002) [shared by hi RES for www.best-torrentz.dl.am]/04-Mia - Cool Cat.mp3"
+        title="Cool Cat" trackNumber="4" albumID="20" artistID="117" duration="233.05"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Hieb &amp; Stichfest (2002) [shared by hi RES for www.best-torrentz.dl.am]/05-Mia - Kreisel.mp3"
+        title="Kreisel" trackNumber="5" albumID="20" artistID="117" duration="220.16"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Hieb &amp; Stichfest (2002) [shared by hi RES for www.best-torrentz.dl.am]/06-Mia - Skandal.mp3"
+        title="Skandal" trackNumber="6" albumID="20" artistID="117" duration="180.6"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Peter Fox - Stadtaffe/12-peter_fox_-_zucker_(feat._vanessa_mason)-ysp.mp3"
+        title="Zucker (Feat. Vanessa Mason)" trackNumber="12"
+        albumID="36" artistID="55" duration="193.7"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Snow Patrol/eyes open/08-snow_patrol-set_the_fire_to_the_third_bar_featuring_martha_wainwright.mp3"
+        trackNumber="8" albumID="31" artistID="80" duration="203.68"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Snow Patrol/eyes open/09-snow_patrol-headlights.mp3"
+        trackNumber="9" albumID="31" artistID="80" duration="210.81"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Snow Patrol/eyes open/10-snow_patrol-open_your_eyes.mp3"
+        trackNumber="10" albumID="31" artistID="80" duration="341.32"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Snow Patrol/eyes open/11-snow_patrol-finish_line.mp3"
+        trackNumber="11" albumID="31" artistID="80" duration="208.67"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Snow Patrol/eyes open/13-snow_patrol-in_my_arms.mp3"
+        trackNumber="13" albumID="17" artistID="80" duration="276.69"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Snow Patrol/eyes open/14-snow_patrol-warmer_climate.mp3"
+        trackNumber="14" albumID="17" artistID="80" duration="248.19"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Love Actually - Original Motion Picture Soundtrack/Love Actually-OST/Love Actually - 05 - Wyclef Jean feat. Sharissa - Take Me As I Am.mp3"
+        title="Take Me As I Am" trackNumber="5" albumID="42"
+        artistID="179" duration="215.36"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Love Actually - Original Motion Picture Soundtrack/Love Actually-OST/Love Actually - 06 - Eva Cassidy - Songbird.mp3"
+        title="Songbird" trackNumber="6" albumID="42" artistID="95" duration="221.97"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Love Actually - Original Motion Picture Soundtrack/Love Actually-OST/Love Actually - 07 - The Calling - Wherever You Will Go.mp3"
+        title="Wherever You Will Go" trackNumber="7" albumID="42"
+        artistID="160" duration="223.54"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Love Actually - Original Motion Picture Soundtrack/Love Actually-OST/Love Actually - 08 - The Pointer Sisters - Jump (For My Love).mp3"
+        title="Jump (For My Love)" trackNumber="8" albumID="42"
+        artistID="122" duration="262.1"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Love Actually - Original Motion Picture Soundtrack/Love Actually-OST/Love Actually - 09 - Joni Mitchell - Both Sides Now.mp3"
+        title="Both Sides Now" trackNumber="9" albumID="42"
+        artistID="127" duration="383.67"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Love Actually - Original Motion Picture Soundtrack/Love Actually-OST/Love Actually - 10 - Lynden David Hall - All You Need Is Love.mp3"
+        title="All You Need Is Love" trackNumber="10" albumID="42"
+        artistID="87" duration="183.37"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Love Actually - Original Motion Picture Soundtrack/Love Actually-OST/Love Actually - 11 - The Beach Boys - God Only Knows.mp3"
+        title="God Only Knows" trackNumber="11" albumID="42"
+        artistID="175" duration="172.26"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Love Actually - Original Motion Picture Soundtrack/Love Actually-OST/Love Actually - 12 - Texas - I'll See It Through.mp3"
+        title="I'll See It Through" trackNumber="12" albumID="42"
+        artistID="140" duration="227.44"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Love Actually - Original Motion Picture Soundtrack/Love Actually-OST/Love Actually - 13 - Sugababes - Too Lost In You.mp3"
+        title="Too Lost In You" trackNumber="13" albumID="42"
+        artistID="71" duration="247.47"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Love Actually - Original Motion Picture Soundtrack/Love Actually-OST/Love Actually - 15 - Otis Redding - White Christmas.mp3"
+        title="White Christmas" trackNumber="15" albumID="42"
+        artistID="186" duration="191.87"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Love Actually - Original Motion Picture Soundtrack/Love Actually-OST/Love Actually - 16 - Billy Mack - Christmas Is All Around.mp3"
+        title="Christmas Is All Around" trackNumber="16" albumID="42"
+        artistID="83" duration="232.43"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Love Actually - Original Motion Picture Soundtrack/Love Actually-OST/07 - Eva Cassidy - Songbird.mp3"
+        title="Songbird" trackNumber="7" albumID="48" artistID="95" duration="223.31"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Love Actually - Original Motion Picture Soundtrack/Love Actually-OST/17 - Olivia Olson - All I Want For Christmas Is You.mp3"
+        title="All I Want For Christmas Is You" trackNumber="13"
+        albumID="48" artistID="142" duration="207.64"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Love Actually - Original Motion Picture Soundtrack/Love Actually-OST/16 - Craig Armstrong - Glasgow Love Theme.mp3"
+        title="Glasgow Love Theme" trackNumber="16" albumID="48"
+        artistID="163" duration="234.13"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Love Actually - Original Motion Picture Soundtrack/Love Actually-OST/17 - Craig Armstrong - PM's Love Theme.mp3"
+        title="PM's Love Theme" trackNumber="17" albumID="48"
+        artistID="163" duration="123.89"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Love Actually - Original Motion Picture Soundtrack/Love Actually-OST/18 - Gabrielle - Sometimes.mp3"
+        title="Sometimes" trackNumber="18" albumID="48" artistID="146" duration="136.48"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Rare and B sides/Storm &amp; Stress.mp3"
+        title="Storm &amp; Stress" trackNumber="0" albumID="30"
+        artistID="104" duration="167.59"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Save the last Dance OST/01. - Fredro Starr &amp; Jill Scott - Shining Through (Theme From 'Save The Last Dance').mp3"
+        title="Shining Through" trackNumber="1" albumID="21"
+        artistID="97" duration="229.84"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Save the last Dance OST/05. - Pink - You Make Me Sick.mp3"
+        title="You Make Me Sick" trackNumber="5" albumID="21"
+        artistID="100" duration="246.84"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Save the last Dance OST/06. - Donell Jones - U Know What's Up.mp3"
+        title="U Know What's Up" trackNumber="6" albumID="21"
+        artistID="130" duration="243.02"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Save the last Dance OST/07. - Kevon Edmonds - Move It Slow.mp3"
+        title="Move It Slow" trackNumber="7" albumID="21" artistID="157" duration="306.57"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Save the last Dance OST/09. - Ice Cube (Featuring Mack 10 and Ms. Toi) - You Can Do It.mp3"
+        title="You Can Do It" trackNumber="9" albumID="21"
+        artistID="164" duration="262.93"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Save the last Dance OST/10. - Soulbone - My Window.mp3"
+        title="My Window" trackNumber="10" albumID="21" artistID="96" duration="300.6"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Save the last Dance OST/11. - 112 (Featuring The Notorious B.I.G.) - Only You.mp3"
+        title="Only You" trackNumber="11" albumID="21" artistID="153" duration="259.37"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Save the last Dance OST/12. - Montell Jordan - Get It On Tonite.mp3"
+        title="Get It On Tonite" trackNumber="12" albumID="21"
+        artistID="185" duration="277.29"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Save the last Dance OST/13. - Athena Cage - All Or Nothing.mp3"
+        title="All Or Nothing" trackNumber="13" albumID="21"
+        artistID="106" duration="220.73"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/Smack Smash/04 - beatsteaks - hello joe.mp3"
+        title="Hello Joe" trackNumber="4" albumID="50" artistID="118" duration="209.32"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/Smack Smash/05 - beatsteaks - hand in hand.mp3"
+        title="Hand In Hand" trackNumber="5" albumID="50" artistID="118" duration="161.58"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/Smack Smash/06 - beatsteaks - monster.mp3"
+        title="Monster" trackNumber="6" albumID="50" artistID="118" duration="122.31"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/Smack Smash/07 - beatsteaks - everything.mp3"
+        title="Everything" trackNumber="7" albumID="50" artistID="118" duration="189.15"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/Smack Smash/08 - beatsteaks - i don't care a s long as you sing.mp3"
+        title="I Don't Care As Long As You Sing" trackNumber="8"
+        albumID="50" artistID="118" duration="215.11"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/Smack Smash/09 - beatsteaks - atomic love.mp3"
+        title="Atomic Love" trackNumber="9" albumID="50" artistID="118" duration="153.57"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/Smack Smash/10 - beatsteaks - loyal to none.mp3"
+        title="Loyal To None" trackNumber="10" albumID="50"
+        artistID="118" duration="87.83"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/Smack Smash/11 - beatsteaks - what's coming over you.mp3"
+        title="What's Coming Over You" trackNumber="11" albumID="50"
+        artistID="118" duration="195.38"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Beatsteaks/Smack Smash/12 - beatsteaks - my revelation.mp3"
+        title="My Revalation" trackNumber="12" albumID="50"
+        artistID="118" duration="105.41"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Rare and B sides/02 Skeleton.mp3"
+        title="Skeleton" trackNumber="2" albumID="11" artistID="104" duration="195.75"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Rare and B sides/11 The Present.mp3"
+        title="The Present" trackNumber="11" albumID="14" artistID="104" duration="277.93"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Rare and B sides/Atonement.mp3"
+        title="Atonement" trackNumber="0" albumID="25" artistID="104" duration="226.55"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Silent Alarm/01 - Like Eating Glass.mp3"
+        title="Like Eating Glass" trackNumber="1" albumID="0"
+        artistID="104" duration="261.75"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Silent Alarm/02 - Helicopter.mp3"
+        title="Helicopter" trackNumber="2" albumID="0" artistID="104" duration="220.48"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Silent Alarm/03 - Positive Tension.mp3"
+        title="Positive Tension" trackNumber="3" albumID="0"
+        artistID="104" duration="234.22"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Silent Alarm/04 - Banquet.mp3"
+        title="Banquet" trackNumber="4" albumID="0" artistID="104" duration="202.22"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2005]Silent Alarm Remixed/01 Like Eating Glass (Ladytron Zapatista Mix).mp3"
+        title="Like Eating Glass (Ladytron Zapatista Mix)"
+        trackNumber="1" albumID="2" artistID="104" duration="258.51"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2005]Silent Alarm Remixed/02 Helicopter (Whitey Version].mp3"
+        title="Helicopter (Whitey Version)" trackNumber="2" albumID="2"
+        artistID="104" duration="274.36"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2005]Silent Alarm Remixed/03 Positive Tension (Blackbox Remix).mp3"
+        title="Positive Tension (Blackbox Remix)" trackNumber="3"
+        albumID="2" artistID="104" duration="267.13"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2005]Silent Alarm Remixed/04 Banquet (Phones Disco Edit).mp3"
+        title="Banquet (Phones Disco Edit)" trackNumber="4" albumID="2"
+        artistID="104" duration="326.71"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2005]Silent Alarm Remixed/05 Blue Light (Engineers 'Anti-Gravity' Mix).mp3"
+        title="Blue Light (Engineers 'Anti-Gravity' Mix)"
+        trackNumber="5" albumID="2" artistID="104" duration="182.8"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2005]Silent Alarm Remixed/06 She's Hearing Voices (Erol Alkan's Calling Your Dub).mp3"
+        title="She's Hearing Voices (Erol Alkan's Calling Your Dub)"
+        trackNumber="6" albumID="2" artistID="104" duration="504.63"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/[2005]Silent Alarm Remixed/07 This Modern Love (Dave P. and Adam Sparkles' Making Time Remix).mp3"
+        title="This Modern Love (Dave P. and Adam Sparkles' Making Time Remix)"
+        trackNumber="7" albumID="2" artistID="104" duration="303.31"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/So sehr dabei/Clueso - So Sehr Dabei - 03 - Niemand An Dich Denkt.mp3"
+        title="Niemand An Dich Denkt" trackNumber="3" albumID="10"
+        artistID="91" duration="323.08"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/So sehr dabei/Clueso - So Sehr Dabei - 04 - Wir Woll'n Sommer.mp3"
+        title="Wir Woll'n Sommer" trackNumber="4" albumID="10"
+        artistID="91" duration="216.74"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/So sehr dabei/Clueso - So Sehr Dabei - 05 - Geisterstadt.mp3"
+        title="Geisterstadt" trackNumber="5" albumID="10" artistID="91" duration="367.26"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/So sehr dabei/Clueso - So Sehr Dabei - 06 - Mitnehm'.mp3"
+        title="Mitnehm" trackNumber="6" albumID="10" artistID="91" duration="213.12"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/So sehr dabei/Clueso - So Sehr Dabei - 07 - Gewinner.mp3"
+        title="Gewinner" trackNumber="7" albumID="10" artistID="91" duration="222.22"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/So sehr dabei/Clueso - So Sehr Dabei - 08 - Schreibe Dir.mp3"
+        title="Schreibe Dir" trackNumber="8" albumID="10" artistID="91" duration="267.0"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/So sehr dabei/Clueso - So Sehr Dabei - 09 - Keinen Zentimeter.mp3"
+        title="Keinen Zentimeter" trackNumber="9" albumID="10"
+        artistID="91" duration="206.92"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/So sehr dabei/Clueso - So Sehr Dabei - 10 - So Sein Wie Du.mp3"
+        title="So Sein Wie Du" trackNumber="10" albumID="10"
+        artistID="91" duration="295.78"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/So sehr dabei/Clueso - So Sehr Dabei - 11 - Utopie.mp3"
+        title="Utopie" trackNumber="11" albumID="10" artistID="91" duration="274.83"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/So sehr dabei/Clueso - So Sehr Dabei - 12 - Verlierer.mp3"
+        title="Verlierer" trackNumber="12" albumID="10" artistID="91" duration="187.35"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/So sehr dabei/Clueso - So Sehr Dabei - 13 - Pause.mp3"
+        title="Pause" trackNumber="13" albumID="10" artistID="91" duration="77.43"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/So sehr dabei/Clueso - So Sehr Dabei - 14 - Jede Stadt.mp3"
+        title="Jede Stadt" trackNumber="14" albumID="10" artistID="91" duration="250.1"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/So sehr dabei/Clueso - So Sehr Dabei - 15 - So Sehr Dabei.(incomplete).mp3"
+        title="So Sehr Dabei" trackNumber="15" albumID="10"
+        artistID="91" duration="221.7"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/So sehr dabei/Clueso - So Sehr Dabei - 16 - Abspann (Weck Sie Nicht Auf).mp3"
+        title="Abspann (Weck Sie Nicht Auf)" trackNumber="16"
+        albumID="10" artistID="91" duration="125.41"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/Clueso-So Sehr Dabei [Live]/Clueso-So Sehr Dabei [Live]/01 - Clueso - Pause.mp3"
+        title="Pause" trackNumber="1" albumID="9" artistID="91" duration="188.38"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/Clueso-So Sehr Dabei [Live]/Clueso-So Sehr Dabei [Live]/02 - Clueso - Augen Zu.mp3"
+        title="Augen Zu" trackNumber="2" albumID="9" artistID="91" duration="257.97"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/Clueso-So Sehr Dabei [Live]/Clueso-So Sehr Dabei [Live]/03 - Clueso - Jede Stadt.mp3"
+        title="Jede Stadt" trackNumber="3" albumID="9" artistID="91" duration="248.15"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/Clueso-So Sehr Dabei [Live]/Clueso-So Sehr Dabei [Live]/04 - Clueso - Utopie.mp3"
+        title="Utopie" trackNumber="4" albumID="9" artistID="91" duration="101.95"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/Clueso-So Sehr Dabei [Live]/Clueso-So Sehr Dabei [Live]/05 - Clueso - Verlierer.mp3"
+        title="Verlierer" trackNumber="5" albumID="9" artistID="91" duration="215.16"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/Clueso-So Sehr Dabei [Live]/Clueso-So Sehr Dabei [Live]/06 - Clueso - Niemand An Dich Denkt.mp3"
+        title="Niemand An Dich Denkt" trackNumber="6" albumID="9"
+        artistID="91" duration="260.24"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/Clueso-So Sehr Dabei [Live]/Clueso-So Sehr Dabei [Live]/07 - Clueso - Frische Luft.mp3"
+        title="Frische Luft" trackNumber="7" albumID="9" artistID="91" duration="243.76"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/Clueso-So Sehr Dabei [Live]/Clueso-So Sehr Dabei [Live]/08 - Clueso - Vier Kleine Wände.mp3"
+        title="Vier Kleine Wände" trackNumber="8" albumID="9"
+        artistID="91" duration="264.21"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/Clueso-So Sehr Dabei [Live]/Clueso-So Sehr Dabei [Live]/09 - Clueso - Wir Wolln Sommer.mp3"
+        title="Wir Wolln Sommer" trackNumber="9" albumID="9"
+        artistID="91" duration="306.32"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/Clueso-So Sehr Dabei [Live]/Clueso-So Sehr Dabei [Live]/10 - Clueso - Mitnehm.mp3"
+        title="Mitnehm" trackNumber="10" albumID="9" artistID="91" duration="277.71"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/Clueso-So Sehr Dabei [Live]/Clueso-So Sehr Dabei [Live]/11 - Clueso - Keinen Zentimeter.mp3"
+        title="Keinen Zentimeter" trackNumber="11" albumID="9"
+        artistID="91" duration="269.75"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/Clueso-So Sehr Dabei [Live]/Clueso-So Sehr Dabei [Live]/12 - Clueso - Chicago.mp3"
+        title="Chicago" trackNumber="12" albumID="9" artistID="91" duration="241.51"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/Clueso-So Sehr Dabei [Live]/Clueso-So Sehr Dabei [Live]/13 - Clueso - Kein Bock Zu Gehen.mp3"
+        title="Kein Bock Zu Gehen" trackNumber="13" albumID="9"
+        artistID="91" duration="410.74"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/Clueso-So Sehr Dabei [Live]/Clueso-So Sehr Dabei [Live]/14 - Clueso - So Sehr Dabei.mp3"
+        title="So Sehr Dabei" trackNumber="14" albumID="9" artistID="91" duration="294.56"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/Clueso-So Sehr Dabei [Live]/Clueso-So Sehr Dabei [Live]/15 - Clueso - Geisterstadt.mp3"
+        title="Geisterstadt" trackNumber="15" albumID="9" artistID="91" duration="337.71"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/Clueso-So Sehr Dabei [Live]/Clueso-So Sehr Dabei [Live]/16 - Clueso - Barfuss.mp3"
+        title="Barfuss" trackNumber="16" albumID="9" artistID="91" duration="179.14"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Clueso/Clueso-So Sehr Dabei [Live]/Clueso-So Sehr Dabei [Live]/17 - Clueso - Gewinner.mp3"
+        title="Gewinner" trackNumber="17" albumID="9" artistID="91" duration="218.94"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Coldplay - the scientist.mp3"
+        title="The Scientist" trackNumber="4" albumID="5" artistID="151" duration="309.82"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Viel/01-die_fantastischen_vier-auf_gehts-khz.mp3"
+        title="Auf Geht's" trackNumber="1" albumID="19" artistID="56" duration="65.57"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Viel/02-die_fantastischen_vier-bring_it_back-khz.mp3"
+        title="Bring it Back" trackNumber="2" albumID="19" artistID="56" duration="226.43"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Viel/03-die_fantastischen_vier-geboren-khz.mp3"
+        title="Geboren" trackNumber="3" albumID="19" artistID="56" duration="231.55"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Viel/04-die_fantastischen_vier-jede_generation-khz.mp3"
+        title="Jede Generation" trackNumber="4" albumID="19"
+        artistID="56" duration="223.61"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Viel/05-die_fantastischen_vier-pipis_und_popos-khz.mp3"
+        title="Pipis und Popos" trackNumber="5" albumID="19"
+        artistID="56" duration="282.44"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Viel/06-die_fantastischen_vier-leben_zu_zweit-khz.mp3"
+        title="Leben Zu Zweit" trackNumber="6" albumID="19"
+        artistID="56" duration="227.06"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Viel/07-die_fantastischen_vier-sommerregen-khz.mp3"
+        title="Sommerregen" trackNumber="7" albumID="19" artistID="56" duration="334.03"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Viel/08-die_fantastischen_vier-ewig-khz.mp3"
+        title="Ewig" trackNumber="8" albumID="19" artistID="56" duration="292.36"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Viel/09-die_fantastischen_vier-keine_loesung-khz.mp3"
+        title="Keine Lösung" trackNumber="9" albumID="19" artistID="56" duration="233.64"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Viel/10-die_fantastischen_vier-hey-khz.mp3"
+        title="Hey!" trackNumber="10" albumID="19" artistID="56" duration="244.3"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Viel/11-die_fantastischen_vier-mein_schwert-khz.mp3"
+        title="Mein Schwert" trackNumber="11" albumID="19" artistID="56" duration="344.89"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Viel/12-die_fantastischen_vier-ruf_die_polizei-khz.mp3"
+        title="Ruf Die Polizei" trackNumber="12" albumID="19"
+        artistID="56" duration="216.06"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Viel/13-die_fantastischen_vier-troy-khz.mp3"
+        title="Troy" trackNumber="13" albumID="19" artistID="56" duration="269.9"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Die Fantastischen Vier/Viel/14-die_fantastischen_vier-viel-khz.mp3"
+        title="Viel" trackNumber="14" albumID="19" artistID="56" duration="146.68"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/elliott smith/figure 8/Elliott Smith - Junk Bond Trader.mp3"
+        title="Junk Bond Trader" trackNumber="3" albumID="15"
+        artistID="68" duration="229.75"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/elliott smith/figure 8/Elliott Smith - In The Lost And Found.mp3"
+        title="In The Lost And Found" trackNumber="7" albumID="15"
+        artistID="68" duration="272.85"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/elliott smith/figure 8/Elliott Smith - Stupidity Tries.mp3"
+        title="Stupidity Tries" trackNumber="8" albumID="15"
+        artistID="68" duration="264.1"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/elliott smith/figure 8/Elliott Smith - Easy Way Out.mp3"
+        title="Easy Way Out" trackNumber="9" albumID="15" artistID="68" duration="164.28"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/elliott smith/figure 8/Elliott Smith - Wouldn't Mama Be Proud .mp3"
+        title="Wouldn't Mama Be Proud?" trackNumber="10" albumID="15"
+        artistID="68" duration="205.84"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/elliott smith/figure 8/Elliott Smith - Color Bars.mp3"
+        title="Color Bars" trackNumber="11" albumID="15" artistID="68" duration="139.86"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/elliott smith/figure 8/Elliott Smith - Pretty Mary K.mp3"
+        title="Pretty Mary K" trackNumber="13" albumID="15"
+        artistID="68" duration="156.03"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/elliott smith/figure 8/Elliott Smith - I Better Be Quiet Now.mp3"
+        title="I Better Be Quiet Now" trackNumber="14" albumID="15"
+        artistID="68" duration="215.04"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Eiskalte Engel/Fatboy Slim - Praise You.mp3"
+        title="Praise You" trackNumber="0" albumID="51" artistID="139" duration="204.31"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Brot-DE-2010-VOiCE/03_fettes_brot_-_trotzdem.mp3"
+        title="Trotzdem" trackNumber="3" albumID="38" artistID="86" duration="193.38"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Brot-DE-2010-VOiCE/05_fettes_brot_-_ich_hasse_das.mp3"
+        title="Ich Hasse Das" trackNumber="5" albumID="38" artistID="86" duration="307.83"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Brot-DE-2010-VOiCE/06_fettes_brot_-_die_meisten_meiner_feinde.mp3"
+        title="Die Meisten Meiner Feinde" trackNumber="6" albumID="38"
+        artistID="86" duration="319.82"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Brot-DE-2010-VOiCE/07_fettes_brot_-_the_grosser.mp3"
+        title="The Grosser" trackNumber="7" albumID="38" artistID="86" duration="233.48"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Brot-DE-2010-VOiCE/08_fettes_brot_-_emanuela.mp3"
+        title="Emanuela" trackNumber="8" albumID="38" artistID="86" duration="230.14"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Brot-DE-2010-VOiCE/09_fettes_brot_-_welthit.mp3"
+        title="Welthit" trackNumber="9" albumID="38" artistID="86" duration="287.16"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Brot-DE-2010-VOiCE/10_fettes_brot_-_das_allererste_mal.mp3"
+        title="Das Allererste Mal" trackNumber="10" albumID="38"
+        artistID="86" duration="195.53"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Brot-DE-2010-VOiCE/11_fettes_brot_-_lauterbach.mp3"
+        title="Lauterbach" trackNumber="11" albumID="38" artistID="86" duration="158.48"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Brot-DE-2010-VOiCE/13_fettes_brot_-_hoerst_du_mich.mp3"
+        title="Hoerst Du Mich" trackNumber="13" albumID="38"
+        artistID="86" duration="365.04"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Brot-DE-2010-VOiCE/15_fettes_brot_-_my_way_by_nature.mp3"
+        title="My Way by Nature" trackNumber="15" albumID="38"
+        artistID="86" duration="267.7"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Brot-DE-2010-VOiCE/16_fettes_brot_-_nordisch_by_nature.mp3"
+        title="Nordisch by Nature" trackNumber="16" albumID="38"
+        artistID="86" duration="317.44"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Fettes-DE-2010-VOiCE/04_fettes_brot_-_ich_bin_muede.mp3"
+        title="Ich Bin Muede" trackNumber="4" albumID="8" artistID="86" duration="313.21"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Fettes-DE-2010-VOiCE/05_fettes_brot_-_erdbeben.mp3"
+        title="Erdbeben" trackNumber="5" albumID="8" artistID="86" duration="196.31"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Fettes-DE-2010-VOiCE/08_fettes_brot_-_amsterdam.mp3"
+        title="Amsterdam" trackNumber="8" albumID="8" artistID="86" duration="323.16"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Fettes-DE-2010-VOiCE/09_fettes_brot_-_da_draussen.mp3"
+        title="Da Draussen" trackNumber="9" albumID="8" artistID="86" duration="285.81"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Fettes-DE-2010-VOiCE/11_fettes_brot_-_an_tagen_wie_diesen.mp3"
+        title="An Tagen Wie Diesen" trackNumber="11" albumID="8"
+        artistID="86" duration="236.33"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Fettes-DE-2010-VOiCE/13_fettes_brot_-_falsche_entscheidung.mp3"
+        title="Falsche Entscheidung" trackNumber="13" albumID="8"
+        artistID="86" duration="332.67"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Hieb &amp; Stichfest (2002) [shared by hi RES for www.best-torrentz.dl.am]/11-Mia - Secretly.mp3"
+        title="Secretly" trackNumber="11" albumID="20" artistID="117" duration="207.26"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Hieb &amp; Stichfest (2002) [shared by hi RES for www.best-torrentz.dl.am]/12-Mia - Home.mp3"
+        title="Home" trackNumber="12" albumID="20" artistID="117" duration="220.36"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Hieb &amp; Stichfest (2002) [shared by hi RES for www.best-torrentz.dl.am]/13-Mia - Kill For You.mp3"
+        title="Kill For You" trackNumber="13" albumID="20"
+        artistID="117" duration="263.37"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/stille post/10.sonne.mp3"
+        title="Sonne" trackNumber="0" albumID="1" artistID="117" duration="273.42"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/stille post/05.was es ist.mp3"
+        title="Was es ist" trackNumber="0" albumID="1" artistID="117" duration="241.03"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/stille post/08.atze de boe - unsere lieder(express mix) .mp3"
+        title="Atze de Boe / Unsere Lieder (E" trackNumber="0"
+        albumID="1" artistID="117" duration="242.81"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/stille post/03.hungriges herz.mp3"
+        title="Hungriges Herz" trackNumber="0" albumID="1"
+        artistID="117" duration="262.64"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/stille post/01.komm mein maedchen.mp3"
+        title="Komm mein Mädchen" trackNumber="0" albumID="1"
+        artistID="117" duration="240.2"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/stille post/07.blaue flecken.mp3"
+        title="Blaue Flecken" trackNumber="0" albumID="1" artistID="117" duration="211.25"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Save the last Dance OST/01-t-pain_ft._pitbull-dance_floor.mp3"
+        title="Dance Floor" trackNumber="1" albumID="23" artistID="155" duration="222.67"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Save the last Dance OST/02-noel_ft._ghostface_killah-clap_for_that.mp3"
+        title="Clap For That" trackNumber="2" albumID="23"
+        artistID="102" duration="203.81"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Save the last Dance OST/03-ne-yo-watch_you_dance.mp3"
+        title="Watch You Dance" trackNumber="3" albumID="23"
+        artistID="81" duration="187.4"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Save the last Dance OST/04-ryan_toby_(formerly_of_city_high)-just_my_thang.mp3"
+        title="Just My Thang" trackNumber="4" albumID="23"
+        artistID="123" duration="184.97"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Save the last Dance OST/05-rihanna_ft._shontelle-the_hotness.mp3"
+        title="The Hotness" trackNumber="5" albumID="23" artistID="182" duration="191.45"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Snow Patrol/eyes open/01-snow_patrol-youre_all_i_have.mp3"
+        trackNumber="1" albumID="31" artistID="80" duration="272.64"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Snow Patrol/eyes open/02-snow_patrol-hands_open.mp3"
+        trackNumber="2" albumID="31" artistID="80" duration="197.51"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Snow Patrol/eyes open/03-snow_patrol-chasing_cars.mp3"
+        trackNumber="3" albumID="31" artistID="80" duration="267.99"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Snow Patrol/eyes open/04-snow_patrol-shut_your_eyes.mp3"
+        trackNumber="4" albumID="31" artistID="80" duration="197.17"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Snow Patrol/eyes open/05-snow_patrol-beginning_to_get_to_me.mp3"
+        trackNumber="5" albumID="31" artistID="80" duration="275.83"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Snow Patrol/eyes open/06-snow_patrol-you_could_be_happy.mp3"
+        trackNumber="6" albumID="31" artistID="80" duration="182.18"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Snow Patrol/eyes open/07-snow_patrol-make_this_go_on_forever.mp3"
+        trackNumber="7" albumID="31" artistID="80" duration="347.38"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The.Kooks.Konk.2008.Alphadutch/01. The Kooks - See The Sun.mp3"
+        title="See The Sun" trackNumber="1" albumID="26" artistID="119" duration="216.79"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The.Kooks.Konk.2008.Alphadutch/02. The Kooks - Always Where I Need To Be.mp3"
+        title="Always Where I Need To Be" trackNumber="2" albumID="26"
+        artistID="119" duration="162.06"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The.Kooks.Konk.2008.Alphadutch/03. The Kooks - Mr. Maker.mp3"
+        title="Mr. Maker" trackNumber="3" albumID="26" artistID="119" duration="180.06"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The.Kooks.Konk.2008.Alphadutch/04. The Kooks - Do You Wanna.mp3"
+        title="Do You Wanna" trackNumber="4" albumID="26" artistID="119" duration="246.28"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The.Kooks.Konk.2008.Alphadutch/05. The Kooks - Gap.mp3"
+        title="Gap" trackNumber="5" albumID="26" artistID="119" duration="240.35"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The.Kooks.Konk.2008.Alphadutch/06. The Kooks - Love It All.mp3"
+        title="Love It All" trackNumber="6" albumID="26" artistID="119" duration="171.91"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The.Kooks.Konk.2008.Alphadutch/07. The Kooks - Stormy Weather.mp3"
+        title="Stormy Weather" trackNumber="7" albumID="26"
+        artistID="119" duration="242.13"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The.Kooks.Konk.2008.Alphadutch/08. The Kooks - Sway.mp3"
+        title="Sway" trackNumber="8" albumID="26" artistID="119" duration="216.87"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The.Kooks.Konk.2008.Alphadutch/09. The Kooks - Shine On.mp3"
+        title="Shine On" trackNumber="9" albumID="26" artistID="119" duration="195.4"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The.Kooks.Konk.2008.Alphadutch/10. The Kooks - Down To The Market.mp3"
+        title="Down To The Market" trackNumber="10" albumID="26"
+        artistID="119" duration="147.51"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The.Kooks.Konk.2008.Alphadutch/11. The Kooks - One Last Time.mp3"
+        title="One Last Time" trackNumber="11" albumID="26"
+        artistID="119" duration="158.67"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The.Kooks.Konk.2008.Alphadutch/12. The Kooks - Tick Of Time.mp3"
+        title="Tick Of Time" trackNumber="12" albumID="26"
+        artistID="119" duration="461.79"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The_Strokes/First Impression of Earth/01-the_strokes-you_only_live_once.mp3"
+        title="You Only Live Once" trackNumber="1" albumID="40"
+        artistID="88" duration="187.25"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The_Strokes/First Impression of Earth/02-the_strokes-juicebox.mp3"
+        title="Juicebox" trackNumber="2" albumID="40" artistID="88" duration="199.61"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The_Strokes/First Impression of Earth/03-the_strokes-heart_in_a_cage.mp3"
+        title="Heart In A Cage" trackNumber="3" albumID="40"
+        artistID="88" duration="210.37"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The_Strokes/First Impression of Earth/04-the_strokes-razorblade.mp3"
+        title="Razorblade" trackNumber="4" albumID="40" artistID="88" duration="211.26"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The_Strokes/First Impression of Earth/05-the_strokes-on_the_other_side.mp3"
+        title="On The Other Side" trackNumber="5" albumID="40"
+        artistID="88" duration="280.61"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The_Strokes/First Impression of Earth/06-the_strokes-vision_of_division.mp3"
+        title="Vision Of Division" trackNumber="6" albumID="40"
+        artistID="88" duration="262.25"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The_Strokes/First Impression of Earth/07-the_strokes-ask_me_anything.mp3"
+        title="Ask Me Anything" trackNumber="7" albumID="40"
+        artistID="88" duration="194.46"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The_Strokes/First Impression of Earth/08-the_strokes-electricityscape.mp3"
+        title="Electricityscape" trackNumber="8" albumID="40"
+        artistID="88" duration="215.2"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The_Strokes/First Impression of Earth/09-the_strokes-killing_lies.mp3"
+        title="Killing Lies" trackNumber="9" albumID="40" artistID="88" duration="232.08"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The_Strokes/First Impression of Earth/10-the_strokes-fear_of_sleep.mp3"
+        title="Fear Of Sleep" trackNumber="10" albumID="40"
+        artistID="88" duration="243.94"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The_Strokes/First Impression of Earth/11-the_strokes-evening_sun.mp3"
+        title="Evening Sun" trackNumber="11" albumID="40" artistID="88" duration="274.87"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The_Strokes/First Impression of Earth/12-the_strokes-ize_of_the_world.mp3"
+        title="Ize Of The World" trackNumber="12" albumID="40"
+        artistID="88" duration="271.1"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The_Strokes/First Impression of Earth/13-the_strokes-15_minutes.mp3"
+        title="15 Minutes" trackNumber="13" albumID="40" artistID="88" duration="187.98"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/The_Strokes/First Impression of Earth/14-the_strokes-red_light.mp3"
+        title="Red Light" trackNumber="14" albumID="40" artistID="88" duration="194.96"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/björn kleinhenz/01 - Titel 1.mp3"
+        title="Titel 1" trackNumber="1" albumID="35" artistID="116" duration="260.84"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/björn kleinhenz/02 - Titel 2.mp3"
+        title="Titel 2" trackNumber="2" albumID="35" artistID="116" duration="157.61"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/björn kleinhenz/03 - Titel 3.mp3"
+        title="Titel 3" trackNumber="3" albumID="35" artistID="116" duration="138.07"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/björn kleinhenz/04 - Titel 4.mp3"
+        title="Titel 4" trackNumber="4" albumID="35" artistID="116" duration="256.0"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/björn kleinhenz/05 - Titel 5.mp3"
+        title="Titel 5" trackNumber="5" albumID="35" artistID="116" duration="164.12"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/björn kleinhenz/06 - Titel 6.mp3"
+        title="Titel 6" trackNumber="6" albumID="35" artistID="116" duration="321.12"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/björn kleinhenz/07 - Titel 7.mp3"
+        title="Titel 7" trackNumber="7" albumID="35" artistID="116" duration="227.36"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/björn kleinhenz/08 - Titel 8.mp3"
+        title="Titel 8" trackNumber="8" albumID="35" artistID="116" duration="234.24"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/björn kleinhenz/09 - Titel 9.mp3"
+        title="Titel 9" trackNumber="9" albumID="35" artistID="116" duration="248.57"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/björn kleinhenz/10 - Titel 10.mp3"
+        title="Titel 10" trackNumber="10" albumID="35" artistID="116" duration="194.81"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Save the last Dance OST/03. - X-2-C - Bonafide.mp3"
+        title="Bonafide" trackNumber="3" albumID="21" artistID="143" duration="242.5"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Save the last Dance OST/04. - K-Ci &amp; JoJo - Crazy.mp3"
+        title="Crazy" trackNumber="4" albumID="21" artistID="187" duration="220.36"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/stille post/06.hoffnung mit diesem trick.mp3"
+        title="Hoffnung / Mit diesem Trick" trackNumber="0" albumID="1"
+        artistID="117" duration="270.92"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/stille post/02.ökostrom.mp3"
+        title="Ökostrom" trackNumber="0" albumID="1" artistID="117" duration="162.22"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/stille post/11.komm her.mp3"
+        title="Komm her " trackNumber="0" albumID="1" artistID="117" duration="236.33"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/stille post/04.pro test.mp3"
+        title="PRO Test" trackNumber="0" albumID="1" artistID="117" duration="381.1"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Wir sind Helden - Soundso/01 Wir Sind Helden - Soundso - Ode an die Arbeit.mp3"
+        title="01 Ode an die Arbeit" trackNumber="1" albumID="27"
+        artistID="131" duration="223.58"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Wir sind Helden - Soundso/02 Wir Sind Helden - Soundso -  - Die Konkurrenz.mp3"
+        title="02 Die Konkurrenz" trackNumber="2" albumID="27"
+        artistID="131" duration="225.49"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Wir sind Helden - Soundso/03_wir_sind_helden_-_soundso.mp3"
+        title="soundso" trackNumber="3" albumID="27" artistID="131" duration="254.69"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Wir sind Helden - Soundso/04  Wir Sind Helden - Soundso - Fuer nichts garantieren.mp3"
+        title="04 Fuer nichts garantieren" trackNumber="4" albumID="27"
+        artistID="131" duration="262.67"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Wir sind Helden - Soundso/05  Wir Sind Helden - Soundso - Kaputt.mp3"
+        title="05 Kaputt" trackNumber="5" albumID="27" artistID="131" duration="190.85"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Wir sind Helden - Soundso/07_wir_sind_helden_-_labyrinth.mp3"
+        title="labyrinth" trackNumber="7" albumID="27" artistID="131" duration="220.24"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Wir sind Helden - Soundso/08 Wir sind Helden - Endlich ein Grund zur Panik.mp3"
+        title="Endlich ein Grund zur Panik / " trackNumber="8"
+        albumID="27" artistID="131" duration="223.82"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Wir sind Helden - Soundso/09-wir_sind_helden_-_der_krieg_kommt_schneller_zurueck_als_du_denkst.mp3"
+        title="Der Krieg kommt schneller zurü" trackNumber="9"
+        albumID="27" artistID="131" duration="168.33"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Wir sind Helden - Soundso/10 Wir sind Helden - Soundso  - Hände hoch.mp3"
+        title="10 Haende hoch" trackNumber="10" albumID="27"
+        artistID="131" duration="280.68"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Wir sind Helden - Soundso/11 Wir sind Helden - Soundso  - Stiller.mp3"
+        title="Stiller" trackNumber="11" albumID="27" artistID="131" duration="261.46"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Wir sind Helden - Soundso/12_wir_sind_helden_-_lass_uns_verschwinden.mp3"
+        title="lass uns verschwinden" trackNumber="12" albumID="27"
+        artistID="131" duration="256.26"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/dEUS - The Ideal Crash/01 - dEUS - Put The Freaks Up Front.mp3"
+        title="Put The Freaks Up Front" trackNumber="1" albumID="39"
+        artistID="94" duration="314.91"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/dEUS - The Ideal Crash/02 - dEUS - Sister Dew.mp3"
+        title="Sister Dew" trackNumber="2" albumID="39" artistID="94" duration="335.58"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/dEUS - The Ideal Crash/03 - dEUS - One Advice, Space.mp3"
+        title="One Advice, Space" trackNumber="3" albumID="39"
+        artistID="94" duration="346.78"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/dEUS - The Ideal Crash/04 - dEUS - The Magic Hour.mp3"
+        title="The Magic Hour" trackNumber="4" albumID="39"
+        artistID="94" duration="323.6"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/dEUS - The Ideal Crash/05 - dEUS - The Ideal Crash.mp3"
+        title="The Ideal Crash" trackNumber="5" albumID="39"
+        artistID="94" duration="301.02"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/dEUS - The Ideal Crash/06 - dEUS - Instant Street.mp3"
+        title="Instant Street" trackNumber="6" albumID="39"
+        artistID="94" duration="375.87"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/dEUS - The Ideal Crash/07 - dEUS - Magdalena.mp3"
+        title="Magdalena" trackNumber="7" albumID="39" artistID="94" duration="298.46"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/dEUS - The Ideal Crash/08 - dEUS - Everybody's Weird.mp3"
+        title="Everybody's Weird" trackNumber="8" albumID="39"
+        artistID="94" duration="292.18"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/dEUS - The Ideal Crash/09 - dEUS - Let's See Who Goes Down First.mp3"
+        title="Let's See Who Goes Down First" trackNumber="9"
+        albumID="39" artistID="94" duration="384.42"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/dEUS - The Ideal Crash/10 - dEUS - Dream Sequence #1.mp3"
+        title="Dream Sequence #1" trackNumber="10" albumID="39"
+        artistID="94" duration="391.59"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/- Skunk Anansie - Hedonism.mp3"
+        title="Skunk Anansie - Hedonism" trackNumber="2" albumID="53"
+        artistID="108" duration="206.54"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/- Garbage - Milk.mp3"
+        title="Garbage - Milk" trackNumber="3" albumID="53"
+        artistID="108" duration="241.3"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Eiskalte Engel/Marcy Playground - Comin' Up From Behind.mp3"
+        title="Comin' Up F" trackNumber="0" albumID="22" artistID="70" duration="221.82"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Eiskalte Engel/Skunk Anansie - Secretly.mp3"
+        title="Secretly" trackNumber="0" albumID="22" artistID="148" duration="286.44"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Eiskalte Engel/Faithless - Addictive.mp3"
+        title="Addictive" trackNumber="0" albumID="22" artistID="176" duration="258.44"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Eiskalte Engel/Craig Armstrong - This Love.mp3"
+        title="This Love" trackNumber="0" albumID="22" artistID="163" duration="387.24"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Eiskalte Engel/Abra Moore - Trip On Love.mp3"
+        title="Trip On Love" trackNumber="0" albumID="22" artistID="149" duration="256.92"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Eiskalte Engel/Aimee Mann - You Could Make A Killing.mp3"
+        title="You Could Make A" trackNumber="0" albumID="22"
+        artistID="54" duration="215.44"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Eiskalte Engel/Kristen Barry - Ordinary Life.mp3"
+        title="Ordinary Life" trackNumber="0" albumID="22"
+        artistID="181" duration="297.33"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Eiskalte Engel/The Verve - Bitter Sweet Symphony.mp3"
+        title="Bitter Sweet Symph" trackNumber="0" albumID="22"
+        artistID="78" duration="358.16"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Eiskalte Engel/Day One - Bedroom Dancing.mp3"
+        title="Bedroom Dancing" trackNumber="0" albumID="22"
+        artistID="76" duration="230.52"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Eiskalte Engel/Blur - Coffee And TV.mp3"
+        title="Coffee And TV" trackNumber="0" albumID="22"
+        artistID="103" duration="319.19"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Hellogoodbye/ZOMBIES! ALIENS! VAMPIRES! DINOSAURS/01 - All Of Your Love.mp3"
+        title="All Of Your Love" trackNumber="1" albumID="24"
+        artistID="136" duration="176.91"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Peter Fox - Stadtaffe/06-peter_fox_-_der_letzte_tag-ysp.mp3"
+        title="Der Letzte Tag" trackNumber="6" albumID="36"
+        artistID="55" duration="222.64"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Peter Fox - Stadtaffe/07-peter_fox_-_ich_deine_steine_du_steine-ysp.mp3"
+        title="Ich Deine Steine, Du Steine" trackNumber="7" albumID="36"
+        artistID="55" duration="196.83"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Peter Fox - Stadtaffe/08-peter_fox_-_lok_auf_2_beinen-ysp.mp3"
+        title="Lok Auf 2 Beinen" trackNumber="8" albumID="36"
+        artistID="55" duration="224.13"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Peter Fox - Stadtaffe/09-peter_fox_-_stadtaffe-ysp.mp3"
+        title="Stadtaffe" trackNumber="9" albumID="36" artistID="55" duration="219.74"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Peter Fox - Stadtaffe/10-peter_fox_-_fieber-ysp.mp3"
+        title="Fieber" trackNumber="10" albumID="36" artistID="55" duration="212.98"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Peter Fox - Stadtaffe/11-peter_fox_-_schuettel_deinen_speck-ysp.mp3"
+        title="Schuettel Deinen Speck" trackNumber="11" albumID="36"
+        artistID="55" duration="171.31"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Eiskalte Engel/Placebo - Every You Every Me.mp3"
+        title="Every You Every Me" trackNumber="0" albumID="22"
+        artistID="180" duration="215.5"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Eiskalte Engel/Bare Jr. - You Blew Me Off.mp3"
+        title="You Blew Me Off" trackNumber="0" albumID="22"
+        artistID="150" duration="159.65"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Hellogoodbye/ZOMBIES! ALIENS! VAMPIRES! DINOSAURS/02 - Here (In Your Arms).mp3"
+        title="Here (In Your Arms)" trackNumber="2" albumID="24"
+        artistID="136" duration="240.98"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Hellogoodbye/ZOMBIES! ALIENS! VAMPIRES! DINOSAURS/03 - All Time Lows.mp3"
+        title="All Time Lows" trackNumber="3" albumID="24"
+        artistID="136" duration="164.56"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Hellogoodbye/ZOMBIES! ALIENS! VAMPIRES! DINOSAURS/04 - Stuck To You.mp3"
+        title="Stuck To You" trackNumber="4" albumID="24" artistID="136" duration="164.93"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Hellogoodbye/ZOMBIES! ALIENS! VAMPIRES! DINOSAURS/05 - Homewrecker.mp3"
+        title="Homewrecker" trackNumber="5" albumID="24" artistID="136" duration="151.85"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Hellogoodbye/ZOMBIES! ALIENS! VAMPIRES! DINOSAURS/06 - Oh, It Is Love.mp3"
+        title="Oh, It Is Love" trackNumber="6" albumID="24"
+        artistID="136" duration="240.8"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Hellogoodbye/ZOMBIES! ALIENS! VAMPIRES! DINOSAURS/07 - Baby, It's Fact.mp3"
+        title="Baby, It's Fact" trackNumber="7" albumID="24"
+        artistID="136" duration="197.37"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Hellogoodbye/ZOMBIES! ALIENS! VAMPIRES! DINOSAURS/08 - Figures A And B (Means You And Me).mp3"
+        title="Figures A And B (Means You And Me)" trackNumber="8"
+        albumID="24" artistID="136" duration="141.3"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Hellogoodbye/ZOMBIES! ALIENS! VAMPIRES! DINOSAURS/09 - I Saw It On Your Keyboard.mp3"
+        title="I Saw It On Your Keyboard" trackNumber="9" albumID="24"
+        artistID="136" duration="183.37"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Hellogoodbye/ZOMBIES! ALIENS! VAMPIRES! DINOSAURS/10 - Touchdown Turnaround (Don't Give Up On Me).mp3"
+        title="Touchdown Turnaround (Don't Give Up On Me)"
+        trackNumber="10" albumID="24" artistID="136" duration="150.43"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Hellogoodbye/ZOMBIES! ALIENS! VAMPIRES! DINOSAURS/11 - Two Weeks In Hawaii.mp3"
+        title="Two Weeks In Hawaii" trackNumber="11" albumID="24"
+        artistID="136" duration="291.52"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Zirkus/1 Mia - Intro.mp3"
+        title="Intro" trackNumber="1" albumID="52" artistID="117" duration="10.6"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Zirkus/2 Mia - Uhlala.mp3"
+        title="Uhlala" trackNumber="2" albumID="52" artistID="117" duration="333.01"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Zirkus/3 Mia - Tanz Der Molekuele (Album Version).mp3"
+        title="Tanz Der Molekle (Album Version)" trackNumber="3"
+        albumID="52" artistID="117" duration="346.9"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Zirkus/4 Mia - Zirkus.mp3"
+        title="Zirkus" trackNumber="4" albumID="52" artistID="117" duration="256.36"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Zirkus/5 Mia - Floss.mp3"
+        title="Floss" trackNumber="5" albumID="52" artistID="117" duration="213.92"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Zirkus/6 Mia - Oder Nicht Oder Doch.mp3"
+        title="Oder Nicht Oder Doch" trackNumber="6" albumID="52"
+        artistID="117" duration="308.92"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Zirkus/7 Mia - Je Dis Aime - Ich Sag Liebe.mp3"
+        title="Je Dis Aime/ich Sag Liebe" trackNumber="7" albumID="52"
+        artistID="117" duration="241.79"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Zirkus/8 Mia - Engel.mp3"
+        title="Engel" trackNumber="8" albumID="52" artistID="117" duration="301.54"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Zirkus/9 Mia - Dann War Das Wohl Liebe.mp3"
+        title="Dann War Das Wohl Liebe" trackNumber="9" albumID="52"
+        artistID="117" duration="321.26"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Zirkus/10 Mia - S.O.S..mp3"
+        title="S.O.S." trackNumber="10" albumID="52" artistID="117" duration="261.98"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Zirkus/11 Mia - 2 Pieces.mp3"
+        title="2 Pieces" trackNumber="11" albumID="52" artistID="117" duration="283.23"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Zirkus/12 Mia - Was Besonderes.mp3"
+        title="Was Besonderes" trackNumber="12" albumID="52"
+        artistID="117" duration="244.11"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Zirkus/13 Mia - Outro.mp3"
+        title="Outro" trackNumber="13" albumID="52" artistID="117" duration="102.63"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Mia/Mia - Zirkus/14 Mia - Hoffnung (Pauken And Trompeten Remix).mp3"
+        title="Hoffnung (Pauken &amp; Trompeten Remix)" trackNumber="14"
+        albumID="52" artistID="117" duration="217.98"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Peter Fox - Stadtaffe/01-peter_fox_-_alles_neu-ysp.mp3"
+        title="Alles Neu" trackNumber="1" albumID="36" artistID="55" duration="258.43"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Peter Fox - Stadtaffe/02-peter_fox_-_schwarz_zu_blau-ysp.mp3"
+        title="Schwarz Zu Blau" trackNumber="2" albumID="36"
+        artistID="55" duration="215.64"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Peter Fox - Stadtaffe/03-peter_fox_-_haus_ma_see-ysp.mp3"
+        title="Haus Ma See" trackNumber="3" albumID="36" artistID="55" duration="216.08"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Peter Fox - Stadtaffe/04-peter_fox_-_kopf_verloren-ysp.mp3"
+        title="Kopf Verloren" trackNumber="4" albumID="36" artistID="55" duration="201.74"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Peter Fox - Stadtaffe/05-peter_fox_-_das_zweite_gesicht-ysp.mp3"
+        title="Das Zweite Gesicht" trackNumber="5" albumID="36"
+        artistID="55" duration="233.46"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Snow Patrol/eyes open/12-Untitled.mp3"
+        trackNumber="12" albumID="29" artistID="80" duration="235.42"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD2 Track 07 - Zero 7 - I Have Seen.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="304.85"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD2 Track 15 - Evanescence - My Immortal.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="261.51"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD2 Track 06 - Phantom Planet - Lonely Day.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="217.29"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD2 Track 17 - Binocular - You.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="286.38"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD2 Track 01 - Low Fidelity Allstars - Battleflag.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="336.88"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Wir sind Helden - Soundso/06-wir_sind_helden_-_labyrinth.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="255.87"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD1 Track 14 - Cake - Love You Madly.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="237.53"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD2 Track 12 - Sheila Nicholls - Bread and Water.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="279.43"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD2 Track 05 - OK Go - Dont Ask Me.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="165.33"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD2 Track 16 - Avril Lavigne - Tomorrow.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="226.72"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD1 Track 05 - Five For Fighting - Superman.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="219.61"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD2 Track 08 - The Transplants - Diamonds and Guns.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="241.95"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD1 Track 04 - Stereophonics - Maybe Tomorrow.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="272.77"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD2 Track 13 - The Wiseguys - Ooh La La.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="213.13"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD1 Track 08 - Eagle Eye Cherry - Long Way Around.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="209.01"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD2 Track 18 - Chantal Kreviazuk - In This Life.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="223.48"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD1 Track 13 - Weezer - Island In The Sun.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="202.81"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD1 Track 02 - Frou Frou - Breathe In.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="267.21"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD1 Track 12 - Steadman - Wave Goodbye.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="243.62"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD2 Track 14 - Jimmy Eat World  - The Middle.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="165.67"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD2 Track 11 - The Calling - Wherever You Will Go.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="205.82"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD1 Track 11 - VonRay - Inside Out.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="215.14"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD2 Track 09 - Lifehouse - Everything.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="366.0"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD1 Track 16 - Maria - I Give, You Take.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="232.72"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD1 Track 17 - Ben Lee - No Room To Bleed.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="224.84"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD2 Track 02 - Am Radio - I Just Wanna Be Loved.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="235.0"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD1 Track 03 - The Flaming Lips - Fight Test.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="252.13"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Track 10-Sixpence None The Richer-Dont Dream Its Over.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="237.66"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD2 Track 03 - Jude - Everything I Own.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="237.74"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville-CD2 Track 04-Elvis Presley- A Little.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="211.51"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD1 Track 01 - Remy Zero - Save Me.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="261.49"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD1 Track 18 - Matthew Good Band - Weapon.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="292.57"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD2 Track 10 - Ryan Adams - Nuclear.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="204.12"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD1 Track 15 - Hot Action Cop - Fever For The Flava.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="248.92"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Smallville- The Ultimate Soundtrack/Smallville.-.The.Ultimate.Soundtrack.(2CD-36Tracks).-.by.KMN/Smallville Enhanced Soundtrack - CD1 Track 09 - Smash Mouth - Pacific Coast Party.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="176.12"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Staind - outside.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="292.0"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Seether - broken.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="256.01"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Zeromancer - famous last words.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="271.18"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/New Order - run wild.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="233.68"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Stone Sour - bother.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="238.69"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/HIM - funeral of hearts.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="218.29"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Vega 4 - love breaks down.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="261.49"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Eiskalte Engel/Counting Crows - Colorblind.mp3"
+        title="Colorblind" trackNumber="0" albumID="45" artistID="128" duration="207.98"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Dave Gahan - hold on.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="254.96"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Life of Agony - my mind is dangerous.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="246.68"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Skin - the trouble with me.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="213.83"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Stereophonics - I'm alright.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="275.55"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/The Calling - wherever you will go.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="207.48"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Lenny Kravitz - again.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="227.12"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Reamonn - star.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="233.75"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Guano Apes - pretty in scarlet.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="217.77"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Garbage - drive you home.mp3"
+        trackNumber="0" albumID="45" artistID="108" duration="239.34"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Bush - letting the cables sleep.mp3"
+        title="letting the cables sleep" trackNumber="1" albumID="45"
+        artistID="57" duration="277.61"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/Him - Join me.mp3"
+        title="Join me" trackNumber="1" albumID="45" artistID="79" duration="216.72"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Richard Ashcroft - Check the meaning.mp3"
+        title="Check the meaning" trackNumber="1" albumID="45"
+        artistID="168" duration="482.02"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/Reamonn - Supergirl.mp3"
+        title="Supergirl" trackNumber="2" albumID="45" artistID="93" duration="231.46"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Depeche Mode - Goodnight Lovers.mp3"
+        title="Goodnight Lovers" trackNumber="2" albumID="45"
+        artistID="101" duration="229.68"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Blur - Out of time.mp3"
+        title="Out of time" trackNumber="2" albumID="45" artistID="103" duration="232.61"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Garbage - you look so fine.mp3"
+        title="You look so fine" trackNumber="3" albumID="45"
+        artistID="92" duration="232.24"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/Sub7even - Watherman.mp3"
+        title="Weatherman" trackNumber="3" albumID="45" artistID="125" duration="232.94"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Doves - Satellites.mp3"
+        title="Satellites" trackNumber="3" albumID="45" artistID="159" duration="412.0"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/Guano Apes - Living in a lie.mp3"
+        title="Living in a lie" trackNumber="4" albumID="45"
+        artistID="141" duration="218.94"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Incubus - Mexico.mp3"
+        title="Mexico" trackNumber="4" albumID="45" artistID="89" duration="260.34"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/The Cooper temple clause - Sister Soul.mp3"
+        title="Sister Soul" trackNumber="4" albumID="45" artistID="61" duration="241.22"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/Andreas Johnson - Glorious.mp3"
+        title="Glorious" trackNumber="5" albumID="45" artistID="114" duration="208.05"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Alice in chains - Nutshell.mp3"
+        title="Nutshell" trackNumber="5" albumID="45" artistID="173" duration="256.3"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Rare and B sides/13 Version 2.0 [Bonus Track].mp3"
+        title="Version 2.0 [Bonus Track]" trackNumber="13" albumID="6"
+        artistID="104" duration="199.69"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Rare and B sides/03 The Answer.mp3"
+        title="The Answer" trackNumber="3" albumID="28" artistID="104" duration="248.17"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Rare and B sides/01 Little Thoughts.mp3"
+        title="Little Thoughts" trackNumber="1" albumID="32"
+        artistID="104" duration="210.51"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Rare and B sides/The Prayer (Hadouken Remix).mp3"
+        title="The Prayer (Hadouken Remix)" trackNumber="0" albumID="44"
+        artistID="104" duration="157.97"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Rare and B sides/Storm and Stress (Acoustic Version).mp3"
+        title="Storm and Stress (Acoustic Version)" trackNumber="0"
+        albumID="30" artistID="158" duration="192.84"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Rare and B sides/04 Always New Depths.mp3"
+        title="Always New Depths /  /  /  /  /  /  /  /  /  /  /  / "
+        trackNumber="4" albumID="49" artistID="158" duration="298.44"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Bush - glycerine.mp3"
+        title="Glycerine" trackNumber="10" albumID="12" artistID="57" duration="263.92"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Brot-DE-2010-VOiCE/02_fettes_brot_-_kontrolle.mp3"
+        title="Kontrolle" trackNumber="2" albumID="38" artistID="86" duration="168.96"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Brot-DE-2010-VOiCE/14_fettes_brot_-_wie_immer.mp3"
+        title="Wie Immer" trackNumber="14" albumID="38" artistID="86" duration="267.31"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Fettes-DE-2010-VOiCE/01_fettes_brot_-_jein.mp3"
+        title="Jein" trackNumber="1" albumID="8" artistID="86" duration="301.4"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Fettes Brot/Fettes_Brot-Fettes-DE-2010-VOiCE/02_fettes_brot_-_schieb_es_auf_die_brote.mp3"
+        title="Schieb Es Auf Die Brote" trackNumber="2" albumID="8"
+        artistID="86" duration="184.89"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/The Shining - what you see.mp3"
+        title="what you see" trackNumber="5" albumID="45" artistID="69" duration="266.51"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/Manic Street Preachers - If you tolerate this your children will be next.mp3"
+        title="If you tolerate this your children will be next"
+        trackNumber="6" albumID="45" artistID="145" duration="289.02"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/The Yorn - just another.mp3"
+        title="just another" trackNumber="6" albumID="45" artistID="58" duration="194.97"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/The Vines - Ms. Jackson.mp3"
+        title="Ms. Jackson" trackNumber="6" albumID="45" artistID="105" duration="211.42"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/Coldplay - Yellow.mp3"
+        title="Yellow" trackNumber="7" albumID="45" artistID="151" duration="269.46"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Suede - the next life.mp3"
+        title="the next life" trackNumber="7" albumID="45"
+        artistID="124" duration="182.35"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Slut - Slip.mp3"
+        title="Slip" trackNumber="7" albumID="45" artistID="170" duration="235.95"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/Kid Rock - Only god knows why.mp3"
+        title="Only god knows why" trackNumber="8" albumID="45"
+        artistID="66" duration="248.69"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/The Afghan Whigs - step into the light.mp3"
+        title="step into the light" trackNumber="8" albumID="45"
+        artistID="162" duration="221.69"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Madrugada - Majesty.mp3"
+        title="Majesty" trackNumber="8" albumID="45" artistID="144" duration="261.52"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/Everlast - What it's like.mp3"
+        title="What it's like" trackNumber="9" albumID="45"
+        artistID="161" duration="302.5"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/John Frusciante - invisible movement.mp3"
+        title="invisible movement" trackNumber="9" albumID="45"
+        artistID="82" duration="142.41"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/K's choice - All.mp3"
+        title="All" trackNumber="9" albumID="45" artistID="110" duration="194.68"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/Oasis - Wonderwall.mp3"
+        title="Wonderwall" trackNumber="10" albumID="45" artistID="178" duration="260.0"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Zero 7 - Distractions.mp3"
+        title="Distractions" trackNumber="10" albumID="45" artistID="77" duration="247.34"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Moloko - Statues.mp3"
+        title="Statues" trackNumber="10" albumID="45" artistID="183" duration="326.85"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/Monster Magnet - Your lies become you.mp3"
+        title="Your lies becoe you" trackNumber="11" albumID="45"
+        artistID="62" duration="257.34"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Fleps - sorry for the tears.mp3"
+        title="sorry for the tears" trackNumber="11" albumID="45"
+        artistID="109" duration="249.35"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Portishead - It's a fire.mp3"
+        title="It's a fire" trackNumber="11" albumID="45" artistID="138" duration="222.34"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/Fun lovin' criminals - we are all very worried about you.mp3"
+        title="we are all very worried about you" trackNumber="12"
+        albumID="45" artistID="60" duration="248.8"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Hooverphonic - the magnificent tree.mp3"
+        title="the magnificent tree" trackNumber="12" albumID="45"
+        artistID="113" duration="235.01"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Gus Gus - Why.mp3"
+        title="Why" trackNumber="12" albumID="45" artistID="152" duration="243.68"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/Counting Crows - Colorblind.mp3"
+        title="Colorblind" trackNumber="13" albumID="45" artistID="128" duration="203.43"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Krezip - I would stay.mp3"
+        title="I would stay" trackNumber="13" albumID="45" artistID="90" duration="231.09"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Goldfrapp - Hairy Trees.mp3"
+        title="Hairy Trees" trackNumber="13" albumID="45" artistID="129" duration="274.68"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/Queensryche - Silent Lucidity.mp3"
+        title="Silent Lucidity" trackNumber="14" albumID="45"
+        artistID="184" duration="346.57"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/V.A.S.T. - flames.mp3"
+        title="flames" trackNumber="14" albumID="45" artistID="64" duration="276.28"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Lamb - Gabriel.mp3"
+        title="Gabriel" trackNumber="14" albumID="45" artistID="171" duration="258.02"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/Faith no more - Evidence.mp3"
+        title="Evidence" trackNumber="15" albumID="45" artistID="72" duration="293.28"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/The Soundtrack of our lives - in your veins.mp3"
+        title="in your veins" trackNumber="15" albumID="45"
+        artistID="74" duration="264.29"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Heather Nova - River of life.mp3"
+        title="River of life" trackNumber="15" albumID="45"
+        artistID="73" duration="202.02"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/Alice in chains - Down in a hole.mp3"
+        title="down in a hole" trackNumber="16" albumID="45"
+        artistID="173" duration="339.59"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Bloc Party/Rare and B sides/10 Selfish Son.mp3"
+        title="Selfish Son" trackNumber="10" albumID="3" artistID="104" duration="299.13"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Jimmies Chicken Shack - 30 days.mp3"
+        title="30 days" trackNumber="16" albumID="45" artistID="147" duration="235.74"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments IV/Kristofer Aström &amp; Hidden Truck - Defender.mp3"
+        title="Defender" trackNumber="16" albumID="45" artistID="121" duration="455.2"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments I/Mother love bone - chloe dancer.mp3"
+        title="Chloe dancer/crown of thorns" trackNumber="17"
+        albumID="45" artistID="65" duration="500.86"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Starsailor - love is here.mp3"
+        title="love is here" trackNumber="17" albumID="45" artistID="98" duration="281.01"/>
+    <Song md5=""
+        fileName="/home/wusel/testMusik1/Alternative Moments III/Jeff Buckley - Hallelujah.mp3"
+        title="Hallelujah" trackNumber="18" albumID="45" artistID="67" duration="412.62"/>
+</library>

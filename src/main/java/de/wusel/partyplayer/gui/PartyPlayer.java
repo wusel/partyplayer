@@ -16,25 +16,18 @@
  */
 package de.wusel.partyplayer.gui;
 
-import de.wusel.partyplayer.cli.FileCallback;
-import de.wusel.partyplayer.cli.FileSearcher;
 import de.wusel.partyplayer.cli.Player;
 import de.wusel.partyplayer.cli.PlayerListener;
 import de.wusel.partyplayer.settings.Settings;
-import de.wusel.partyplayer.cli.TagReader;
-import de.wusel.partyplayer.cli.TrackInfo;
-import de.wusel.partyplayer.gui.dialog.ChangePasswordDialog;
-import de.wusel.partyplayer.gui.dialog.DialogStatus;
-import de.wusel.partyplayer.gui.dialog.SettingsDialog;
 import de.wusel.partyplayer.library.Library;
 import de.wusel.partyplayer.library.LibraryListener;
 import de.wusel.partyplayer.library.Playlist;
 import de.wusel.partyplayer.library.PlaylistListener;
 import de.wusel.partyplayer.library.Song;
 import de.wusel.partyplayer.library.SongComparator;
+import de.wusel.partyplayer.tasks.CheckSearchDirectoryTask;
 import de.wusel.partyplayer.util.PathUtil;
 import de.wusel.partyplayer.util.Util;
-import java.awt.Color;
 import java.awt.Component;
 import java.awt.GraphicsEnvironment;
 import java.awt.event.ActionEvent;
@@ -44,31 +37,20 @@ import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.File;
-import java.io.IOException;
 import java.util.EventObject;
 import java.util.List;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
-import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JPasswordField;
-import javax.swing.JProgressBar;
 import javax.swing.JScrollPane;
 import javax.swing.JSeparator;
 import javax.swing.JTable;
 import javax.swing.JTextField;
-import javax.swing.JToggleButton;
 import javax.swing.RowFilter;
-import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 import javax.swing.Timer;
 import javax.swing.table.DefaultTableCellRenderer;
@@ -77,9 +59,7 @@ import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.log4j.Logger;
 import org.jdesktop.application.FrameView;
 import org.jdesktop.application.SingleFrameApplication;
-import org.jdesktop.swingx.JXStatusBar;
 import org.jdesktop.swingx.JXTable;
-import org.jdesktop.swingx.prompt.PromptSupport;
 import org.jdesktop.swingx.sort.TableSortController;
 
 /**
@@ -90,42 +70,45 @@ public class PartyPlayer extends SingleFrameApplication {
 
     private static final Logger log = Logger.getLogger(PartyPlayer.class);
     private final Player player = new Player();
+    private final Library library = new Library();
     private final Playlist playList = new Playlist();
-    private PlayerPanel playerPanel;
-    private JProgressBar fileReaderProgressBar;
-    private JLabel statusLabel;
-    private Timer timer;
     private final Settings settings = new Settings();
-    private JToggleButton lockButton;
-    private JButton settingsButton;
-    private JPasswordField pinCodeInputField;
+    private LockingStatusbar statusbar;
+    private PlayerPanel playerPanel;
+    private Timer timer;
     private JXTable table;
     private boolean started = false;
     private long startTime;
 
-    private void readBackupFile(File backupFile) {
-        Library.INSTANCE.importBackup(backupFile);
-    }
+    private boolean unlocked = false;
 
-    private void readSettingsFile(File settingsFile) {
-        this.settings.importXML(settingsFile);
-    }
+    private final LockingListener lockingListener = new LockingListener() {
 
-    private void checkBinaries() {
-        if(!PathUtil.checkBinaries()) {
-            System.exit(-1);
+        @Override
+        public void lock() {
+            unlocked = false;
+            getMainFrame().setAlwaysOnTop(true);
+            GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().setFullScreenWindow(getMainFrame());
         }
-    }
 
-    private static enum MessageType {
+        @Override
+        public void unlock() {
+            unlocked = true;
+            GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().setFullScreenWindow(null);
+            getMainFrame().setAlwaysOnTop(false);
+            getMainFrame().pack();
+            getMainFrame().setExtendedState(JFrame.MAXIMIZED_BOTH);
+        }
 
-        STARTED,
-        STOPPED,
-        CHANGED
-    }
+        @Override
+        public void settingsChanged() {
+        }
+    };
 
     @Override
     protected void startup() {
+        statusbar = new LockingStatusbar(this, getMainFrame(), settings);
+        statusbar.addLockingListener(lockingListener);
         startTime = System.currentTimeMillis();
         log.info("Application started @[" + startTime + "]");
         playList.addListener(playListListener);
@@ -133,7 +116,7 @@ public class PartyPlayer extends SingleFrameApplication {
 
             @Override
             public boolean canExit(EventObject eo) {
-                if (settings.isPasswordValid(null) || lockButton.isSelected()) {
+                if (settings.isPasswordValid(null) || unlocked) {
                     return true;
                 } else {
                     final String showInputDialog = JOptionPane.showInputDialog(getMainFrame(), "PIN-Code eingeben!");
@@ -143,7 +126,7 @@ public class PartyPlayer extends SingleFrameApplication {
 
             @Override
             public void willExit(EventObject eo) {
-                Library.INSTANCE.backup(PathUtil.getLibraryFile());
+                library.backup(PathUtil.getLibraryFile());
                 settings.backup(PathUtil.getSettingsFile());
                 playList.logUserFavorites();
                 log.info("Application stopped @[" + System.currentTimeMillis() + "] running for [" + (System.currentTimeMillis() - startTime) / 1000 + "]seconds");
@@ -152,122 +135,15 @@ public class PartyPlayer extends SingleFrameApplication {
 
         FrameView mainView = getMainView();
         mainView.setComponent(createMainComponent());
-        JXStatusBar bar = new JXStatusBar();
-        statusLabel = new JLabel("Ready");
-        fileReaderProgressBar = new JProgressBar(0, 0);
-
-        pinCodeInputField = new JPasswordField();
-        PromptSupport.setPrompt("pin-code", pinCodeInputField);
-        PromptSupport.setForeground(Color.GRAY, pinCodeInputField);
-
-        pinCodeInputField.addMouseListener(new MouseAdapter() {
-
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                if (!pinCodeInputField.isEnabled()) {
-                    ChangePasswordDialog dialog = new ChangePasswordDialog(getMainFrame(), settings);
-                    dialog.setVisible(true);
-                    if (dialog.getStatus() == DialogStatus.CONFIRMED) {
-                        settings.setNewPassword(dialog.getPassDigest());
-                        settings.backup(PathUtil.getSettingsFile());
-                    }
-                }
-            }
-        });
-        pinCodeInputField.addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                boolean unlocked = unlock(new String(pinCodeInputField.getPassword()));
-                if (unlocked) {
-                    pinCodeInputField.transferFocus();
-                }
-                pinCodeInputField.setText(null);
-            }
-        });
-
-        lockButton = new JToggleButton();
-        lockButton.setIcon(getIcon("lock"));
-        lockButton.setSelectedIcon(getIcon("lock_open"));
-        lockButton.setEnabled(false);
-        lockButton.addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                lock();
-            }
-        });
-
-        this.settingsButton = new JButton(getIcon("cog_edit"));
-        this.settingsButton.addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                showSettings();
-            }
-        });
-        bar.add(statusLabel, new JXStatusBar.Constraint(JXStatusBar.Constraint.ResizeBehavior.FILL));
-        bar.add(fileReaderProgressBar, new JXStatusBar.Constraint(200));
-        bar.add(pinCodeInputField, new JXStatusBar.Constraint(100));
-        bar.add(lockButton, new JXStatusBar.Constraint());
-        bar.add(settingsButton, new JXStatusBar.Constraint());
-        mainView.setStatusBar(bar);
+        mainView.setStatusBar(statusbar);
         show(mainView);
-    }
-
-    private ImageIcon getIcon(String iconName) {
-        try {
-            return new ImageIcon(ImageIO.read(PartyPlayer.class.getResourceAsStream("/icons/" + iconName + ".png")));
-        } catch (IOException ex) {
-            log.fatal("could not load icon", ex);
-            return null;
-        }
-    }
-
-    private void showSettings() {
-        SettingsDialog dialog = new SettingsDialog(getMainFrame(), settings.getSearchDirectories());
-        dialog.setVisible(true);
-        if (dialog.getStatus() == DialogStatus.CONFIRMED) {
-            settings.setSearchDirectories(dialog.getSelectedDirectories());
-            settings.backup(PathUtil.getSettingsFile());
-            timer.restart();
-
-        }
-        log.debug(dialog.getStatus());
-    }
-
-    private void lock() {
-        this.lockButton.setEnabled(false);
-        this.pinCodeInputField.setEnabled(true);
-        this.settingsButton.setEnabled(false);
-        this.playerPanel.lock();
-        PromptSupport.setPrompt("pin-code", pinCodeInputField);
-        getMainFrame().setAlwaysOnTop(true);
-        GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().setFullScreenWindow(getMainFrame());
-    }
-
-    private boolean unlock(String password) {
-        if (password == null || settings.isPasswordValid(DigestUtils.md5Hex(password))) {
-            this.lockButton.setEnabled(true);
-            this.lockButton.setSelected(true);
-            this.pinCodeInputField.setEnabled(false);
-            this.settingsButton.setEnabled(true);
-            this.playerPanel.unlock();
-            PromptSupport.setPrompt("Click here to change password", pinCodeInputField);
-            GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().setFullScreenWindow(null);
-            getMainFrame().setAlwaysOnTop(false);
-            getMainFrame().pack();
-            getMainFrame().setExtendedState(JFrame.MAXIMIZED_BOTH);
-            return true;
-        }
-        return false;
     }
 
     @Override
     protected void ready() {
 
         checkBinaries();
-        Library.INSTANCE.addListener(new LibraryListener() {
+        library.addListener(new LibraryListener() {
 
             @Override
             public void songRemoved(Song song, int oldIndex) {
@@ -276,15 +152,10 @@ public class PartyPlayer extends SingleFrameApplication {
                 }
             }
         });
-        
+
         readSettingsFile(PathUtil.getSettingsFile());
         readBackupFile(PathUtil.getLibraryFile());
 
-        if (settings.isPasswordValid(null)) {
-            unlock(null);
-        } else {
-            lock();
-        }
         player.addListener(playerListener);
 
         timer = new Timer(settings.getFolderCheckInterval(), new ActionListener() {
@@ -293,16 +164,34 @@ public class PartyPlayer extends SingleFrameApplication {
             public void actionPerformed(ActionEvent e) {
                 if (!started) {
                     started = true;
-                    setStatusbarMessage("[start] checking");
                     executeSongCheck();
-                    exceuteFileCheck();
-                    setStatusbarMessage("[finished] checking");
-                    setStatusbarMessage("[" + Library.INSTANCE.getSongCount() + "] available");
+                    getContext().getTaskService().execute(new CheckSearchDirectoryTask(getInstance(), library, settings));
+                    started = false;
                 }
             }
         });
         timer.setInitialDelay(0);
         timer.start();
+    }
+
+    private void readBackupFile(File backupFile) {
+        library.importBackup(backupFile);
+    }
+
+    private void readSettingsFile(File settingsFile) {
+        this.settings.importXML(settingsFile);
+    }
+
+    private void checkBinaries() {
+        if (!PathUtil.checkBinaries()) {
+            System.exit(-1);
+        }
+    }
+
+    private static enum MessageType {
+        STARTED,
+        STOPPED,
+        CHANGED
     }
 
     private void executeSongCheck() {
@@ -311,13 +200,13 @@ public class PartyPlayer extends SingleFrameApplication {
 
             @Override
             protected Void doInBackground() throws Exception {
-                final List<Song> songs = Library.INSTANCE.getSongs();
+                final List<Song> songs = library.getSongs();
                 for (Song song : songs) {
-                    setStatusbarMessage("[" + song.getFileName() + "] check");
+//                    setStatusbarMessage("[" + song.getFileName() + "] check");
                     boolean exists = new File(song.getFileName()).exists();
                     boolean remove = exists && !belongsToSearchDirectories(song.getFileName());
                     if (remove) {
-                        setStatusbarMessage("[" + song.getFileName() + "] removed");
+//                        setStatusbarMessage("[" + song.getFileName() + "] removed");
                         publish(song);
                     }
                 }
@@ -336,99 +225,18 @@ public class PartyPlayer extends SingleFrameApplication {
             @Override
             protected void process(List<Song> chunks) {
                 for (Song song : chunks) {
-                    Library.INSTANCE.removeSong(song);
+                    library.removeSong(song);
                 }
             }
 
             @Override
             protected void done() {
-                setStatusbarMessage("[" + Library.INSTANCE.getSongCount() + "] available");
+//                setStatusbarMessage("[" + Library.INSTANCE.getSongCount() + "] available");
             }
         }.execute();
     }
 
-    private void exceuteFileCheck() {
-        new SwingWorker<Void, TrackInfo>() {
-
-            private int maxFiles;
-            private int currentFiles;
-
-            @Override
-            protected Void doInBackground() throws Exception {
-
-                final ExecutorService service = Executors.newFixedThreadPool(10);
-                FileSearcher searcher = new FileSearcher(settings);
-                searcher.search(new FileCallback() {
-
-                    @Override
-                    public void fileFound(final File file) {
-                        maxFiles++;
-                        SwingUtilities.invokeLater(new Runnable() {
-
-                            @Override
-                            public void run() {
-                                setStatusbarMessage("reading [" + currentFiles + "/" + maxFiles + "] files");
-                                fileReaderProgressBar.setMaximum(maxFiles);
-                            }
-                        });
-                        service.execute(new Runnable() {
-
-                            @Override
-                            public void run() {
-                                try {
-                                    publish(new TagReader().read(file));
-                                    setStatusbarMessage("[" + Library.INSTANCE.getSongCount() + "] available");
-                                } catch (IOException ex) {
-                                    log.fatal("could not read file:", ex);
-                                }
-                            }
-                        });
-                    }
-                });
-
-                service.shutdown();
-                service.awaitTermination(100, TimeUnit.MINUTES);
-                SwingUtilities.invokeLater(new Runnable() {
-
-                    @Override
-                    public void run() {
-                        fileReaderProgressBar.setValue(0);
-                        fileReaderProgressBar.setMaximum(0);
-                        setStatusbarMessage("[" + Library.INSTANCE.getSongCount() + "] available");
-                    }
-                });
-                return null;
-            }
-
-            @Override
-            protected void process(List<TrackInfo> chunks) {
-                for (TrackInfo trackInfo : chunks) {
-                    currentFiles++;
-                    if (trackInfo != null) {
-                        Library.INSTANCE.addTrackInfo(trackInfo);
-                    }
-                    fileReaderProgressBar.setValue(currentFiles);
-                }
-            }
-
-            @Override
-            protected void done() {
-                started = false;
-            }
-        }.execute();
-    }
-
-    private void setStatusbarMessage(final String message) {
-        SwingUtilities.invokeLater(new Runnable() {
-
-            @Override
-            public void run() {
-                statusLabel.setText(message);
-            }
-        });
-    }
-
-    private void play(final Song song) {
+     private void play(final Song song) {
         SwingWorker worker = new SwingWorker() {
 
             @Override
@@ -493,7 +301,7 @@ public class PartyPlayer extends SingleFrameApplication {
     }
 
     private Component createSongPanel() {
-        final SongsTableModel model = new SongsTableModel(Library.INSTANCE);
+        final SongsTableModel model = new SongsTableModel(library);
 
         table = new JXTable(model) {
 
@@ -502,7 +310,7 @@ public class PartyPlayer extends SingleFrameApplication {
                 int viewRowIndex = rowAtPoint(event.getPoint());
                 if (viewRowIndex != -1) {
                     int modelIndex = convertRowIndexToModel(viewRowIndex);
-                    Song songFromList = Library.INSTANCE.getSongFromList(modelIndex);
+                    Song songFromList = library.getSongFromList(modelIndex);
                     return songFromList.getFileName();
                 }
                 return super.getToolTipText(event);
@@ -539,7 +347,7 @@ public class PartyPlayer extends SingleFrameApplication {
             @Override
             public void mouseClicked(MouseEvent e) {
                 if (e.getClickCount() == 2) {
-                    addSongToPlaylist(Library.INSTANCE.getSongFromList(table.convertRowIndexToModel(table.getSelectedRow())));
+                    addSongToPlaylist(library.getSongFromList(table.convertRowIndexToModel(table.getSelectedRow())));
                 }
             }
         });
@@ -549,7 +357,7 @@ public class PartyPlayer extends SingleFrameApplication {
             @Override
             public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-                    addSongToPlaylist(Library.INSTANCE.getSongFromList(table.convertRowIndexToModel(table.getSelectedRow())));
+                    addSongToPlaylist(library.getSongFromList(table.convertRowIndexToModel(table.getSelectedRow())));
                 }
             }
         });
@@ -562,7 +370,7 @@ public class PartyPlayer extends SingleFrameApplication {
     private void addSongToPlaylist(Song song) {
         this.playList.putSong(song, true);
     }
-    
+
     private final PlaylistListener playListListener = new PlaylistListener() {
 
         @Override
@@ -583,9 +391,9 @@ public class PartyPlayer extends SingleFrameApplication {
         }
 
         private void putRandomSongInPlaylist() {
-            int playListCount = Library.INSTANCE.getSongCount();
+            int playListCount = library.getSongCount();
             int songNumber = (int) (Math.random() * playListCount);
-            playList.putSong(Library.INSTANCE.getSongFromList(songNumber), false);
+            playList.putSong(library.getSongFromList(songNumber), false);
         }
 
         @Override
@@ -596,7 +404,6 @@ public class PartyPlayer extends SingleFrameApplication {
                 next = playList.getNext();
             }
             play(next);
-
         }
     };
 }

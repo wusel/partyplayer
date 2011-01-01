@@ -41,7 +41,8 @@ public class CLITest {
     private static final Logger log = Logger.getLogger(CLITest.class);
 
     public static void main(String[] args) throws ExecutionException, IOException {
-        Library.INSTANCE.addListener(new LibraryListener() {
+        Library library = new Library();
+        library.addListener(new LibraryListener() {
 
             @Override
             public void songAdded(Song song, int index) {
@@ -54,7 +55,7 @@ public class CLITest {
 //        log.debug("singleThread needed: [" + ((double) endTime - startTime) / 1000 / 1000 / 1000 + "s]");
 
         startTime = System.nanoTime();
-        executeMultiThread();
+        executeMultiThread(library);
         endTime = System.nanoTime();
         log.debug("multiThread needed: [" + ((double) endTime - startTime) / 1000 / 1000 / 1000 + "s]");
 //        Set<Song> songs = Library.INSTANCE.getAlbums("Dendemann").get(0).getSongs();
@@ -82,7 +83,7 @@ public class CLITest {
         });
     }
 
-    private static void executeMultiThread() throws ExecutionException {
+    private static void executeMultiThread(Library library) throws ExecutionException {
         final ExecutorService service = Executors.newCachedThreadPool();
         Settings settings = new Settings();
         settings.addSearchDirectory(new File("/home/wusel/testMusik1"));
@@ -106,7 +107,7 @@ public class CLITest {
             for (Future<TrackInfo> future : futures) {
                 TrackInfo result = future.get();
                 if (result != null)
-                    Library.INSTANCE.addTrackInfo(result);
+                    library.addTrackInfo(result);
             }
         } catch (InterruptedException ex) {
             log.error(ex);

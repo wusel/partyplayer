@@ -33,11 +33,7 @@ public class TagReader {
 
     private static final Logger log = Logger.getLogger(TagReader.class);
 
-    public TrackInfo read(File file) throws IOException {
-        if (Library.INSTANCE.containsSong(file.getAbsolutePath())) {
-            return null;
-        }
-       
+    public static TrackInfo read(File file) throws IOException {
         ProcessBuilder processBuilder = new ProcessBuilder("./mutagen-inspect", file.getAbsolutePath());
         File workingDirectory = new File(PathUtil.getBinDirectory(), "/mutagen/");
         processBuilder.directory(workingDirectory);
@@ -55,7 +51,7 @@ public class TagReader {
         return trackInfo;
     }
 
-    private TrackInfo parseSong(String message) throws IOException {
+    private static TrackInfo parseSong(String message) throws IOException {
         /**
          *"-- /home/wusel/Musik/Dendemann/Die Pfütze des Eisbergs (2006)/09 - LaLaLabernich.flac 
          * - FLAC, 216.49 seconds, 44100 Hz (audio/x-flac) 
@@ -115,7 +111,7 @@ public class TagReader {
         return info;
     }
 
-    private int isArtistTag(String line) {
+    private static int isArtistTag(String line) {
         String[] args = {"artist=", "TPE1="};
         for (String string : args) {
             if (line.startsWith(string)) {
@@ -125,7 +121,7 @@ public class TagReader {
         return -1;
     }
 
-    private int isAlbumTag(String line) {
+    private static int isAlbumTag(String line) {
         String[] args = {"album=", "TALB="};
         for (String string : args) {
             if (line.startsWith(string)) {
@@ -135,7 +131,7 @@ public class TagReader {
         return -1;
     }
 
-    private int isTitleTag(String line) {
+    private static int isTitleTag(String line) {
         String[] args = {"title=", "TIT2="};
         for (String string : args) {
             if (line.startsWith(string)) {
@@ -145,7 +141,7 @@ public class TagReader {
         return -1;
     }
 
-    private int isDateTag(String line) {
+    private static int isDateTag(String line) {
         String[] args = {"date=", "TDRC="};
         for (String string : args) {
             if (line.startsWith(string)) {
@@ -155,7 +151,7 @@ public class TagReader {
         return -1;
     }
 
-    private int isGenreTag(String line) {
+    private static int isGenreTag(String line) {
         String[] args = {"genre=", "TCON="};
         for (String string : args) {
             if (line.startsWith(string)) {
@@ -165,7 +161,7 @@ public class TagReader {
         return -1;
     }
 
-    private int isNumberTag(String line) {
+    private static int isNumberTag(String line) {
         String[] args = {"tracknumber=", "TRCK="};
         for (String string : args) {
             if (line.startsWith(string)) {
@@ -175,7 +171,7 @@ public class TagReader {
         return -1;
     }
 
-    private int isCDDBTag(String line) {
+    private static int isCDDBTag(String line) {
         String[] args = {"cddb="};
         for (String string : args) {
             if (line.startsWith(string)) {

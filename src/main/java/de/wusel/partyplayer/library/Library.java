@@ -46,11 +46,7 @@ public class Library {
     private final Map<String, Song> songByFileName = new HashMap<String, Song>();
     private final Map<String, Artist> artistByName = new HashMap<String, Artist>();
     private final List<Song> songsAsList = new ArrayList<Song>();
-    public static final Library INSTANCE = new Library();
     private final List<LibraryListener> listeners = new ArrayList<LibraryListener>();
-
-    private Library() {
-    }
 
     public synchronized void addTrackInfo(TrackInfo trackInfo) {
         if (songByFileName.containsKey(trackInfo.getFile().getAbsolutePath())) {

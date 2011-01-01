@@ -81,6 +81,8 @@ public class CheckSearchDirectoryTask extends Task<Void, TrackInfo> {
         });
         executorService.shutdown();
         executorService.awaitTermination(1000, TimeUnit.DAYS);
+        setProgress(0, 0, 100);
+        message("finished", library.getSongCount());
         return null;
     }
 
@@ -94,12 +96,6 @@ public class CheckSearchDirectoryTask extends Task<Void, TrackInfo> {
                 message("available", currentFiles, maxFiles);
             }
         }
-    }
-
-    @Override
-    protected void finished() {
-        message("finished", library.getSongCount());
-        setProgress(0, 0, 100);
     }
 
 }

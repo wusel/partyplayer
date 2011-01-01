@@ -16,6 +16,7 @@
  */
 package de.wusel.partyplayer.cli;
 
+import de.wusel.partyplayer.settings.Settings;
 import java.io.File;
 import java.util.List;
 

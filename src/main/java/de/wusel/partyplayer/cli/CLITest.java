@@ -16,6 +16,7 @@
  */
 package de.wusel.partyplayer.cli;
 
+import de.wusel.partyplayer.settings.Settings;
 import de.wusel.partyplayer.library.Library;
 import de.wusel.partyplayer.library.LibraryListener;
 import de.wusel.partyplayer.library.Song;

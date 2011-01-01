@@ -16,7 +16,7 @@
  */
 package de.wusel.partyplayer.gui.dialog;
 
-import de.wusel.partyplayer.cli.Settings;
+import de.wusel.partyplayer.settings.Settings;
 import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

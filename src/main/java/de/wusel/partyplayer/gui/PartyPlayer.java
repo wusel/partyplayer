@@ -20,7 +20,7 @@ import de.wusel.partyplayer.cli.FileCallback;
 import de.wusel.partyplayer.cli.FileSearcher;
 import de.wusel.partyplayer.cli.Player;
 import de.wusel.partyplayer.cli.PlayerListener;
-import de.wusel.partyplayer.cli.Settings;
+import de.wusel.partyplayer.settings.Settings;
 import de.wusel.partyplayer.cli.TagReader;
 import de.wusel.partyplayer.cli.TrackInfo;
 import de.wusel.partyplayer.gui.dialog.ChangePasswordDialog;
@@ -287,7 +287,7 @@ public class PartyPlayer extends SingleFrameApplication {
         }
         player.addListener(playerListener);
 
-        timer = new Timer(1000 * 30, new ActionListener() {
+        timer = new Timer(settings.getFolderCheckInterval(), new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -562,6 +562,7 @@ public class PartyPlayer extends SingleFrameApplication {
     private void addSongToPlaylist(Song song) {
         this.playList.putSong(song, true);
     }
+    
     private final PlaylistListener playListListener = new PlaylistListener() {
 
         @Override
@@ -571,6 +572,7 @@ public class PartyPlayer extends SingleFrameApplication {
             }
         }
     };
+
     private final PlayerListener playerListener = new PlayerListener() {
 
         @Override

@@ -80,28 +80,6 @@ public class PartyPlayer extends SingleFrameApplication {
     private boolean started = false;
     private long startTime;
     private boolean unlocked = false;
-    private final LockingListener lockingListener = new LockingListener() {
-
-        @Override
-        public void lock() {
-            unlocked = false;
-            getMainFrame().setAlwaysOnTop(true);
-            GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().setFullScreenWindow(getMainFrame());
-        }
-
-        @Override
-        public void unlock() {
-            unlocked = true;
-            GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().setFullScreenWindow(null);
-            getMainFrame().setAlwaysOnTop(false);
-            getMainFrame().pack();
-            getMainFrame().setExtendedState(JFrame.MAXIMIZED_BOTH);
-        }
-
-        @Override
-        public void settingsChanged() {
-        }
-    };
 
     @Override
     protected void startup() {
@@ -117,7 +95,7 @@ public class PartyPlayer extends SingleFrameApplication {
                 if (settings.isPasswordValid(null) || unlocked) {
                     return true;
                 } else {
-                    final String showInputDialog = JOptionPane.showInputDialog(getMainFrame(), "PIN-Code eingeben!");
+                    final String showInputDialog = JOptionPane.showInputDialog(getMainFrame(),getText("exit.requestPin.label"));
                     return showInputDialog != null && settings.isPasswordValid(DigestUtils.md5Hex(showInputDialog));
                 }
             }
@@ -212,13 +190,13 @@ public class PartyPlayer extends SingleFrameApplication {
 
     private JComponent createMainComponent() {
         JPanel mainPanel = new JPanel(new MigLayout("fill", "[][50%][][50%]", "[] [] [] [] [grow]"));
-        mainPanel.add(new JLabel("Current"));
+        mainPanel.add(new JLabel(getText("layout.current.title")));
         mainPanel.add(new JSeparator(), "growx");
-        mainPanel.add(new JLabel("Next"));
+        mainPanel.add(new JLabel(getText("layout.next.title")));
         mainPanel.add(new JSeparator(), "growx, wrap");
         mainPanel.add(createPlayerPanel(), "grow, span 2");
         mainPanel.add(createPlayListPanel(), "grow, hmax 100, span 2, wrap");
-        mainPanel.add(new JLabel("Available"));
+        mainPanel.add(new JLabel(getText("layout.available.title")));
         mainPanel.add(new JSeparator(), "growx, span, wrap");
         final JTextField searchField = new JTextField();
         searchField.addKeyListener(new KeyAdapter() {
@@ -237,7 +215,7 @@ public class PartyPlayer extends SingleFrameApplication {
                 }
             }
         });
-        mainPanel.add(new JLabel("Suche:"));
+        mainPanel.add(new JLabel(getText("layout.search.label")));
         mainPanel.add(searchField, "span, growx, wrap");
         mainPanel.add(createSongPanel(), "span, grow");
         return mainPanel;
@@ -249,17 +227,17 @@ public class PartyPlayer extends SingleFrameApplication {
     }
 
     private Component createPlayListPanel() {
-        final PlaylistTableModel model = new PlaylistTableModel(playList);
+        final PlaylistTableModel model = new PlaylistTableModel(playList, this);
         final JTable playlistTable = new JTable(model);
-        playlistTable.getColumn("Votes").setMaxWidth(40);
-        playlistTable.getColumn("Votes").setResizable(false);
+        playlistTable.getColumn(getText("table.playlist.column.votes.label")).setMaxWidth(40);
+        playlistTable.getColumn(getText("table.playlist.column.votes.label")).setResizable(false);
         JScrollPane scrollPane = new JScrollPane(playlistTable);
         playlistTable.setFillsViewportHeight(true);
         return scrollPane;
     }
 
     private Component createSongPanel() {
-        final SongsTableModel model = new SongsTableModel(library);
+        final SongsTableModel model = new SongsTableModel(library, this);
 
         table = new JXTable(model) {
 
@@ -276,11 +254,12 @@ public class PartyPlayer extends SingleFrameApplication {
         };
 
         table.setAutoCreateRowSorter(true);
-        table.getColumn("#").setMaxWidth(25);
-        table.getColumn("#").setResizable(false);
+        String numberColumnName = getText("table.songs.column.number.label");
+        table.getColumn(numberColumnName).setMaxWidth(25);
+        table.getColumn(numberColumnName).setResizable(false);
         TableSortController sorter = (TableSortController) table.getRowSorter();
         sorter.setComparator(2, new SongComparator());
-        table.getColumn("#").setCellRenderer(new DefaultTableCellRenderer() {
+        table.getColumn(numberColumnName).setCellRenderer(new DefaultTableCellRenderer() {
 
             @Override
             public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
@@ -290,7 +269,7 @@ public class PartyPlayer extends SingleFrameApplication {
             }
         });
 
-        table.getColumn("Dauer").setCellRenderer(new DefaultTableCellRenderer() {
+        table.getColumn(getText("table.songs.column.duration.label")).setCellRenderer(new DefaultTableCellRenderer() {
 
             @Override
             public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
@@ -328,6 +307,7 @@ public class PartyPlayer extends SingleFrameApplication {
     private void addSongToPlaylist(Song song) {
         this.playList.putSong(song, true);
     }
+
     private final PlaylistListener playListListener = new PlaylistListener() {
 
         @Override
@@ -337,6 +317,7 @@ public class PartyPlayer extends SingleFrameApplication {
             }
         }
     };
+    
     private final PlayerListener playerListener = new PlayerListener() {
 
         @Override
@@ -362,4 +343,31 @@ public class PartyPlayer extends SingleFrameApplication {
             play(next);
         }
     };
+
+    private final LockingListener lockingListener = new LockingListener() {
+
+        @Override
+        public void lock() {
+            unlocked = false;
+            getMainFrame().setAlwaysOnTop(true);
+            GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().setFullScreenWindow(getMainFrame());
+        }
+
+        @Override
+        public void unlock() {
+            unlocked = true;
+            GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().setFullScreenWindow(null);
+            getMainFrame().setAlwaysOnTop(false);
+            getMainFrame().pack();
+            getMainFrame().setExtendedState(JFrame.MAXIMIZED_BOTH);
+        }
+
+        @Override
+        public void settingsChanged() {
+        }
+    };
+
+    private String getText(String key, Object... args) {
+        return getContext().getResourceMap(PartyPlayer.class).getString(key, args);
+    }
 }

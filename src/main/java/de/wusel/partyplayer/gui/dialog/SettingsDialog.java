@@ -20,13 +20,10 @@ import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import javax.imageio.ImageIO;
 import javax.swing.AbstractListModel;
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JFileChooser;
@@ -38,6 +35,8 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import net.miginfocom.swing.MigLayout;
 import org.apache.log4j.Logger;
+import org.jdesktop.application.Action;
+import org.jdesktop.application.Application;
 
 /**
  *
@@ -48,56 +47,31 @@ public class SettingsDialog extends JDialog {
     private static final Logger log = Logger.getLogger(SettingsDialog.class);
     private DialogStatus status = DialogStatus.CANCELED;
     private final FileListModel listModel;
+    private JList fileList;
 
     public SettingsDialog(Window owner, List<File> files) {
-        super(owner, "Settings", ModalityType.APPLICATION_MODAL);
+        super(owner, ModalityType.APPLICATION_MODAL);
         listModel = new FileListModel(files);
         initUI();
         pack();
         setResizable(true);
+        setSize(240, 300);
         setLocationRelativeTo(owner);
+        setTitle(getText("dialog.title"));
     }
 
     private void initUI() {
         setLayout(new MigLayout("fill", "[] [grow] []", "[] [] [] [grow] []"));
-        add(new JLabel("Ordner"));
+        add(new JLabel(getText("layout.folder.title")));
         add(new JSeparator(), "grow, span, wrap");
-        final JList fileList = new JList(listModel);
+        fileList = new JList(listModel);
         add(fileList, "span 2 3, grow");
 
-        final JButton addButton = new JButton(getIcon("folder_add"));
-        addButton.addActionListener(new ActionListener() {
+        final JButton addButton = new JButton(getAction("folderAdd"));
+        addButton.setText(null);
 
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JFileChooser fileChooser = new JFileChooser();
-                fileChooser.setMultiSelectionEnabled(true);
-                fileChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-                int result = fileChooser.showOpenDialog(rootPane);
-                if (result == JFileChooser.APPROVE_OPTION) {
-                    File[] selectedFiles = fileChooser.getSelectedFiles();
-                    for (File file : selectedFiles) {
-                        listModel.addFile(file);
-                    }
-                }
-
-            }
-        });
-
-        final JButton removeButton = new JButton(getIcon("folder_delete"));
-        removeButton.setEnabled(false);
-
-        removeButton.addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                int[] selectedValues = fileList.getSelectedIndices();
-                for (int i = selectedValues.length - 1; i >= 0; i--) {
-                    listModel.removeFile(selectedValues[i]);
-                }
-                pack();
-            }
-        });
+        final JButton removeButton = new JButton(getAction("folderDelete"));
+        removeButton.setText(null);
         
         fileList.addListSelectionListener(new ListSelectionListener() {
 
@@ -112,24 +86,9 @@ public class SettingsDialog extends JDialog {
         add(removeButton, "wrap, grow");
         add(new JSeparator(), "newline push, span, grow, aligny top, wrap");
         JPanel buttonPanel = new JPanel(new MigLayout("insets 0 0 0 0, fill"));
-        final JButton cancelButton = new JButton("cancel");
-        cancelButton.addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                cancel();
-            }
-        });
+        JButton cancelButton = new JButton(getAction("cancel"));
         buttonPanel.add(cancelButton, "split 2, tag cancel");
-        final JButton okButton = new JButton("ok");
-        okButton.addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                ok();
-            }
-        });
-
+        JButton okButton = new JButton(getAction("ok"));
         buttonPanel.add(okButton, "tag ok");
         add(buttonPanel, "span 3, growx");
     }
@@ -138,12 +97,37 @@ public class SettingsDialog extends JDialog {
         return Collections.unmodifiableList(listModel.files);
     }
 
-    private void ok() {
+    @Action
+    public void folderAdd() {
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setMultiSelectionEnabled(true);
+        fileChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+        int result = fileChooser.showOpenDialog(rootPane);
+        if (result == JFileChooser.APPROVE_OPTION) {
+            File[] selectedFiles = fileChooser.getSelectedFiles();
+            for (File file : selectedFiles) {
+                listModel.addFile(file);
+            }
+        }
+    }
+
+    @Action
+    public void folderDelete() {
+        int[] selectedValues = fileList.getSelectedIndices();
+        for (int i = selectedValues.length - 1; i >= 0; i--) {
+            listModel.removeFile(selectedValues[i]);
+        }
+
+    }
+
+    @Action
+    public void ok() {
         status = DialogStatus.CONFIRMED;
         dispose();
     }
 
-    private void cancel() {
+    @Action
+    public void cancel() {
         status = DialogStatus.CANCELED;
         dispose();
     }
@@ -181,12 +165,11 @@ public class SettingsDialog extends JDialog {
         }
     }
 
-    private ImageIcon getIcon(String iconName) {
-        try {
-            return new ImageIcon(ImageIO.read(SettingsDialog.class.getResourceAsStream("/icons/" + iconName + ".png")));
-        } catch (IOException ex) {
-            log.fatal("could not load icon", ex);
-            return null;
-        }
+    private String getText(String textKey) {
+        return Application.getInstance().getContext().getResourceMap(SettingsDialog.class).getString(textKey);
+    }
+
+    private javax.swing.Action getAction(String actionKey) {
+        return Application.getInstance().getContext().getActionMap(this).get(actionKey);
     }
 }

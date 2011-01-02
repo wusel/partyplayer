@@ -20,8 +20,8 @@ package de.wusel.partyplayer.gui;
 import de.wusel.partyplayer.library.Library;
 import de.wusel.partyplayer.library.LibraryListener;
 import de.wusel.partyplayer.library.Song;
-import de.wusel.partyplayer.util.Util;
 import javax.swing.table.AbstractTableModel;
+import org.jdesktop.application.Application;
 
 /**
  *
@@ -29,8 +29,9 @@ import javax.swing.table.AbstractTableModel;
  */
 class SongsTableModel extends AbstractTableModel {
     private final Library library;
+    private final Application application;
 
-    public SongsTableModel(Library library) {
+    public SongsTableModel(Library library, Application application) {
         this.library = library;
         this.library.addListener(new LibraryListener(){
 
@@ -44,6 +45,7 @@ class SongsTableModel extends AbstractTableModel {
                 fireTableRowsDeleted(oldIndex, oldIndex);
             }
         });
+        this.application = application;
     }
 
     @Override
@@ -71,11 +73,11 @@ class SongsTableModel extends AbstractTableModel {
     @Override
     public String getColumnName(int column) {
         switch(column) {
-            case 0: return "Künstler";
-            case 1: return "Titel";
-            case 2: return "#";
-            case 3: return "Album";
-            case 4: return "Dauer";
+            case 0: return application.getContext().getResourceMap().getString("table.songs.column.artist.label");
+            case 1: return application.getContext().getResourceMap().getString("table.songs.column.title.label");
+            case 2: return application.getContext().getResourceMap().getString("table.songs.column.number.label");
+            case 3: return application.getContext().getResourceMap().getString("table.songs.column.album.label");
+            case 4: return application.getContext().getResourceMap().getString("table.songs.column.duration.label");
             default: throw new RuntimeException("unknown columnIndex");
         }
     }

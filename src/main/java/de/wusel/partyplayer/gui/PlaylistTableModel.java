@@ -20,6 +20,7 @@ import de.wusel.partyplayer.library.Playlist;
 import de.wusel.partyplayer.library.PlaylistListener;
 import de.wusel.partyplayer.library.Song;
 import javax.swing.table.AbstractTableModel;
+import org.jdesktop.application.Application;
 
 /**
  *
@@ -45,19 +46,21 @@ class PlaylistTableModel extends AbstractTableModel {
             fireTableDataChanged();
         }
     };
+    private final Application application;
 
-    public PlaylistTableModel(Playlist playList) {
+    public PlaylistTableModel(Playlist playList, Application application) {
         this.playlist = playList;
         this.playlist.addListener(listener);
+        this.application = application;
     }
 
     @Override
     public String getColumnName(int columnIndex) {
         switch (columnIndex) {
             case 0:
-                return "Titel";
+                return application.getContext().getResourceMap().getString("table.playlist.column.title.label");
             case 1:
-                return "Votes";
+                return application.getContext().getResourceMap().getString("table.playlist.column.votes.label");
             default:
                 throw new RuntimeException("unknown columnIndex");
         }

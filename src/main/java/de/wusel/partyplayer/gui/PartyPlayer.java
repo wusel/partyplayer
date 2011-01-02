@@ -25,6 +25,7 @@ import de.wusel.partyplayer.library.Playlist;
 import de.wusel.partyplayer.library.PlaylistListener;
 import de.wusel.partyplayer.library.Song;
 import de.wusel.partyplayer.library.SongComparator;
+import de.wusel.partyplayer.tasks.CheckAvailableSongsTask;
 import de.wusel.partyplayer.tasks.CheckSearchDirectoryTask;
 import de.wusel.partyplayer.util.PathUtil;
 import de.wusel.partyplayer.util.Util;
@@ -38,7 +39,6 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.File;
 import java.util.EventObject;
-import java.util.List;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 import javax.swing.JComponent;
@@ -79,9 +79,7 @@ public class PartyPlayer extends SingleFrameApplication {
     private JXTable table;
     private boolean started = false;
     private long startTime;
-
     private boolean unlocked = false;
-
     private final LockingListener lockingListener = new LockingListener() {
 
         @Override
@@ -142,7 +140,9 @@ public class PartyPlayer extends SingleFrameApplication {
     @Override
     protected void ready() {
 
+        readSettingsFile(PathUtil.getSettingsFile());
         checkBinaries();
+        this.statusbar.init();
         library.addListener(new LibraryListener() {
 
             @Override
@@ -153,7 +153,6 @@ public class PartyPlayer extends SingleFrameApplication {
             }
         });
 
-        readSettingsFile(PathUtil.getSettingsFile());
         readBackupFile(PathUtil.getLibraryFile());
 
         player.addListener(playerListener);
@@ -164,7 +163,7 @@ public class PartyPlayer extends SingleFrameApplication {
             public void actionPerformed(ActionEvent e) {
                 if (!started) {
                     started = true;
-                    executeSongCheck();
+                    getContext().getTaskService().execute(new CheckAvailableSongsTask(getInstance(), library, settings));
                     getContext().getTaskService().execute(new CheckSearchDirectoryTask(getInstance(), library, settings));
                     started = false;
                 }
@@ -189,54 +188,13 @@ public class PartyPlayer extends SingleFrameApplication {
     }
 
     private static enum MessageType {
+
         STARTED,
         STOPPED,
         CHANGED
     }
 
-    private void executeSongCheck() {
-
-        new SwingWorker<Void, Song>() {
-
-            @Override
-            protected Void doInBackground() throws Exception {
-                final List<Song> songs = library.getSongs();
-                for (Song song : songs) {
-//                    setStatusbarMessage("[" + song.getFileName() + "] check");
-                    boolean exists = new File(song.getFileName()).exists();
-                    boolean remove = exists && !belongsToSearchDirectories(song.getFileName());
-                    if (remove) {
-//                        setStatusbarMessage("[" + song.getFileName() + "] removed");
-                        publish(song);
-                    }
-                }
-                return null;
-            }
-
-            private boolean belongsToSearchDirectories(String path) {
-                for (File dirctory : settings.getSearchDirectories()) {
-                    if (path.startsWith(dirctory.getAbsolutePath())) {
-                        return true;
-                    }
-                }
-                return false;
-            }
-
-            @Override
-            protected void process(List<Song> chunks) {
-                for (Song song : chunks) {
-                    library.removeSong(song);
-                }
-            }
-
-            @Override
-            protected void done() {
-//                setStatusbarMessage("[" + Library.INSTANCE.getSongCount() + "] available");
-            }
-        }.execute();
-    }
-
-     private void play(final Song song) {
+    private void play(final Song song) {
         SwingWorker worker = new SwingWorker() {
 
             @Override
@@ -370,7 +328,6 @@ public class PartyPlayer extends SingleFrameApplication {
     private void addSongToPlaylist(Song song) {
         this.playList.putSong(song, true);
     }
-
     private final PlaylistListener playListListener = new PlaylistListener() {
 
         @Override
@@ -380,7 +337,6 @@ public class PartyPlayer extends SingleFrameApplication {
             }
         }
     };
-
     private final PlayerListener playerListener = new PlayerListener() {
 
         @Override

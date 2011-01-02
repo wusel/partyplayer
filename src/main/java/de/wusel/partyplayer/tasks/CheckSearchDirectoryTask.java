@@ -52,16 +52,14 @@ public class CheckSearchDirectoryTask extends Task<Void, TrackInfo> {
 
     @Override
     protected Void doInBackground() throws Exception {
-        final ExecutorService executorService = Executors.newFixedThreadPool(4);
+        final ExecutorService executorService = Executors.newFixedThreadPool(settings.getMaxThreads());
 
         FileSearcher fileSearcher = new FileSearcher(settings);
         fileSearcher.search(new FileCallback() {
 
             @Override
             public void fileFound(final File file) {
-
                 if (!library.containsSong(file.getAbsolutePath())) {
-
                     maxFiles++;
                     message("available", currentFiles, maxFiles);
                     setProgress(currentFiles, 0, maxFiles);

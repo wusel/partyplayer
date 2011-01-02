@@ -67,7 +67,6 @@ public class LockingStatusbar extends JXStatusBar {
             if (evt.getPropertyName().equals("message")) {
                 statusLabel.setText(evt.getNewValue().toString());
             } else if (evt.getPropertyName().equals("progress")) {
-                log.debug(evt.getNewValue());
                 fileReaderProgressBar.setValue((Integer) evt.getNewValue());
             }
         }
@@ -103,12 +102,10 @@ public class LockingStatusbar extends JXStatusBar {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                boolean unlocked = unlock(new String(pinCodeInputField.getPassword()));
+                boolean unlocked = settings.isPasswordValid(DigestUtils.md5Hex(new String(pinCodeInputField.getPassword())));
                 if (unlocked) {
                     pinCodeInputField.transferFocus();
-                    for (LockingListener lockingListener : listeners) {
-                        lockingListener.unlock();
-                    }
+                    unlock();
                 }
                 pinCodeInputField.setText(null);
             }
@@ -142,23 +139,33 @@ public class LockingStatusbar extends JXStatusBar {
         this.mainFrame = mainFrame;
     }
 
+    public void init() {
+        if (this.settings.isPasswordValid(null)) {
+            unlock();
+        } else {
+            lock();
+        }
+    }
+
     private void lock() {
         this.lockButton.setEnabled(false);
         this.pinCodeInputField.setEnabled(true);
         this.settingsButton.setEnabled(false);
         PromptSupport.setPrompt("pin-code", pinCodeInputField);
+        for (LockingListener lockingListener : listeners) {
+            lockingListener.lock();
+        }
     }
 
-    private boolean unlock(String password) {
-        if (password == null || settings.isPasswordValid(DigestUtils.md5Hex(password))) {
-            this.lockButton.setEnabled(true);
-            this.lockButton.setSelected(true);
-            this.pinCodeInputField.setEnabled(false);
-            this.settingsButton.setEnabled(true);
-            PromptSupport.setPrompt("Click here to change password", pinCodeInputField);
-            return true;
+    private void unlock() {
+        this.lockButton.setEnabled(true);
+        this.lockButton.setSelected(true);
+        this.pinCodeInputField.setEnabled(false);
+        this.settingsButton.setEnabled(true);
+        PromptSupport.setPrompt("Click here to change password", pinCodeInputField);
+        for (LockingListener lockingListener : listeners) {
+            lockingListener.unlock();
         }
-        return false;
     }
 
     private ImageIcon getIcon(String iconName) {

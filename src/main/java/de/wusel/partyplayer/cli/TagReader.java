@@ -16,7 +16,6 @@
  */
 package de.wusel.partyplayer.cli;
 
-import de.wusel.partyplayer.library.Library;
 import de.wusel.partyplayer.util.PathUtil;
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;

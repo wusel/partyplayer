@@ -53,7 +53,6 @@ import javax.swing.JTextField;
 import javax.swing.RowFilter;
 import javax.swing.SwingWorker;
 import javax.swing.Timer;
-import javax.swing.table.DefaultTableCellRenderer;
 import net.miginfocom.swing.MigLayout;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.log4j.Logger;
@@ -72,8 +71,8 @@ public class PartyPlayer extends SingleFrameApplication {
     private static final Logger log = Logger.getLogger(PartyPlayer.class);
     private final Player player = new Player();
     private final Library library = new Library();
-    private final Playlist playList = new Playlist();
     private final Settings settings = new Settings();
+    private final Playlist playList = new Playlist(settings);
     private LockingStatusbar statusbar;
     private PlayerPanel playerPanel;
     private Timer timer;
@@ -97,7 +96,7 @@ public class PartyPlayer extends SingleFrameApplication {
                 if (settings.isPasswordValid(null) || unlocked) {
                     return true;
                 } else {
-                    final String showInputDialog = JOptionPane.showInputDialog(getMainFrame(),getText("exit.requestPin.label"));
+                    final String showInputDialog = JOptionPane.showInputDialog(getMainFrame(), getText("exit.requestPin.label"));
                     return showInputDialog != null && settings.isPasswordValid(DigestUtils.md5Hex(showInputDialog));
                 }
             }
@@ -168,7 +167,6 @@ public class PartyPlayer extends SingleFrameApplication {
     }
 
     private static enum MessageType {
-
         STARTED,
         STOPPED,
         CHANGED
@@ -239,7 +237,7 @@ public class PartyPlayer extends SingleFrameApplication {
     }
 
     private Component createSongPanel() {
-        final SongsTableModel model = new SongsTableModel(library, this);
+        final SongsTableModel model = new SongsTableModel(library, playList, this);
 
         table = new JXTable(model) {
 
@@ -308,19 +306,21 @@ public class PartyPlayer extends SingleFrameApplication {
     }
 
     private void addSongToPlaylist(Song song) {
-        this.playList.putSong(song, true);
+        if (this.playList.getWaitTime(song) == 0) {
+            this.playList.putSong(song, true);
+        } else {
+            log.trace(song + " allready voted in last [" + settings.getSongVoteThreshold() / 1000 + "]s");
+        }
     }
-
     private final PlaylistListener playListListener = new PlaylistListener() {
 
         @Override
         public void songAdded(Song song) {
             if (!player.isPlaying()) {
-                play(playList.getNext());
+                play(playList.next());
             }
         }
     };
-    
     private final PlayerListener playerListener = new PlayerListener() {
 
         @Override
@@ -338,15 +338,14 @@ public class PartyPlayer extends SingleFrameApplication {
 
         @Override
         public void songStoped(Song song) {
-            Song next = playList.getNext();
+            Song next = playList.next();
             if (next == null) {
                 putRandomSongInPlaylist();
-                next = playList.getNext();
+                next = playList.next();
             }
             play(next);
         }
     };
-
     private final LockingListener lockingListener = new LockingListener() {
 
         @Override

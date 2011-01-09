@@ -16,6 +16,7 @@
  */
 package de.wusel.partyplayer.library;
 
+import de.wusel.partyplayer.settings.Settings;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -34,9 +35,16 @@ public class Playlist {
     private List<SongWrapper> currentSongs = new ArrayList<SongWrapper>();
     private final List<PlaylistListener> listeners = new ArrayList<PlaylistListener>();
     private final Map<Song, Long> allTimeRequests = new HashMap<Song, Long>();
+    private final Map<Song, Long> lastRequestTime = new HashMap<Song, Long>();
+    private final Settings settings;
+
+    public Playlist(Settings settings) {
+        this.settings = settings;
+    }
 
     public void putSong(Song song, boolean user) {
-        SongWrapper wrapper = new SongWrapper(System.currentTimeMillis(), song);
+        long currentTimeMillis = System.currentTimeMillis();
+        SongWrapper wrapper = new SongWrapper(currentTimeMillis, song);
         if (currentSongs.contains(wrapper)) {
             log.debug("song contained will inc");
 
@@ -44,9 +52,7 @@ public class Playlist {
                 allTimeRequests.put(song, allTimeRequests.get(song) + 1);
             }
             currentSongs.get(currentSongs.indexOf(wrapper)).inc();
-
             Collections.sort(currentSongs, new SongWrapperComparator());
-
             for (PlaylistListener playlistListener : listeners) {
                 playlistListener.songOrderChanged(song);
             }
@@ -63,6 +69,7 @@ public class Playlist {
                 playlistListener.songAdded(song);
             }
         }
+        lastRequestTime.put(song, currentTimeMillis);
     }
 
     public void removeSong(Song song) {
@@ -86,7 +93,7 @@ public class Playlist {
         }
     }
 
-    public Song getNext() {
+    public Song next() {
         if (currentSongs.isEmpty()) {
             return null;
         } else {
@@ -119,6 +126,19 @@ public class Playlist {
         log.info("-------  Userfavorites ------");
         for (Map.Entry<Song, Long> entry : allTimeRequests.entrySet()) {
             log.info("| " + entry.getValue() + " | " + entry.getKey().getTitle());
+        }
+    }
+
+    public long getWaitTime(Song song) {
+        if (this.lastRequestTime.containsKey(song)) {
+            long diff = System.currentTimeMillis() - this.lastRequestTime.get(song);
+            if (diff >= settings.getSongVoteThreshold()) {
+                return 0;
+            } else {
+                return settings.getSongVoteThreshold() - diff;
+            }
+        } else {
+            return 0;
         }
     }
 

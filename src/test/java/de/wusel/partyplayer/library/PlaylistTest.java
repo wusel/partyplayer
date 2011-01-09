@@ -43,7 +43,7 @@ public class PlaylistTest extends TestCase {
     @Test
     public void testEmptyPlaylist() {
         Playlist playlist = new Playlist();
-        assertNull(playlist.getNext());
+        assertNull(playlist.next());
     }
 
     @Test
@@ -52,7 +52,7 @@ public class PlaylistTest extends TestCase {
         Playlist playlist = new Playlist();
         playlist.putSong(song, true);
         assertEquals(1, playlist.getSongCount());
-        assertEquals(playlist.getNext(), song);
+        assertEquals(playlist.next(), song);
         assertEquals(0, playlist.getSongCount());
     }
     

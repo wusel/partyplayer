@@ -38,21 +38,7 @@ public class TagReader {
     private static final Logger log = Logger.getLogger(TagReader.class);
 
     public static TrackInfo read(File file) throws IOException {
-//        ProcessBuilder processBuilder = new ProcessBuilder("./mutagen-inspect", file.getAbsolutePath());
-//        File workingDirectory = new File(PathUtil.getBinDirectory(), "/mutagen/");
-//        processBuilder.directory(workingDirectory);
-//        Process proccess = processBuilder.start();
-//        BufferedInputStream bis = new BufferedInputStream(proccess.getInputStream());
-//        StringBuilder builder = new StringBuilder();
-//        byte[] buffer = new byte[1024];
-//        int len = 0;
-//        while ((len = bis.read(buffer, 0, buffer.length)) != -1) {
-//            builder.append(new String(buffer, 0, len));
-//        }
-//        TrackInfo trackInfo = parseSong(builder.toString());
-//        trackInfo.setFile(file);
-//        proccess.destroy();
-//        return trackInfo;
+
         try {
             AudioFile f = AudioFileIO.read(file);
             Tag tag = f.getTag();

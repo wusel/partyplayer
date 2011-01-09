@@ -41,6 +41,7 @@ import org.xml.sax.helpers.DefaultHandler;
  */
 public class Library {
 
+    private final int VERSION = 1;
     private final Logger log = Logger.getLogger(Library.class);
     private final Map<String, Album> albumByName = new HashMap<String, Album>();
     private final Map<String, Song> songByFileName = new HashMap<String, Song>();
@@ -87,7 +88,7 @@ public class Library {
         album.addSong(song);
         addSong(song);
     }
-    
+
     private synchronized void addSong(Song song) {
         songByFileName.put(song.getFileName(), song);
         this.songsAsList.add(song);
@@ -167,22 +168,21 @@ public class Library {
 
     private final class XMLHandler extends DefaultHandler {
 
+        private final int supportedVersion = 1;
         private Artist currentArtist;
         private Album currentAlbum;
         private Song currentSong;
         private Map<Long, Album> albumByTempID = new HashMap<Long, Album>();
         private Map<Artist, Set<Long>> albumIDsForArtist = new HashMap<Artist, Set<Long>>();
         private Map<Long, Artist> artistByTempID = new HashMap<Long, Artist>();
-
-        @Override
-        public void endDocument() throws SAXException {
-            super.endDocument();
-        }
+        private boolean read;
 
         @Override
         public void endElement(String uri, String localName, String qName) throws SAXException {
+            if (!read) {
+                return;
+            }
             if (qName.equals("Artist")) {
-                
                 Set<Long> albums = albumIDsForArtist.get(currentArtist);
                 for (Long albumID : albums) {
                     final Album album = albumByTempID.get(albumID);
@@ -199,6 +199,7 @@ public class Library {
             }
             super.endElement(uri, localName, qName);
         }
+
         private void addAlbum(Album album) {
             albumByName.put(album.getTitle(), album);
         }
@@ -213,7 +214,6 @@ public class Library {
                 long tmpID = Long.parseLong(attributes.getValue("artistID"));
                 currentArtist = new Artist(attributes.getValue("name"));
                 artistByTempID.put(tmpID, currentArtist);
-
             } else if (qName.equals("Album") && currentArtist != null) {
                 Set<Long> albumIDs = albumIDsForArtist.get(currentArtist);
                 if (albumIDs == null) {
@@ -240,6 +240,9 @@ public class Library {
                 final Album album = albumByTempID.get(albumID);
                 currentSong = new Song(artistByTempID.get(artistID), album, title, trackNumber, duration, new File(fileName), md5);
                 album.addSong(currentSong);
+            } else if (qName.equals("Version")) {
+                this.read = supportedVersion == Integer.parseInt(attributes.getValue("value"));
+                log.info("Version [" + attributes.getValue("value") + "] supported [" + read + "]");
             }
         }
     }
@@ -247,6 +250,8 @@ public class Library {
     public void backup(File backupFile) {
         try {
             XMLExportSupport exportSupport = new XMLExportSupport(backupFile, "library");
+            exportSupport.addAttribute("value", VERSION);
+            exportSupport.writeElement("Version");
             long currentID = 0;
             Map<Album, Long> albumIds = new HashMap<Album, Long>();
             Map<Artist, Long> artistIds = new HashMap<Artist, Long>();
@@ -256,7 +261,6 @@ public class Library {
                 currentID++;
 
             }
-
             for (Artist artist : artistByName.values()) {
                 artist.export(exportSupport, currentID, albumIds);
                 artistIds.put(artist, currentID++);

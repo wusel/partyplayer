@@ -16,6 +16,9 @@
  */
 package de.wusel.partyplayer.gui;
 
+import java.io.IOException;
+import java.io.StringBufferInputStream;
+import java.util.logging.LogManager;
 import javax.swing.SwingUtilities;
 import org.jdesktop.application.Application;
 
@@ -25,7 +28,10 @@ import org.jdesktop.application.Application;
  */
 public class Main {
 
-    public static void main(final String[] args) {
+    public static void main(final String[] args) throws IOException {
+        //Disable JAudioTagger logging
+        LogManager.getLogManager().readConfiguration(new StringBufferInputStream("log4j.logger.com.foo=WARN"));
+        
         SwingUtilities.invokeLater(new Runnable()  {
             @Override
             public void run() {

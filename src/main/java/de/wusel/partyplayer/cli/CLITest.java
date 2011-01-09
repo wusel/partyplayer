@@ -69,13 +69,13 @@ public class CLITest {
 
     private static void executeSingleThread() {
         Settings settings = new Settings();
-        settings.addSearchDirectory(new File("/home/wusel/testMusik1"));
+        settings.addSearchDirectory(new File("/home/wusel/testMusik2"));
         FileSearcher searcher = new FileSearcher(settings);
         searcher.search(new FileCallback()      {
 
             public void fileFound(File file) {
                 try {
-                    log.debug(new TagReader().read(file));
+                    log.debug(TagReaderLib.read(file));
                 } catch (IOException ex) {
                     log.error(ex);
                 }
@@ -86,7 +86,7 @@ public class CLITest {
     private static void executeMultiThread(Library library) throws ExecutionException {
         final ExecutorService service = Executors.newCachedThreadPool();
         Settings settings = new Settings();
-        settings.addSearchDirectory(new File("/home/wusel/testMusik1"));
+        settings.addSearchDirectory(new File("/home/wusel/testMusik2"));
         FileSearcher searcher = new FileSearcher(settings);
         final List<Future<TrackInfo>> futures = new ArrayList<Future<TrackInfo>>();
 
@@ -96,7 +96,7 @@ public class CLITest {
                 futures.add(service.submit(new Callable<TrackInfo>()   {
 
                     public TrackInfo call() throws Exception {
-                        return new TagReader().read(file);
+                        return TagReaderLib.read(file);
                     }
                 }));
             }

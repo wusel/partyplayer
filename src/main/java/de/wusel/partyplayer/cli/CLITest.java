@@ -73,9 +73,10 @@ public class CLITest {
         FileSearcher searcher = new FileSearcher(settings);
         searcher.search(new FileCallback()      {
 
+            @Override
             public void fileFound(File file) {
                 try {
-                    log.debug(TagReaderLib.read(file));
+                    log.debug(TagReader.read(file));
                 } catch (IOException ex) {
                     log.error(ex);
                 }
@@ -92,11 +93,13 @@ public class CLITest {
 
         searcher.search(new FileCallback()  {
 
+            @Override
             public void fileFound(final File file) {
                 futures.add(service.submit(new Callable<TrackInfo>()   {
 
+                    @Override
                     public TrackInfo call() throws Exception {
-                        return TagReaderLib.read(file);
+                        return TagReader.read(file);
                     }
                 }));
             }

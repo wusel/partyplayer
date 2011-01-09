@@ -61,6 +61,7 @@ import org.jdesktop.application.FrameView;
 import org.jdesktop.application.SingleFrameApplication;
 import org.jdesktop.swingx.JXTable;
 import org.jdesktop.swingx.sort.TableSortController;
+import org.pushingpixels.substance.api.renderers.SubstanceDefaultTableCellRenderer;
 
 /**
  *
@@ -88,6 +89,7 @@ public class PartyPlayer extends SingleFrameApplication {
         startTime = System.currentTimeMillis();
         log.info("Application started @[" + startTime + "]");
         playList.addListener(playListListener);
+
         addExitListener(new ExitListener() {
 
             @Override
@@ -259,7 +261,8 @@ public class PartyPlayer extends SingleFrameApplication {
         table.getColumn(numberColumnName).setResizable(false);
         TableSortController sorter = (TableSortController) table.getRowSorter();
         sorter.setComparator(2, new SongComparator());
-        table.getColumn(numberColumnName).setCellRenderer(new DefaultTableCellRenderer() {
+
+        table.getColumn(numberColumnName).setCellRenderer(new SubstanceDefaultTableCellRenderer() {
 
             @Override
             public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
@@ -269,7 +272,7 @@ public class PartyPlayer extends SingleFrameApplication {
             }
         });
 
-        table.getColumn(getText("table.songs.column.duration.label")).setCellRenderer(new DefaultTableCellRenderer() {
+        table.getColumn(getText("table.songs.column.duration.label")).setCellRenderer(new SubstanceDefaultTableCellRenderer() {
 
             @Override
             public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {

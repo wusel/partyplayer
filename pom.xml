@@ -116,6 +116,11 @@
             <artifactId>jaudiotagger</artifactId>
             <version>2.0.3</version>
         </dependency>
+        <dependency>
+            <groupId>substance</groupId>
+            <artifactId>swingx-plugin</artifactId>
+            <version>6.0</version>
+        </dependency>
     </dependencies>
     <build>
         <finalName>partyPlayer</finalName>

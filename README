@@ -1,0 +1,6 @@
+#### BUILD INSTRUCTIONS #####
+
+1. make sure "Maven2" is installed
+2. execute "additional-libs/mvn-install.sh"
+3. in projectdir execute "mvn clean install"
+

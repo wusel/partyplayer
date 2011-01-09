@@ -42,6 +42,7 @@ import org.xml.sax.helpers.DefaultHandler;
 public class Library {
 
     private final int VERSION = 1;
+    
     private final Logger log = Logger.getLogger(Library.class);
     private final Map<String, Album> albumByName = new HashMap<String, Album>();
     private final Map<String, Song> songByFileName = new HashMap<String, Song>();

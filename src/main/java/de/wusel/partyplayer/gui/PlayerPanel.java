@@ -2,7 +2,7 @@ package de.wusel.partyplayer.gui;
 
 import de.wusel.partyplayer.cli.Player;
 import de.wusel.partyplayer.cli.PlayerListener;
-import de.wusel.partyplayer.library.Song;
+import de.wusel.partyplayer.model.SongWrapper;
 import de.wusel.partyplayer.util.Util;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -30,7 +30,7 @@ final class PlayerPanel extends JPanel {
     private final RichJLabel timeLabel = new RichJLabel("--:--/--:--");
     private final JProgressBar songProgress = new JProgressBar();
     private final JButton nextButton = new JButton(getIcon("control_fastforward_blue"));
-    private Song song;
+    private SongWrapper song;
     private final Player player;
     private final PlayerListener listener = new PlayerListener() {
 
@@ -47,7 +47,7 @@ final class PlayerPanel extends JPanel {
         }
 
         @Override
-        public void songStarted(final Song song) {
+        public void songStarted(final SongWrapper song) {
             SwingUtilities.invokeLater(new Runnable() {
 
                 @Override
@@ -58,7 +58,7 @@ final class PlayerPanel extends JPanel {
         }
 
         @Override
-        public void songStoped(Song song) {
+        public void songStoped(SongWrapper song) {
             SwingUtilities.invokeLater(new Runnable() {
 
                 @Override
@@ -107,7 +107,7 @@ final class PlayerPanel extends JPanel {
         }
     }
 
-    public void setSongStarted(Song song) {
+    public void setSongStarted(SongWrapper song) {
         this.song = song;
         songProgress.setMaximum(100);
         songProgress.setValue(0);

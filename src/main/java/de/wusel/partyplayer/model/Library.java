@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package de.wusel.partyplayer.library;
+package de.wusel.partyplayer.model;
 
 import de.wusel.partyplayer.cli.TrackInfo;
 import de.wusel.picotask.xml.XMLExportSupport;
@@ -39,15 +39,14 @@ import org.xml.sax.helpers.DefaultHandler;
  *
  * @author wusel
  */
-public class Library {
+class Library {
 
     private final int VERSION = 1;
-    
     private final Logger log = Logger.getLogger(Library.class);
     private final Map<String, Album> albumByName = new HashMap<String, Album>();
-    private final Map<String, Song> songByFileName = new HashMap<String, Song>();
+    private final Map<String, SongWrapper> songByFileName = new HashMap<String, SongWrapper>();
     private final Map<String, Artist> artistByName = new HashMap<String, Artist>();
-    private final List<Song> songsAsList = new ArrayList<Song>();
+    private final List<SongWrapper> songsAsList = new ArrayList<SongWrapper>();
     private final List<LibraryListener> listeners = new ArrayList<LibraryListener>();
 
     public synchronized void addTrackInfo(TrackInfo trackInfo) {
@@ -90,16 +89,20 @@ public class Library {
         addSong(song);
     }
 
-    private synchronized void addSong(Song song) {
+    private synchronized void addSong(Song newSong) {
+        SongWrapper song = new SongWrapper(newSong);
         songByFileName.put(song.getFileName(), song);
-        this.songsAsList.add(song);
-        Collections.sort(this.songsAsList, new SongComparator());
+        songsAsList.add(song);
         for (LibraryListener libraryListener : listeners) {
             libraryListener.songAdded(song, this.songsAsList.indexOf(song));
         }
     }
 
-    public void removeSong(Song song) {
+    List<SongWrapper> getSongs() {
+        return Collections.unmodifiableList(this.songsAsList);
+    }
+
+    void removeSong(SongWrapper song) {
         Album songAlbum = song.getAlbum();
         Artist songArtist = song.getArtist();
         songByFileName.remove(song.getFileName());
@@ -113,7 +116,7 @@ public class Library {
             songArtist.removeAlbum(songAlbum);
             this.artistByName.remove(songArtist.getName());
         }
-        songAlbum.removeSong(song);
+        songAlbum.removeSong(song.getSong());
         int oldIndex = songsAsList.indexOf(song);
         for (LibraryListener libraryListener : listeners) {
             libraryListener.songRemoved(song, oldIndex);
@@ -141,19 +144,21 @@ public class Library {
         this.listeners.remove(listener);
     }
 
-    public List<Song> getSongs() {
-        return Collections.unmodifiableList(this.songsAsList);
-    }
-
-    public int getSongCount() {
+    int getSongCount() {
         return this.songsAsList.size();
     }
 
-    public Song getSongFromList(int rowIndex) {
-        return (Song) this.songsAsList.get(rowIndex);
+    SongWrapper getSong(int rowIndex) {
+        try {
+            return this.songsAsList.get(rowIndex);
+        } catch (IndexOutOfBoundsException ex) {
+            log.debug("Songs [" + songsAsList.size() + "]");
+            log.debug("Row [" + rowIndex + "]");
+            return null;
+        }
     }
 
-    public void importBackup(File importFile) {
+    void importBackup(File importFile) {
         try {
             final SAXParserFactory parserFactory = SAXParserFactory.newInstance();
             SAXParser xmlReader = parserFactory.newSAXParser();
@@ -266,8 +271,8 @@ public class Library {
                 artist.export(exportSupport, currentID, albumIds);
                 artistIds.put(artist, currentID++);
             }
-            for (Song song : songsAsList) {
-                song.export(exportSupport, albumIds, artistIds);
+            for (SongWrapper song : songsAsList) {
+                song.getSong().export(exportSupport, albumIds, artistIds);
             }
             exportSupport.endElement();
             exportSupport.closeFile();

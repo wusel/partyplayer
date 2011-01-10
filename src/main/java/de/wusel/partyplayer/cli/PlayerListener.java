@@ -17,7 +17,7 @@
 
 package de.wusel.partyplayer.cli;
 
-import de.wusel.partyplayer.library.Song;
+import de.wusel.partyplayer.model.SongWrapper;
 
 /**
  *
@@ -25,11 +25,11 @@ import de.wusel.partyplayer.library.Song;
  */
 public class PlayerListener {
     
-    public void songStarted(Song song) {
+    public void songStarted(SongWrapper song) {
         
     }
     
-    public void songStoped(Song song) {
+    public void songStoped(SongWrapper song) {
         
     }
     

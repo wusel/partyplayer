@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package de.wusel.partyplayer.library;
+package de.wusel.partyplayer.model;
 
 import java.util.Comparator;
 
@@ -23,10 +23,9 @@ import java.util.Comparator;
  *
  * @author wusel
  */
-public class YearComparator implements Comparator<Album> {
+public class NameComparator implements Comparator<Album> {
 
     public int compare(Album o1, Album o2) {
-        return o1.getYear() - o2.getYear();
+        return o1.getTitle().compareTo(o2.getTitle());
     }
-
 }

@@ -19,12 +19,10 @@ package de.wusel.partyplayer.gui;
 import de.wusel.partyplayer.cli.Player;
 import de.wusel.partyplayer.cli.PlayerListener;
 import de.wusel.partyplayer.settings.Settings;
-import de.wusel.partyplayer.library.Library;
-import de.wusel.partyplayer.library.LibraryListener;
-import de.wusel.partyplayer.library.Playlist;
-import de.wusel.partyplayer.library.PlaylistListener;
-import de.wusel.partyplayer.library.Song;
-import de.wusel.partyplayer.library.SongComparator;
+import de.wusel.partyplayer.model.PlayerModel;
+import de.wusel.partyplayer.model.PlaylistListener;
+import de.wusel.partyplayer.model.SongComparator;
+import de.wusel.partyplayer.model.SongWrapper;
 import de.wusel.partyplayer.tasks.CheckAvailableSongsTask;
 import de.wusel.partyplayer.tasks.CheckSearchDirectoryTask;
 import de.wusel.partyplayer.util.PathUtil;
@@ -70,9 +68,8 @@ public class PartyPlayer extends SingleFrameApplication {
 
     private static final Logger log = Logger.getLogger(PartyPlayer.class);
     private final Player player = new Player();
-    private final Library library = new Library();
     private final Settings settings = new Settings();
-    private final Playlist playList = new Playlist(settings);
+    private final PlayerModel playerModel = new PlayerModel();
     private LockingStatusbar statusbar;
     private PlayerPanel playerPanel;
     private Timer timer;
@@ -87,7 +84,9 @@ public class PartyPlayer extends SingleFrameApplication {
         statusbar.addLockingListener(lockingListener);
         startTime = System.currentTimeMillis();
         log.info("Application started @[" + startTime + "]");
-        playList.addListener(playListListener);
+        player.addListener(playerListener);
+        
+        playerModel.addPlaylistListener(playListListener);
 
         addExitListener(new ExitListener() {
 
@@ -103,9 +102,9 @@ public class PartyPlayer extends SingleFrameApplication {
 
             @Override
             public void willExit(EventObject eo) {
-                library.backup(PathUtil.getLibraryFile());
+                playerModel.exportXML(PathUtil.getLibraryFile());
                 settings.backup(PathUtil.getSettingsFile());
-                playList.logUserFavorites();
+                playerModel.logUserFavorites();
                 log.info("Application stopped @[" + System.currentTimeMillis() + "] running for [" + (System.currentTimeMillis() - startTime) / 1000 + "]seconds");
             }
         });
@@ -122,19 +121,7 @@ public class PartyPlayer extends SingleFrameApplication {
         readSettingsFile(PathUtil.getSettingsFile());
         checkBinaries();
         this.statusbar.init();
-        library.addListener(new LibraryListener() {
-
-            @Override
-            public void songRemoved(Song song, int oldIndex) {
-                if (playList.getSongrequests(song) != 0) {
-                    playList.removeSong(song);
-                }
-            }
-        });
-
         readBackupFile(PathUtil.getLibraryFile());
-
-        player.addListener(playerListener);
 
         timer = new Timer(settings.getFolderCheckInterval(), new ActionListener() {
 
@@ -142,8 +129,8 @@ public class PartyPlayer extends SingleFrameApplication {
             public void actionPerformed(ActionEvent e) {
                 if (!started) {
                     started = true;
-                    getContext().getTaskService().execute(new CheckAvailableSongsTask(getInstance(), library, settings));
-                    getContext().getTaskService().execute(new CheckSearchDirectoryTask(getInstance(), library, settings));
+                    getContext().getTaskService().execute(new CheckAvailableSongsTask(getInstance(), playerModel, settings));
+                    getContext().getTaskService().execute(new CheckSearchDirectoryTask(getInstance(), playerModel, settings));
                     started = false;
                 }
             }
@@ -153,7 +140,7 @@ public class PartyPlayer extends SingleFrameApplication {
     }
 
     private void readBackupFile(File backupFile) {
-        library.importBackup(backupFile);
+        playerModel.importXML(backupFile);
     }
 
     private void readSettingsFile(File settingsFile) {
@@ -167,12 +154,13 @@ public class PartyPlayer extends SingleFrameApplication {
     }
 
     private static enum MessageType {
+
         STARTED,
         STOPPED,
         CHANGED
     }
 
-    private void play(final Song song) {
+    private void play(final SongWrapper song) {
         SwingWorker worker = new SwingWorker() {
 
             @Override
@@ -227,7 +215,7 @@ public class PartyPlayer extends SingleFrameApplication {
     }
 
     private Component createPlayListPanel() {
-        final PlaylistTableModel model = new PlaylistTableModel(playList, this);
+        final PlaylistTableModel model = new PlaylistTableModel(playerModel, this);
         final JTable playlistTable = new JTable(model);
         playlistTable.getColumn(getText("table.playlist.column.votes.label")).setMaxWidth(40);
         playlistTable.getColumn(getText("table.playlist.column.votes.label")).setResizable(false);
@@ -237,7 +225,7 @@ public class PartyPlayer extends SingleFrameApplication {
     }
 
     private Component createSongPanel() {
-        final SongsTableModel model = new SongsTableModel(library, playList, this);
+        final SongsTableModel model = new SongsTableModel(playerModel, settings, this);
 
         table = new JXTable(model) {
 
@@ -246,7 +234,7 @@ public class PartyPlayer extends SingleFrameApplication {
                 int viewRowIndex = rowAtPoint(event.getPoint());
                 if (viewRowIndex != -1) {
                     int modelIndex = convertRowIndexToModel(viewRowIndex);
-                    Song songFromList = library.getSongFromList(modelIndex);
+                    SongWrapper songFromList = playerModel.getSongFromList(modelIndex);
                     return songFromList.getFileName();
                 }
                 return super.getToolTipText(event);
@@ -265,7 +253,8 @@ public class PartyPlayer extends SingleFrameApplication {
             @Override
             public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
                 JLabel label = (JLabel) super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
-                label.setText(((Song) value).getTrackNumber() + "");
+                if(value !=null)
+                    label.setText(((SongWrapper) value).getTrackNumber() + "");
                 return label;
             }
         });
@@ -275,7 +264,8 @@ public class PartyPlayer extends SingleFrameApplication {
             @Override
             public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
                 JLabel label = (JLabel) super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
-                label.setText(Util.getTimeString((Double) value));
+                if(value !=null)
+                    label.setText(Util.getTimeString((Double) value));
                 return label;
             }
         });
@@ -285,7 +275,7 @@ public class PartyPlayer extends SingleFrameApplication {
             @Override
             public void mouseClicked(MouseEvent e) {
                 if (e.getClickCount() == 2) {
-                    addSongToPlaylist(library.getSongFromList(table.convertRowIndexToModel(table.getSelectedRow())));
+                    addSongToPlaylist(playerModel.getSongFromList(table.convertRowIndexToModel(table.getSelectedRow())));
                 }
             }
         });
@@ -295,7 +285,7 @@ public class PartyPlayer extends SingleFrameApplication {
             @Override
             public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-                    addSongToPlaylist(library.getSongFromList(table.convertRowIndexToModel(table.getSelectedRow())));
+                    addSongToPlaylist(playerModel.getSongFromList(table.convertRowIndexToModel(table.getSelectedRow())));
                 }
             }
         });
@@ -305,46 +295,41 @@ public class PartyPlayer extends SingleFrameApplication {
         return scrollPane;
     }
 
-    private void addSongToPlaylist(Song song) {
-        if (this.playList.getWaitTime(song) == 0) {
-            this.playList.putSong(song, true);
+    private void addSongToPlaylist(SongWrapper song) {
+        if (song.getWaitTime(settings.getSongVoteThreshold()) == 0) {
+            this.playerModel.addToPlaylist(song, true);
         } else {
             log.trace(song + " allready voted in last [" + settings.getSongVoteThreshold() / 1000 + "]s");
         }
     }
+
     private final PlaylistListener playListListener = new PlaylistListener() {
 
         @Override
-        public void songAdded(Song song) {
+        public void songAdded(SongWrapper song) {
             if (!player.isPlaying()) {
-                play(playList.next());
+                play(playerModel.getNextSong());
             }
         }
     };
+
     private final PlayerListener playerListener = new PlayerListener() {
 
         @Override
         public void progessChanged(double percent) {
-            if (playList.getSongCount() == 0 && percent > 90) {
-                putRandomSongInPlaylist();
+            if(playerModel.getPlaylistSongCount() == 0 && percent > 90) {
+                playerModel.addRandomSongToPlaylist();
             }
-        }
-
-        private void putRandomSongInPlaylist() {
-            int playListCount = library.getSongCount();
-            int songNumber = (int) (Math.random() * playListCount);
-            playList.putSong(library.getSongFromList(songNumber), false);
         }
 
         @Override
-        public void songStoped(Song song) {
-            Song next = playList.next();
-            if (next == null) {
-                putRandomSongInPlaylist();
-                next = playList.next();
+        public void songStoped(SongWrapper song) {
+            if(playerModel.getPlaylistSongCount() == 0) {
+                playerModel.addRandomSongToPlaylist();
             }
-            play(next);
+            play(playerModel.getNextSong());
         }
+
     };
     private final LockingListener lockingListener = new LockingListener() {
 
@@ -366,6 +351,9 @@ public class PartyPlayer extends SingleFrameApplication {
 
         @Override
         public void settingsChanged() {
+            timer.stop();
+            timer.setInitialDelay(0);
+            timer.start();
         }
     };
 

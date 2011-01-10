@@ -1,4 +1,4 @@
-package de.wusel.partyplayer.library;
+package de.wusel.partyplayer.model;
 
 import java.util.Comparator;
 

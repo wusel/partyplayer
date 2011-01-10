@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package de.wusel.partyplayer.library;
+package de.wusel.partyplayer.model;
 
 import java.io.File;
 import junit.framework.TestCase;
@@ -48,7 +48,7 @@ public class PlaylistTest extends TestCase {
 
     @Test
     public void testSingleElement() {
-        Song song = createSong("testmd5");
+        SongWrapper song = createSong("testmd5");
         Playlist playlist = new Playlist();
         playlist.putSong(song, true);
         assertEquals(1, playlist.getSongCount());
@@ -58,47 +58,47 @@ public class PlaylistTest extends TestCase {
     
     @Test
     public void testMultipleInserts() {
-        Song song = createSong("testmd5");
+        SongWrapper song = createSong("testmd5");
         Playlist playlist = new Playlist();
         playlist.putSong(song, true);
         assertEquals(1, playlist.getSongCount());
-        assertEquals(1, playlist.getSongrequests(song));
+        assertEquals(1, song.getCurrentRequestCount());
         playlist.putSong(song, true);
-        assertEquals(2, playlist.getSongrequests(song));
+        assertEquals(2, song.getCurrentRequestCount());
         playlist.putSong(song, true);
-        assertEquals(3, playlist.getSongrequests(song));
+        assertEquals(3, song.getCurrentRequestCount());
     }
     
     @Test
     public void testMultipleSongs() {
-        Song song = createSong("testmd5");
+        SongWrapper song = createSong("testmd5");
         Playlist playlist = new Playlist();
         playlist.putSong(song, true);
-        Song song2 = createSong("test2md5");
+        SongWrapper song2 = createSong("test2md5");
         playlist.putSong(song2, true);
         
-        Song[] firstTestExpected = {song, song2};
+        SongWrapper[] firstTestExpected = {song, song2};
         assertEquals(2, playlist.getSongCount());
-        assertArrayEquals(firstTestExpected, playlist.getSongs().toArray(new Song[0]));
+        assertArrayEquals(firstTestExpected, playlist.getSongs().toArray(new SongWrapper[0]));
         playlist.putSong(song2, true);
-        Song[] secondTestExpected = {song2, song};
+        SongWrapper[] secondTestExpected = {song2, song};
         assertEquals(2, playlist.getSongCount());
-        assertArrayEquals(secondTestExpected, playlist.getSongs().toArray(new Song[0]));
+        assertArrayEquals(secondTestExpected, playlist.getSongs().toArray(new SongWrapper[0]));
         playlist.putSong(song, true);
         playlist.putSong(song, true);
         assertEquals(2, playlist.getSongCount());
-        assertArrayEquals(firstTestExpected, playlist.getSongs().toArray(new Song[0]));
+        assertArrayEquals(firstTestExpected, playlist.getSongs().toArray(new SongWrapper[0]));
         
     }
 
-    private static void assertArrayEquals(Song[] expected, Song[] result) {
+    private static void assertArrayEquals(SongWrapper[] expected, SongWrapper[] result) {
         assertEquals("arraylength differs", expected.length, result.length);
         for (int i = 0; i < result.length; i++) {
-            Song song = result[i];
+            SongWrapper song = result[i];
             assertEquals(expected[i], song);
         }
     }
-    private static Song createSong(String md5) {
-        return new Song(new Artist("Test"), new Album(2000, "TestAlbum", "100"), "Testsong", 1, 111d, new File("testFileName"), md5);
+    private static SongWrapper createSong(String md5) {
+        return new SongWrapper(new Song(new Artist("Test"), new Album(2000, "TestAlbum", "100"), "Testsong", 1, 111d, new File("testFileName"), md5));
     }
 }

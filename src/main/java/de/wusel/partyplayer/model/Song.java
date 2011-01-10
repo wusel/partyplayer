@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package de.wusel.partyplayer.library;
+package de.wusel.partyplayer.model;
 
 import de.wusel.picotask.xml.XMLExportSupport;
 import java.io.File;
@@ -25,7 +25,7 @@ import java.util.Map;
  *
  * @author wusel
  */
-public class Song {
+class Song {
     private final Artist artist;
     private final Album album;
     private final String title;

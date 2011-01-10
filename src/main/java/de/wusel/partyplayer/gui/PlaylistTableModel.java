@@ -16,9 +16,9 @@
  */
 package de.wusel.partyplayer.gui;
 
-import de.wusel.partyplayer.library.Playlist;
-import de.wusel.partyplayer.library.PlaylistListener;
-import de.wusel.partyplayer.library.Song;
+import de.wusel.partyplayer.model.PlayerModel;
+import de.wusel.partyplayer.model.PlaylistListener;
+import de.wusel.partyplayer.model.SongWrapper;
 import javax.swing.table.AbstractTableModel;
 import org.jdesktop.application.Application;
 
@@ -28,29 +28,29 @@ import org.jdesktop.application.Application;
  */
 class PlaylistTableModel extends AbstractTableModel {
 
-    private final Playlist playlist;
+    private final PlayerModel playerModel;
     private final PlaylistListener listener = new PlaylistListener() {
 
         @Override
-        public void songAdded(Song song) {
+        public void songAdded(SongWrapper song) {
             fireTableDataChanged();
         }
 
         @Override
-        public void songOrderChanged(Song song) {
+        public void songOrderChanged() {
             fireTableDataChanged();
         }
 
         @Override
-        public void songRemoved(Song song) {
+        public void songRemoved(SongWrapper song) {
             fireTableDataChanged();
         }
     };
     private final Application application;
 
-    public PlaylistTableModel(Playlist playList, Application application) {
-        this.playlist = playList;
-        this.playlist.addListener(listener);
+    public PlaylistTableModel(PlayerModel playerModel, Application application) {
+        this.playerModel = playerModel;
+        this.playerModel.addPlaylistListener(listener);
         this.application = application;
     }
 
@@ -68,7 +68,7 @@ class PlaylistTableModel extends AbstractTableModel {
 
     @Override
     public int getRowCount() {
-        return playlist.getSongCount();
+        return playerModel.getPlaylistSongCount();
     }
 
     @Override
@@ -78,12 +78,12 @@ class PlaylistTableModel extends AbstractTableModel {
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
-        Song song = playlist.getSongs().get(rowIndex);
+        SongWrapper song = playerModel.getPlaylistSongs().get(rowIndex);
         switch (columnIndex) {
             case 0:
                 return song.getTitle();
             case 1:
-                return playlist.getSongrequests(song);
+                return song.getCurrentRequestCount();
             default:
                 throw new RuntimeException("unknown columnIndex");
         }

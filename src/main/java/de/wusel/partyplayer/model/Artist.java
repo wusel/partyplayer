@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package de.wusel.partyplayer.library;
+package de.wusel.partyplayer.model;
 
 import de.wusel.picotask.xml.XMLExportSupport;
 import java.util.ArrayList;

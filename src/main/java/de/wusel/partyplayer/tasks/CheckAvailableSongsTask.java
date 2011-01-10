@@ -16,8 +16,8 @@
  */
 package de.wusel.partyplayer.tasks;
 
-import de.wusel.partyplayer.library.Library;
-import de.wusel.partyplayer.library.Song;
+import de.wusel.partyplayer.model.PlayerModel;
+import de.wusel.partyplayer.model.SongWrapper;
 import de.wusel.partyplayer.settings.Settings;
 import java.io.File;
 import java.util.ArrayList;
@@ -29,22 +29,22 @@ import org.jdesktop.application.Task;
  *
  * @author wusel
  */
-public class CheckAvailableSongsTask extends Task<Void, Song> {
+public class CheckAvailableSongsTask extends Task<Void, SongWrapper> {
 
-    private final Library library;
+    private final PlayerModel playerModel;
     private final Settings settings;
 
-    public CheckAvailableSongsTask(Application application, Library library, Settings settings) {
+    public CheckAvailableSongsTask(Application application, PlayerModel library, Settings settings) {
         super(application);
-        this.library = library;
+        this.playerModel = library;
         this.settings = settings;
     }
 
     @Override
     protected Void doInBackground() throws Exception {
-        message("start", library.getSongCount());
-        final List<Song> songs = new ArrayList<Song>(library.getSongs());
-        for (Song song : songs) {
+        message("start", playerModel.getSongCount());
+        final List<SongWrapper> songs = new ArrayList<SongWrapper>(playerModel.getAvailableSongs());
+        for (SongWrapper song : songs) {
             boolean exists = new File(song.getFileName()).exists();
             boolean remove = exists && !belongsToSearchDirectories(song.getFileName());
             if (remove) {
@@ -52,14 +52,14 @@ public class CheckAvailableSongsTask extends Task<Void, Song> {
                 publish(song);
             }
         }
-        message("finished", library.getSongCount());
+        message("finished", playerModel.getSongCount());
         return null;
     }
 
     @Override
-    protected void process(List<Song> values) {
-        for (Song song : values) {
-            library.removeSong(song);
+    protected void process(List<SongWrapper> values) {
+        for (SongWrapper song : values) {
+            playerModel.removeSong(song);
         }
     }
 

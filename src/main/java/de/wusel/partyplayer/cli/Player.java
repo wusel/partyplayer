@@ -16,7 +16,7 @@
  */
 package de.wusel.partyplayer.cli;
 
-import de.wusel.partyplayer.library.Song;
+import de.wusel.partyplayer.model.SongWrapper;
 import de.wusel.partyplayer.util.PathUtil;
 import java.io.BufferedInputStream;
 import java.io.IOException;
@@ -33,9 +33,9 @@ public class Player {
     private static final Logger log = Logger.getLogger(Player.class);
     private final List<PlayerListener> listeners = new ArrayList<PlayerListener>();
     private Process playerProcess;
-    private Song currentSong;
+    private SongWrapper currentSong;
 
-    public void play(Song song) throws IOException {
+    public void play(SongWrapper song) throws IOException {
         this.currentSong = song;
         log.debug("playing now [" + song.getFileName() + "]");
         ProcessBuilder processbuilder = new ProcessBuilder(PathUtil.getMPlayerPath(), song.getFileName());

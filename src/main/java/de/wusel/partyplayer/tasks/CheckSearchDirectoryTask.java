@@ -20,7 +20,7 @@ import de.wusel.partyplayer.cli.FileCallback;
 import de.wusel.partyplayer.cli.FileSearcher;
 import de.wusel.partyplayer.cli.TagReader;
 import de.wusel.partyplayer.cli.TrackInfo;
-import de.wusel.partyplayer.library.Library;
+import de.wusel.partyplayer.model.PlayerModel;
 import de.wusel.partyplayer.settings.Settings;
 import java.io.File;
 import java.io.IOException;
@@ -39,12 +39,12 @@ import org.jdesktop.application.Task;
 public class CheckSearchDirectoryTask extends Task<Void, TrackInfo> {
 
     private static final Logger log = Logger.getLogger(CheckSearchDirectoryTask.class);
-    private final Library library;
+    private final PlayerModel library;
     private final Settings settings;
     private int maxFiles = 0;
     private int currentFiles = 0;
 
-    public CheckSearchDirectoryTask(Application application, Library library, Settings settings) {
+    public CheckSearchDirectoryTask(Application application, PlayerModel library, Settings settings) {
         super(application);
         this.library = library;
         this.settings = settings;

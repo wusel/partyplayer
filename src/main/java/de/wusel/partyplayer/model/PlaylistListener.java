@@ -15,18 +15,22 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package de.wusel.partyplayer.library;
+package de.wusel.partyplayer.model;
 
 /**
  *
  * @author wusel
  */
-public class LibraryListener {
-    public void songAdded(Song song, int index) {
+public class PlaylistListener {
+    public void songAdded(SongWrapper song) {
+        
+    }
+    
+    public void songOrderChanged() {
         
     }
 
-    public void songRemoved(Song song, int oldIndex) {
-
+    public void songRemoved(SongWrapper song) {
+        
     }
 }
